@@ -1,0 +1,20 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{Abstract}{ii}{section*.1}
+\contentsline {chapter}{Acknowledgements}{iii}{section*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
+\contentsline {section}{\numberline {1.1}Dissertation Structure}{1}{section.5}
+\contentsline {section}{\numberline {1.2}List of Publications}{1}{section.7}
+\contentsline {chapter}{\numberline {2}Crowdsourced Media Analysis}{3}{chapter.8}
+\contentsline {chapter}{\numberline {3}Image Sentiment Analysis}{4}{chapter.9}
+\contentsline {section}{\numberline {3.1}Introduction}{4}{section.10}
+\contentsline {section}{\numberline {3.2}The Social Picture}{4}{section.11}
+\contentsline {section}{\numberline {3.3}Image Polarity Prediction}{4}{section.12}
+\contentsline {section}{\numberline {3.4}Image Popularity Prediction}{4}{section.13}
+\contentsline {section}{\numberline {3.5}Conclusions}{4}{section.14}
+\contentsline {chapter}{\numberline {4}Video Sentiment Analysis}{5}{chapter.15}
+\contentsline {section}{\numberline {4.1}Introduction}{5}{section.16}
+\contentsline {section}{\numberline {4.2}RECfusion}{5}{section.17}
+\contentsline {section}{\numberline {4.3}RECfusion for lifelogging}{5}{section.18}
+\contentsline {section}{\numberline {4.4}Conclusions}{5}{section.19}
+\contentsline {chapter}{\numberline {5}Final Discussion, Remarks and Future Works}{6}{chapter.20}
