@@ -1,0 +1,1511 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+
+@article{furnari2018personal,
+	title = {  Personal-Location-Based Temporal Segmentation of Egocentric Video for Lifelogging Applications  },
+	journal = {  Journal of Visual Communication and Image Representation  },
+	year = {  2018  },
+	pdf = {  publications/furnari2018personal.pdf  },
+	url = {  http://iplab.dmi.unict.it/PersonalLocationSegmentation/  },
+	author = { Antonino Furnari and Sebastiano Battiato and Giovanni Maria Farinella },
+	issn = {  1047-3203  },
+	volume = {  52  },
+	pages = {  1-12  },
+}
+
+
+@ARTICLE{CappalloTEMP18, 
+	author = {Spencer Cappallo and Stacey Svetlichnaya and Pierre Garrigues and Thomas Mensink and Cees G. M. Snoek}, 
+	title = {The New Modality: Emoji Challenges in Prediction, Anticipation, and Retrieval}, 
+	journal = {{IEEE} Transactions on Multimedia}, 
+	pages = {}, 
+	month = {}, 
+	year = {2018}, 
+	volume = {}, 
+	number = {}, 
+	pdf = {https://arxiv.org/abs/1801.10253}, 
+	note = {Pending minor revision}, 
+	abstract = { }
+}
+
+@article{ORTIS2017207,
+	author = { Alessandro Ortis and Giovanni Maria Farinella and Valeria D'Amico and Luca Addesso and Giovanni Torrisi and Sebastiano Battiato },
+	url = { http://iplab.dmi.unict.it/dailylivingactivities },
+	doi = { https://doi.org/10.1016/j.patcog.2017.07.010 },
+	issn = { 0031-3203 },
+	year = { 2017 },
+	pages = { 207 - 218 },
+	number = { Supplement C },
+	volume = { 72 },
+	journal = { Pattern Recognition },
+	title = { Organizing egocentric videos of daily living activities },
+}
+@incollection{liu2012survey,
+	title={A survey of opinion mining and sentiment analysis},
+	author={Liu, Bing and Zhang, Lei},
+	booktitle={Mining text data},
+	pages={415--463},
+	year={2012},
+	publisher={Springer}
+}
+@inproceedings{googlenet,
+	title = {Going Deeper with Convolutions},
+	author  = {Christian Szegedy and Wei Liu and Yangqing Jia and Pierre Sermanet and Scott Reed and Dragomir Anguelov and Dumitru Erhan and Vincent Vanhoucke and Andrew Rabinovich},
+	year  = 2015,
+	booktitle = {proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}
+}
+@article{baecchi2016multimodal,
+	title={A multimodal feature learning approach for sentiment analysis of social network multimedia},
+	author={Baecchi, Claudio and Uricchio, Tiberio and Bertini, Marco and Del Bimbo, Alberto},
+	journal={Multimedia Tools and Applications},
+	volume={75},
+	number={5},
+	pages={2507--2525},
+	year={2016},
+	publisher={Springer}
+}
+@article{wu2013tag,
+	title={Tag completion for image retrieval},
+	author={Wu, Lei and Jin, Rong and Jain, Anil K},
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	volume={35},
+	number={3},
+	pages={716--727},
+	year={2013},
+	publisher={IEEE}
+}
+@inproceedings{xu2009tag,
+	title={Tag refinement by regularized LDA},
+	author={Xu, Hao and Wang, Jingdong and Hua, Xian-Sheng and Li, Shipeng},
+	booktitle={Proceedings of the 17th ACM international conference on Multimedia},
+	pages={573--576},
+	year={2009},
+	organization={ACM}
+}
+@article{sang2012user,
+	title={User-aware image tag refinement via ternary semantic analysis},
+	author={Sang, Jitao and Xu, Changsheng and Liu, Jing},
+	journal={IEEE Transactions on Multimedia},
+	volume={14},
+	number={3},
+	pages={883--895},
+	year={2012},
+	publisher={IEEE}
+}
+@article{li2016socializing,
+	title={Socializing the semantic gap: A comparative survey on image tag assignment, refinement, and retrieval},
+	author={Li, Xirong and Uricchio, Tiberio and Ballan, Lamberto and Bertini, Marco and Snoek, Cees GM and Bimbo, Alberto Del},
+	journal={ACM Computing Surveys (CSUR)},
+	volume={49},
+	number={1},
+	pages={14},
+	year={2016},
+	publisher={ACM}
+}
+@inproceedings{Ravi2012,
+	title = {A Novel Computational Tool for Aesthetic Scoring of Digital Photography},
+	author = { F. Rav\'{i} and S. Battiato},
+	year = {2012},
+	booktitle = {Proceedings of 6th European Conference on Colour in Graphics, Imaging, and Vision},
+	pages = {1--5},
+	publisher = {SPIE-IS\&T},
+	address = {Amsterdam},
+	keywords = {},
+	pubstate = {published},
+	tppubtype = {inproceedings},
+}
+@inproceedings{ijcai2017-456,
+	author    = {Jufeng Yang, Dongyu She, Ming Sun},
+	title     = {Joint Image Emotion Classification and Distribution Learning via Deep Convolutional Neural Network},
+	booktitle = {Proceedings of the Twenty-Sixth International Joint Conference on
+	Artificial Intelligence, {IJCAI-17}},
+	pages     = {3266--3272},
+	year      = {2017},
+	doi       = {10.24963/ijcai.2017/456},
+}
+
+
+
+@Article{campos2017pixels,
+	title = "From pixels to sentiment: Fine-tuning CNNs for visual sentiment prediction",
+	journal = "Image and Vision Computing",
+	volume = "65",
+	pages = "15 - 22",
+	year = "2017",
+	note = "Multimodal Sentiment Analysis and Mining in the Wild Image and Vision Computing",
+	issn = "0262-8856",
+	doi = "https://doi.org/10.1016/j.imavis.2017.01.011",
+	url = "http://www.sciencedirect.com/science/article/pii/S0262885617300355",
+	author = "V{\'\i}ctor Campos and Brendan Jou and Xavier Gir\'{o}-i-Nieto",
+	keywords = "Sentiment, Convolutional Neural Networks, Social multimedia, Fine-tuning strategies"
+}
+
+
+@article{thelwall2010sentiment,
+	title={Sentiment strength detection in short informal text},
+	author={Thelwall, Mike and Buckley, Kevan and Paltoglou, Georgios and Cai, Di and Kappas, Arvid},
+	journal={Journal of the Association for Information Science and Technology},
+	volume={61},
+	number={12},
+	pages={2544--2558},
+	year={2010},
+	publisher={Wiley Online Library}
+}
+
+
+@article{narihira2015mapping,
+	title={Mapping Images to Sentiment Adjective Noun Pairs with Factorized Neural Nets},
+	author={Narihira, Takuya and Borth, Damian and Yu, Stella X and Ni, Karl and Darrell, Trevor},
+	journal={arXiv preprint arXiv:1511.06838},
+	year={2015}
+}
+@inproceedings{jou2016deep,
+	title={Deep cross residual learning for multitask visual recognition},
+	author={Jou, Brendan and Chang, Shih-Fu},
+	booktitle={Proceedings of the 2016 ACM on Multimedia Conference},
+	pages={998--1007},
+	year={2016},
+	organization={ACM}
+}
+@inproceedings{cappallo2015image2emoji,
+	title={Image2emoji: Zero-shot emoji prediction for visual media},
+	author={Cappallo, Spencer and Mensink, Thomas and Snoek, Cees GM},
+	booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+	pages={1311--1314},
+	year={2015},
+	organization={ACM}
+}
+@article{eisner2016emoji2vec,
+	title={emoji2vec: Learning Emoji Representations from their Description},
+	author={Eisner, Ben and Rockt{\"a}schel, Tim and Augenstein, Isabelle and Bo{\v{s}}njak, Matko and Riedel, Sebastian},
+	journal={arXiv preprint arXiv:1609.08359},
+	year={2016}
+}
+@inproceedings{hogenboom2013exploiting,
+	title={Exploiting emoticons in sentiment analysis},
+	author={Hogenboom, Alexander and Bal, Daniella and Frasincar, Flavius and Bal, Malissa and de Jong, Franciska and Kaymak, Uzay},
+	booktitle={Proceedings of the 28th Annual ACM Symposium on Applied Computing},
+	pages={703--710},
+	year={2013},
+	organization={ACM},
+}
+
+@article{novak2015sentiment,
+    author = {Kralj Novak, Petra AND Smailovi\'{c}, Jasmina AND Sluban, Borut AND Mozeti\v{c}, Igor},
+journal = {PLOS ONE},
+publisher = {Public Library of Science},
+title = {Sentiment of Emojis},
+year = {2015},
+month = {12},
+volume = {10},
+url = {https://doi.org/10.1371/journal.pone.0144296},
+pages = {1-22},
+number = {12},
+doi = {10.1371/journal.pone.0144296}
+}
+@article{lang2008international,
+	title={International affective picture system (IAPS): Affective ratings of pictures and instruction manual},
+	author={Lang, Peter J and Bradley, Margaret M and Cuthbert, Bruce N},
+	journal={Technical report A-8},
+	year={2008}
+}
+@inproceedings{wei2006image,
+	title={Image retrieval by emotional semantics: A study of emotional space and feature extraction},
+	author={Wei-ning, Wang and Ying-lin, Yu and Sheng-ming, Jiang},
+	booktitle={IEEE International Conference on Systems, Man and Cybernetics},
+	volume={4},
+	pages={3534--3539},
+	year={2006},
+	organization={IEEE}
+}
+
+@inproceedings{yang2017learning,
+	title={Learning Visual Sentiment Distributions via Augmented Conditional Probability Neural Network.},
+	author={Yang, Jufeng and Sun, Ming and Sun, Xiaoxiao},
+	booktitle={AAAI},
+	pages={224--230},
+	year={2017}
+}
+@inproceedings{stottinger2009translating,
+	title={Translating journalists' requirements into features for image search},
+	author={Stottinger, Julian and Banova, Jana and Ponitz, Thomas and Sebe, Nicu and Hanbury, Allan},
+	booktitle={15th International Conference on Virtual Systems and Multimedia.},
+	pages={149--153},
+	year={2009},
+	organization={IEEE}
+}
+
+
+
+
+@inproceedings{machajdik2010affective,
+	title={Affective image classification using features inspired by psychology and art theory},
+	author={Machajdik, Jana and Hanbury, Allan},
+	booktitle={Proceedings of the 18th ACM international conference on Multimedia},
+	pages={83--92},
+	year={2010},
+	organization={ACM}
+}
+@inproceedings{zhao2014exploring,
+	title={Exploring principles-of-art features for image emotion recognition},
+	author={Zhao, Sicheng and Gao, Yue and Jiang, Xiaolei and Yao, Hongxun and Chua, Tat-Seng and Sun, Xiaoshuai},
+	booktitle={Proceedings of the 22nd ACM international conference on Multimedia},
+	pages={47--56},
+	year={2014},
+	organization={ACM}
+}
+@article{dan2011geneva,
+	title={The Geneva affective picture database (GAPED): a new 730-picture database focusing on valence and normative significance},
+	author={Dan-Glauser, Elise S and Scherer, Klaus R},
+	journal={Behavior research methods},
+	volume={43},
+	number={2},
+	pages={468--477},
+	year={2011},
+	publisher={Springer}
+}
+@article{lang1999international,
+	title={International affective picture system (IAPS): Technical manual and affective ratings},
+	author={Lang, Peter J and Bradley, Margaret M and Cuthbert, Bruce N},
+	journal={Gainesville, FL: The Center for Research in Psychophysiology, University of Florida},
+	year={1999}
+}
+@inproceedings{peng2015mixed,
+	title={A mixed bag of emotions: Model, predict, and transfer emotion distributions},
+	author={Peng, Kuan-Chuan and Chen, Tsuhan and Sadovnik, Amir and Gallagher, Andrew C},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={860--868},
+	year={2015}
+}
+
+@inproceedings{katsurai2016image,
+	title={Image sentiment analysis using latent correlations among visual, textual, and sentiment views},
+	author={Katsurai, Marie and Satoh, Shin'ichi},
+	booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
+	pages={2837--2841},
+	year={2016},
+	organization={IEEE}
+}
+
+@inproceedings{gong2014improving,
+	title={Improving image-sentence embeddings using large weakly annotated photo collections},
+	author={Gong, Yunchao and Wang, Liwei and Hodosh, Micah and Hockenmaier, Julia and Lazebnik, Svetlana},
+	booktitle={European Conference on Computer Vision},
+	pages={529--545},
+	year={2014},
+	organization={Springer}
+}
+
+@inproceedings{sun2016discovering,
+	title={Discovering affective regions in deep convolutional neural networks for visual sentiment prediction},
+	author={Sun, Ming and Yang, Jufeng and Wang, Kai and Shen, Hui},
+	booktitle={IEEE International Conference on Multimedia and Expo.},
+	pages={1--6},
+	year={2016},
+	organization={IEEE}
+}
+@article{pang2015deep,
+	title={Deep multimodal learning for affective analysis and retrieval},
+	author={Pang, Lei and Zhu, Shiai and Ngo, Chong-Wah},
+	journal={IEEE Transactions on Multimedia},
+	volume={17},
+	number={11},
+	pages={2008--2020},
+	year={2015},
+	publisher={IEEE}
+}
+@inproceedings{yu2013designing,
+	title={Designing category-level attributes for discriminative visual recognition},
+	author={Yu, Felix X and Cao, Liangliang and Feris, Rogerio S and Smith, John R and Chang, Shih-Fu},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={771--778},
+	year={2013}
+}
+@inproceedings{esuli2006sentiwordnet,
+	title={Sentiwordnet: A publicly available lexical resource for opinion mining},
+	author={Esuli, Andrea and Sebastiani, Fabrizio},
+	booktitle={Proceedings of LREC},
+	volume={6},
+	pages={417--422},
+	year={2006},
+	organization={Citeseer}
+}
+@inproceedings{wang2008survey,
+author={Weining Wang and Qianhua He}, 
+booktitle={15th IEEE International Conference on Image Processing}, 
+title={A survey on emotional semantic image retrieval}, 
+year={2008}, 
+volume={}, 
+number={}, 
+pages={117-120}, 
+keywords={emotion recognition;feature extraction;image retrieval;emotion recognition;emotional semantic image retrieval;emotional semantic representation;image feature extraction;Content based retrieval;Emotion recognition;Feature extraction;Helium;Humans;Image analysis;Image color analysis;Image retrieval;Indexing;Information retrieval;emotion recognition;emotional semantics;image retrieval}, 
+doi={10.1109/ICIP.2008.4711705}, 
+ISSN={1522-4880} 
+}
+
+@article{katsurai2014cross,
+	title={A cross-modal approach for extracting semantic relationships between concepts using tagged images},
+	author={Katsurai, Marie and Ogawa, Takahiro and Haseyama, Miki},
+	journal={IEEE Transactions on Multimedia},
+	volume={16},
+	number={4},
+	pages={1059--1074},
+	year={2014},
+	publisher={IEEE}
+}
+
+@book{itten1973art,
+	author = {Johannes Itten},
+	title = {The Art of Color: The Subjective Experience and Objective Rationale of Color.},
+	isbn = {0442240376},
+	publisher = {John Wiley \& Sons Inc},
+	year = {1973},
+}
+
+@inproceedings{fu2014transductive,
+	title={Transductive multi-view embedding for zero-shot recognition and annotation},
+	author={Fu, Yanwei and Hospedales, Timothy M and Xiang, Tao and Fu, Zhenyong and Gong, Shaogang},
+	booktitle={European Conference on Computer Vision},
+	pages={584--599},
+	year={2014},
+	organization={Springer}
+}
+
+@article{li2015robust,
+	title={Robust structured subspace learning for data representation},
+	author={Li, Zechao and Liu, Jing and Tang, Jinhui and Lu, Hanqing},
+	journal={IEEE transactions on pattern analysis and machine intelligence},
+	volume={37},
+	number={10},
+	pages={2085--2098},
+	year={2015},
+	publisher={IEEE}
+}
+
+@article{gong2014multi,
+	title={A multi-view embedding space for modeling internet images, tags, and their semantics},
+	author={Gong, Yunchao and Ke, Qifa and Isard, Michael and Lazebnik, Svetlana},
+	journal={International journal of computer vision},
+	volume={106},
+	number={2},
+	pages={210--233},
+	year={2014},
+	publisher={Springer}
+}
+
+@inproceedings{rasiwasia2010new,
+	title={A new approach to cross-modal multimedia retrieval},
+	author={Rasiwasia, Nikhil and Costa Pereira, Jose and Coviello, Emanuele and Doyle, Gabriel and Lanckriet, Gert RG and Levy, Roger and Vasconcelos, Nuno},
+	booktitle={Proceedings of the 18th ACM international conference on Multimedia},
+	pages={251--260},
+	year={2010},
+	organization={ACM}
+}
+
+@inproceedings{guillaumin2010multimodal,
+	title={Multimodal semi-supervised learning for image classification},
+	author={Guillaumin, Matthieu and Verbeek, Jakob and Schmid, Cordelia},
+	booktitle={IEEE Conference on Computer Vision \& Pattern Recognition},
+	pages={902--909},
+	year={2010},
+	organization={IEEE Computer Society}
+}
+@inproceedings{gelli2015image,
+	title={Image popularity prediction in social media using sentiment and context features},
+	author={Gelli, Francesco and Uricchio, Tiberio and Bertini, Marco and Del Bimbo, Alberto and Chang, Shih-Fu},
+	booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+	pages={907--910},
+	year={2015},
+	organization={ACM}
+}
+@inproceedings{mcparlane2014nobody,
+	title={Nobody comes here anymore, it's too crowded; Predicting Image Popularity on Flickr},
+	author={McParlane, Philip J and Moshfeghi, Yashar and Jose, Joemon M},
+	booktitle={Proceedings of International Conference on Multimedia Retrieval},
+	pages={385},
+	year={2014},
+	organization={ACM}
+}
+
+
+@inproceedings{li2017hybrid,
+	author = {Li, Liuwu and Situ, Runwei and Gao, Junyan and Yang, Zhenguo and Liu, Wenyin},
+	title = {A Hybrid Model Combining Convolutional Neural Network with XGBoost for Predicting Social Media Popularity},
+	booktitle = {Proceedings of the 2017 ACM on Multimedia Conference},
+	series = {MM '17},
+	year = {2017},
+	isbn = {978-1-4503-4906-2},
+	location = {Mountain View, California, USA},
+	pages = {1912--1917},
+	numpages = {6},
+	url = {http://doi.acm.org/10.1145/3123266.3127902},
+	doi = {10.1145/3123266.3127902},
+	acmid = {3127902},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {convolution neural network, popularity prediction, regression., social media mining},
+} 
+
+
+@inproceedings{hidayati2017popularity,
+	title={Popularity Meter: An Influence-and Aesthetics-aware Social Media Popularity Predictor},
+	author={Hidayati, Shintami Chusnul and Chen, Yi-Ling and Yang, Chao-Lung and Hua, Kai-Lung},
+	booktitle={Proceedings of the 2017 ACM on Multimedia Conference},
+	pages={1918--1923},
+	year={2017},
+	organization={ACM}
+}
+@inproceedings{Wu2017DTCN,
+	title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
+	author={Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Qiushi, Huang and Jintao, Li and Mei, Tao},
+	booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
+	year={2017},
+	location = {Melbourne, Australia}}
+
+
+@inproceedings{Wu2016TemporalPrediction,
+	author = {Wu, Bo and Mei, Tao and Cheng, Wen-Huang and Zhang, Yongdong},
+	title = {Unfolding Temporal Dynamics: Predicting Social Media Popularity Using Multi-scale Temporal Decomposition},
+	booktitle = {Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence (AAAI)},
+	year = {2016},
+	location = {Phoenix, Arizona}}
+
+
+@inproceedings{Wu2016TimeMatters,
+	author = {Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Mei, Tao},
+	title = {Time Matters: Multi-scale Temporalization of Social Media Popularity},
+	booktitle = {Proceedings of the 2016 ACM on Multimedia Conference (ACM MM)},
+	year = {2016},
+	location = {Amsterdam, The Netherlands}}
+
+@inproceedings{khosla2014makes,
+	title={What makes an image popular?},
+	author={Khosla, Aditya and Das Sarma, Atish and Hamid, Raffay},
+	booktitle={Proceedings of the 23rd international conference on World wide web},
+	pages={867--876},
+	year={2014},
+	organization={ACM}
+}
+@inproceedings{totti2014impact,
+	title={The impact of visual attributes on online image diffusion},
+	author={Totti, Luam Catao and Costa, Felipe Almeida and Avila, Sandra and Valle, Eduardo and Meira Jr, Wagner and Almeida, Virgilio},
+	booktitle={Proceedings of the 2014 ACM conference on Web science},
+	pages={42--51},
+	year={2014},
+	organization={ACM}
+}
+@inproceedings{esuli2006sentiwordnet,
+	title={Sentiwordnet: A publicly available lexical resource for opinion mining},
+	author={Esuli, Andrea and Sebastiani, Fabrizio},
+	booktitle={Proceedings of LREC},
+	volume={6},
+	pages={417--422},
+	year={2006},
+	organization={Citeseer}
+}
+
+@inproceedings{yanulevskaya2008emotional,
+	title={Emotional valence categorization using holistic image features},
+	author={Yanulevskaya, Victoria and Van Gemert, JC and Roth, Katharina and Herbold, Ann-Katrin and Sebe, Nicu and Geusebroek, Jan-Mark},
+	booktitle={15th IEEE International Conference on Image Processing},
+	pages={101--104},
+	year={2008},
+	organization={IEEE}
+}
+@inproceedings{yang2014your,
+ author = {Yang, Yang and Jia, Jia and Zhang, Shumei and Wu, Boya and Chen, Qicong and Li, Juanzi and Xing, Chunxiao and Tang, Jie},
+title = {How Do Your Friends on Social Media Disclose Your Emotions?},
+booktitle = {Proceedings of the Twenty-Eighth AAAI Conference on Artificial Intelligence},
+series = {AAAI'14},
+year = {2014},
+location = {Qu\&\#233;bec City, Qu\&\#233;bec, Canada},
+pages = {306--312},
+numpages = {7},
+url = {http://dl.acm.org/citation.cfm?id=2893873.2893922},
+acmid = {2893922},
+publisher = {AAAI Press},
+}
+@article{chen2014deepsentibank,
+	title={Deepsentibank: Visual sentiment concept classification with deep convolutional neural networks},
+	author={Chen, Tao and Borth, Damian and Darrell, Trevor and Chang, Shih-Fu},
+	journal={arXiv preprint arXiv:1410.8586},
+	year={2014}
+}
+@inproceedings{isola2011makes,
+	title={What makes an image memorable?},
+	author={Isola, Phillip and Xiao, Jianxiong and Torralba, Antonio and Oliva, Aude},
+	booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={145--152},
+	year={2011},
+	organization={IEEE}
+}
+@InProceedings{Karpathy_2015_CVPR,
+	author = {Karpathy, Andrej and Fei-Fei, Li},
+	title = {Deep Visual-Semantic Alignments for Generating Image Descriptions},
+	booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition},
+	month = {June},
+	year = {2015}
+}
+@inproceedings{karpathy2015deep,
+	title={Deep visual-semantic alignments for generating image descriptions},
+	author={Karpathy, Andrej and Fei-Fei, Li},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={3128--3137},
+	year={2015}
+}
+@article{reece2016instagram,
+	author="Reece, Andrew G.
+	and Danforth, Christopher M.",
+	title="Instagram photos reveal predictive markers of depression",
+	journal="EPJ Data Science",
+	year="2017",
+	volume="6",
+	number="1",
+	pages="15",
+	issn="2193-1127",
+	doi="10.1140/epjds/s13688-017-0110-z"
+}
+@inproceedings{khosla2012memorability,
+	title={Memorability of image regions},
+	author={Khosla, Aditya and Xiao, Jianxiong and Torralba, Antonio and Oliva, Aude},
+	booktitle={Advances in Neural Information Processing Systems},
+	pages={305--313},
+	year={2012}
+}
+
+@inproceedings{fan2013relative,
+	title={Relative attributes for large-scale abandoned object detection},
+	author={Fan, Quanfu and Gabbur, Prasad and Pankanti, Sharath},
+	booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+	pages={2736--2743},
+	year={2013}
+}
+
+@inproceedings{altwaijry2013relative,
+	title={Relative ranking of facial attractiveness},
+	author={Altwaijry, Hani and Belongie, Serge},
+	booktitle={IEEE Workshop on Applications of Computer Vision (WACV)},
+	pages={117--124},
+	year={2013}
+}
+@inproceedings{yu2015just,
+	title={Just noticeable differences in visual attributes},
+	author={Yu, Aron and Grauman, Kristen},
+	booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+	pages={2416--2424},
+	year={2015}
+}
+@Article{agarwal2015sentiment,
+	title="Sentiment analysis using common-sense and context information",
+	author="Agarwal, Basant and Mittal, Namita and Bansal, Pooja and Garg, Sonal",
+	journal="Computational intelligence and neuroscience",
+	numpages="30",
+	year="2015",
+	publisher="Hindawi Publishing Corp."
+}
+
+
+@article{liu2004conceptnet,
+	author="Liu, H.
+	and Singh, P.",
+	title="ConceptNet --- A Practical Commonsense Reasoning Tool-Kit",
+	journal="BT Technology Journal",
+	year="2004",
+	month="Oct",
+	day="01",
+	volume="22",
+	number="4",
+	pages="211--226",
+	issn="1573-1995",
+	doi="10.1023/B:BTTJ.0000047600.45421.6d",
+	url="https://doi.org/10.1023/B:BTTJ.0000047600.45421.6d"
+}
+@inproceedings{yuan2013sentribute,
+	title={Sentribute: image sentiment analysis from a mid-level perspective},
+	author={Yuan, Jianbo and Mcdonough, Sean and You, Quanzeng and Luo, Jiebo},
+	booktitle={Proceedings of the Second International Workshop on Issues of Sentiment Discovery and Opinion Mining},
+	pages={10},
+	year={2013},
+	organization={ACM}
+}
+
+@article{hanjalic2006extracting,
+	title={Extracting moods from pictures and sounds: Towards truly personalized TV},
+	author={Hanjalic, Alan},
+	journal={IEEE Signal Processing Magazine},
+	volume={23},
+	number={2},
+	pages={90--100},
+	year={2006},
+	publisher={IEEE}
+}
+@inproceedings{zhao2014affective,
+	title={Affective image retrieval via multi-graph learning},
+	author={Zhao, Sicheng and Yao, Hongxun and Yang, You and Zhang, Yanhao},
+	booktitle={Proceedings of the 22nd ACM international conference on Multimedia},
+	pages={1025--1028},
+	year={2014},
+	organization={ACM}
+}
+
+@inproceedings{jia2012can,
+	title={Can we understand van gogh's mood?: learning to infer affects from images in social networks},
+	author={Jia, Jia and Wu, Sen and Wang, Xiaohui and Hu, Peiyun and Cai, Lianhong and Tang, Jie},
+	booktitle={Proceedings of the 20th ACM international conference on Multimedia},
+	pages={857--860},
+	year={2012},
+	organization={ACM}
+}
+
+
+@inproceedings{marchesotti2011assessing,
+	title={Assessing the aesthetic quality of photographs using generic image descriptors},
+	author={Marchesotti, Luca and Perronnin, Florent and Larlus, Diane and Csurka, Gabriela},
+	booktitle={2011 International Conference on Computer Vision},
+	pages={1784--1791},
+	year={2011},
+	organization={IEEE}
+}
+
+@article{joshi2011aesthetics,
+	title={Aesthetics and emotions in images},
+	author={Joshi, Dhiraj and Datta, Ritendra and Fedorovskaya, Elena and Luong, Quang-Tuan and Wang, James Z and Li, Jia and Luo, Jiebo},
+	journal={IEEE Signal Processing Magazine},
+	volume={28},
+	number={5},
+	pages={94--115},
+	year={2011},
+	publisher={IEEE}
+}
+
+
+@article{colombo1999semantics,
+	title={Semantics in visual information retrieval},
+	author={Colombo, Carlo and Del Bimbo, Alberto and Pala, Pietro},
+	journal={IEEE Multimedia},
+	volume={6},
+	number={3},
+	pages={38--53},
+	year={1999}
+}
+
+
+@article{tamura1978textural,
+	title={Textural features corresponding to visual perception},
+	author={Tamura, Hideyuki and Mori, Shunji and Yamawaki, Takashi},
+	journal={IEEE Transactions on Systems, Man, and Cybernetics},
+	volume={8},
+	number={6},
+	pages={460--473},
+	year={1978},
+	publisher={IEEE}
+}
+
+@article{schmidt2009collective,
+	title={Collective indexing of emotions in images. A study in emotional information retrieval},
+	author={Schmidt, Stefanie and Stock, Wolfgang G},
+	journal={Journal of the American Society for Information Science and Technology},
+	volume={60},
+	number={5},
+	pages={863--876},
+	year={2009},
+	publisher={Wiley Online Library}
+}
+@inproceedings{wei2006image,
+	title={Image retrieval by emotional semantics: A study of emotional space and feature extraction},
+	author={Wei-ning, Wang and Ying-lin, Yu and Sheng-ming, Jiang},
+	booktitle={2006 IEEE International Conference on Systems, Man and Cybernetics},
+	volume={4},
+	pages={3534--3539},
+	year={2006},
+	organization={IEEE}
+}
+@inproceedings{siersdorfer2010analyzing,
+	title={Analyzing and predicting sentiment of images on the social web},
+	author={Siersdorfer, Stefan and Minack, Enrico and Deng, Fan and Hare, Jonathon},
+	booktitle={Proceedings of the 18th ACM international conference on Multimedia},
+	pages={715--718},
+	year={2010},
+	organization={ACM}
+}
+
+@online{instagram2015,
+	author={Dimson,T},
+	title = {Emojineering part 1: Machine learning for emoji trends},
+	howpublished = {\url{https://instagram-engineering.com/emojineering-part-1-machine-learning-for-emoji-trendsmachine-learning-for-emoji-trends-7f5f9cb979ad}},
+	note = {Accessed: 2018-04-17},
+	
+	year={2015}
+	
+}
+
+@article{amalanathan2015social,
+	title={Social network user’s content personalization based on emoticons},
+	author={Amalanathan, Anthoniraj and Anouncia, S Margret},
+	journal={Indian Journal of Science and Technology},
+	volume={8},
+	number={23},
+	year={2015}
+}
+
+@inproceedings{datta2006studying,
+	title={Studying aesthetics in photographic images using a computational approach},
+	author={Datta, Ritendra and Joshi, Dhiraj and Li, Jia and Wang, James Z},
+	booktitle={European Conference on Computer Vision},
+	pages={288--301},
+	year={2006},
+	organization={Springer}
+}
+@inproceedings{wilson2005recognizing,
+	title={Recognizing contextual polarity in phrase-level sentiment analysis},
+	author={Wilson, Theresa and Wiebe, Janyce and Hoffmann, Paul},
+	booktitle={Proceedings of the conference on human language technology and empirical methods in natural language processing},
+	pages={347--354},
+	year={2005},
+	organization={Association for Computational Linguistics}
+}
+@inproceedings{van2007learning,
+	title={Learning color names from real-world images},
+	author={Van de Weijer, Joost and Schmid, Cordelia and Verbeek, Jakob},
+	booktitle={2007 IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={1--8},
+	year={2007},
+	organization={IEEE}
+}
+
+@article{osgood1952nature,
+	title={The nature and measurement of meaning.},
+	author={Osgood, Charles E},
+	journal={Psychological bulletin},
+	volume={49},
+	number={3},
+	pages={197},
+	year={1952},
+	publisher={American Psychological Association}
+}
+
+@article{valdez1994effects,
+	title={Effects of color on emotions.},
+	author={Valdez, Patricia and Mehrabian, Albert},
+	journal={Journal of experimental psychology: General},
+	volume={123},
+	number={4},
+	pages={394},
+	year={1994},
+	publisher={American Psychological Association}
+}
+@Article{alexe2012measuring,
+	title="Measuring the objectness of image windows",
+	author="Alexe, Bogdan and Deselaers, Thomas and Ferrari, Vittorio",
+	journal="IEEE transactions on pattern analysis and machine intelligence",
+	volume="34",
+	number="11",
+	pages="2189--2202",
+	year="2012",
+	publisher="IEEE"
+}
+
+@inproceedings{lockner2014emotion,
+	title={Emotion and interface design},
+	author={Lockner, Damien and Bonnardel, Nathalie and Bouchard, Carole and Rieuf, Vincent},
+	booktitle={Proceedings of the 2014 Ergonomie et Informatique Avanc{\'e}e Conference-Design, Ergonomie et IHM: quelle articulation pour la co-conception de l'interaction},
+	pages={33--40},
+	year={2014},
+	organization={ACM}
+}
+
+
+@inproceedings{campos2015diving,
+	author = "Campos, V{\'\i}ctor and Salvador, Amaia and Gir\'{o}-i-Nieto, Xavier and Jou, Brendan",
+	title = {Diving Deep into Sentiment: Understanding Fine-tuned CNNs for Visual Sentiment Prediction},
+	booktitle = {Proceedings of the 1st International Workshop on Affect \&\#38; Sentiment in Multimedia},
+	series = {ASM '15},
+	year = {2015},
+	isbn = {978-1-4503-3750-2},
+	location = {Brisbane, Australia},
+	pages = {57--62},
+	numpages = {6},
+	url = {http://doi.acm.org/10.1145/2813524.2813530},
+	doi = {10.1145/2813524.2813530},
+	acmid = {2813530},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {convolutional neural networks, fine-tuning strategies, sentiment, social multimedia},
+} 
+
+@inproceedings{you2016image,
+	title={Image captioning with semantic attention},
+	author={You, Quanzeng and Jin, Hailin and Wang, Zhaowen and Fang, Chen and Luo, Jiebo},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={4651--4659},
+	year={2016}
+}
+@inproceedings{xu2015show,
+	title={Show, attend and tell: Neural image caption generation with visual attention},
+	author={Xu, Kelvin and Ba, Jimmy and Kiros, Ryan and Cho, Kyunghyun and Courville, Aaron and Salakhudinov, Ruslan and Zemel, Rich and Bengio, Yoshua},
+	booktitle={International Conference on Machine Learning},
+	pages={2048--2057},
+	year={2015}
+}
+
+
+
+@online{emoji2015w,
+	author = "Sherine Kazim",
+	year = 		"2016",
+	title =        "An Introduction to Emotive UI",
+	url =           "https://www.hugeinc.com/articles/an-introduction-to-emotive-ui.",
+	month = 	 apr,
+	note = "Accessed: 2018-04-17"
+}
+
+
+
+@inproceedings{wang2015unsupervised,
+ author = {Wang, Yilin and Wang, Suhang and Tang, Jiliang and Liu, Huan and Li, Baoxin},
+title = {Unsupervised Sentiment Analysis for Social Media Images},
+booktitle = {Proceedings of the 24th International Conference on Artificial Intelligence},
+series = {IJCAI'15},
+year = {2015},
+isbn = {978-1-57735-738-4},
+location = {Buenos Aires, Argentina},
+pages = {2378--2379},
+numpages = {2},
+url = {http://dl.acm.org/citation.cfm?id=2832415.2832579},
+acmid = {2832579},
+publisher = {AAAI Press},
+}
+@article{shaver1987emotion,
+	title={Emotion knowledge: further exploration of a prototype approach.},
+	author={Shaver, Phillip and Schwartz, Judith and Kirson, Donald and O'connor, Cary},
+	journal={Journal of personality and social psychology},
+	volume={52},
+	number={6},
+	pages={1061},
+	year={1987},
+	publisher={American Psychological Association}
+}
+@article{ekman1987universals,
+	title={Universals and cultural differences in the judgments of facial expressions of emotion.},
+	author={Ekman, Paul and Friesen, Wallace V and O'Sullivan, Maureen and Chan, Anthony and Diacoyanni-Tarlatzis, Irene and Heider, Karl and Krause, Rainer and LeCompte, William Ayhan and Pitcairn, Tom and Ricci-Bitti, Pio and Scherer, Klaus and Tomita, Masatoshi and Tzavaras, Athanase},
+	journal={Journal of personality and social psychology},
+	volume={53},
+	number={4},
+	pages={712},
+	year={1987},
+	publisher={American Psychological Association}
+}
+@article{mikels2005emotional,
+	title={Emotional category data on images from the International Affective Picture System},
+	author={Mikels, Joseph A and Fredrickson, Barbara L and Larkin, Gregory R and Lindberg, Casey M and Maglio, Sam J and Reuter-Lorenz, Patricia A},
+	journal={Behavior research methods},
+	volume={37},
+	number={4},
+	pages={626--630},
+	year={2005},
+	publisher={Springer}
+}
+
+@Inproceedings{almgren2016predicting,
+	title={Predicting the future popularity of images on social networks},
+	author={Almgren, Khaled and Lee, Jeongkyu and others},
+	booktitle={Proceedings of the The 3rd Multidisciplinary International Social Networks Conference on SocialInformatics 2016, Data Science 2016},
+	pages={15},
+	year={2016},
+	organization={ACM}
+}
+
+@inproceedings{cappallo2015latent,
+	title={Latent factors of visual popularity prediction},
+	author={Cappallo, Spencer and Mensink, Thomas and Snoek, Cees GM},
+	booktitle={Proceedings of the 5th ACM on International Conference on Multimedia Retrieval},
+	pages={195--202},
+	year={2015},
+	organization={ACM}
+}
+
+@inproceedings{huiskes2010new,
+	title={New trends and ideas in visual concept detection: the MIR flickr retrieval evaluation initiative},
+	author={Huiskes, Mark J and Thomee, Bart and Lew, Michael S},
+	booktitle={Proceedings of the international conference on Multimedia information retrieval},
+	pages={527--536},
+	year={2010},
+	organization={ACM},
+}
+
+@techreport{lin2013overview,
+	title={Overview of the trec2013 microblog track},
+	author={Lin, Jimmy and Efron, Miles},
+	year={2013},
+	publisher={TREC}
+}
+@inproceedings{valafar2009beyond,
+	title={Beyond friendship graphs: a study of user interactions in Flickr},
+	author={Valafar, Masoud and Rejaie, Reza and Willinger, Walter},
+	booktitle={Proceedings of the 2nd ACM workshop on Online social networks},
+	pages={25--30},
+	year={2009},
+	organization={ACM}
+}
+
+@inproceedings{yamasaki2014social,
+	title={Social popularity score: Predicting numbers of views, comments, and favorites of social photos using only annotations},
+	author={Yamasaki, Toshihiko and Sano, Shumpei and Aizawa, Kiyoharu},
+	booktitle={Proceedings of the First International Workshop on Internet-Scale Multimedia Management},
+	pages={3--8},
+	year={2014},
+	organization={ACM}
+}
+
+@article{simonyan2014very,
+	title={Very deep convolutional networks for large-scale image recognition},
+	author={Simonyan, Karen and Zisserman, Andrew},
+	journal={arXiv preprint arXiv:1409.1556},
+	year={2014}
+}
+
+@article{li2018image,
+	title={Image sentiment prediction based on textual descriptions with adjective noun pairs},
+	author={Li, Zuhe and Fan, Yangyu and Liu, Weihua and Wang, Fengqin},
+	journal={Multimedia Tools and Applications},
+	volume={77},
+	number={1},
+	pages={1115--1132},
+	year={2018},
+	publisher={Springer}
+}
+
+@inproceedings{zhou2014learning,
+	title={Learning deep features for scene recognition using places database},
+	author={Zhou, Bolei and Lapedriza, Agata and Xiao, Jianxiong and Torralba, Antonio and Oliva, Aude},
+	booktitle={Advances in neural information processing systems},
+	pages={487--495},
+	year={2014}
+}
+
+@article{gaikwad2017social,
+	title={Social Media Sentiments Using Latent Correlation Analysis},
+	author={Gaikwad, Miss Sonali B and Dhakane, Vikas N},
+	year={2017}
+}
+@inproceedings{vadicamo2017cross,
+	title={Cross-Media Learning for Image Sentiment Analysis in the Wild},
+	author={Vadicamo, Lucia and Carrara, Fabio and Cimino, Andrea and Cresci, Stefano and Dell'Orletta, Felice and Falchi, Fabrizio and Tesconi, Maurizio},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={308--317},
+	year={2017}
+}
+
+@article{soleymani2017survey,
+	title={A survey of multimodal sentiment analysis},
+	author={Soleymani, Mohammad and Garcia, David and Jou, Brendan and Schuller, Bj{\"o}rn and Chang, Shih-Fu and Pantic, Maja},
+	journal={Image and Vision Computing},
+	volume={65},
+	pages={3--14},
+	year={2017},
+	publisher={Elsevier}
+}
+
+@article{liu2012sentiment,
+	title={Sentiment analysis and opinion mining},
+	author={Liu, Bing},
+	journal={Synthesis lectures on human language technologies},
+	volume={5},
+	number={1},
+	pages={1--167},
+	year={2012},
+	publisher={Morgan \& Claypool Publishers}
+}
+@inproceedings{jou2015visual,
+	title={Visual affect around the world: A large-scale multilingual visual sentiment ontology},
+	author={Jou, Brendan and Chen, Tao and Pappas, Nikolaos and Redi, Miriam and Topkara, Mercan and Chang, Shih-Fu},
+	booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+	pages={159--168},
+	year={2015},
+	organization={ACM}
+}
+@article{tumasjan2010predicting,
+author = {Andranik Tumasjan and Timm Sprenger and Philipp Sandner and Isabell Welpe},
+title = {Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment},
+conference = {International AAAI Conference on Web and Social Media},
+year = {2010},
+keywords = {Twitter; microblogging; politics; elections; sentiment analysis; data mining}
+}
+
+
+
+
+@article{pang2015deep,
+	title={Deep multimodal learning for affective analysis and retrieval},
+	author={Pang, Lei and Zhu, Shiai and Ngo, Chong-Wah},
+	journal={IEEE Transactions on Multimedia},
+	volume={17},
+	number={11},
+	pages={2008--2020},
+	year={2015},
+	publisher={IEEE}
+}
+@inproceedings{borth2013large,
+	title={Large-scale visual sentiment ontology and detectors using adjective noun pairs},
+	author={Borth, Damian and Ji, Rongrong and Chen, Tao and Breuel, Thomas and Chang, Shih-Fu},
+	booktitle={Proceedings of the 21st ACM international conference on Multimedia},
+	pages={223--232},
+	year={2013},
+	organization={ACM}
+}
+
+@article{pang2008opinion,
+	title={Opinion mining and sentiment analysis},
+	author={Pang, Bo and Lee, Lillian},
+	journal={Foundations and trends in information retrieval},
+	volume={2},
+	number={1-2},
+	pages={1--135},
+	year={2008},
+	publisher={Now Publishers Inc.}
+}
+@book{osgood1964measurement,
+	title={The measurement of meaning},
+	author={Osgood, Charles Egerton and Suci, George J and Tannenbaum, Percy H},
+	year={1964},
+	publisher={University of Illinois Press}
+}
+
+@Article{bradley1994emotional,
+	title="Emotional memory: A dimensional analysis",
+	author="Bradley, Margaret M",
+	journal="Emotions: Essays on emotion theory",
+	pages="97--134",
+	year="1994"
+}
+
+
+@article{lang1993network,
+	title={The network model of emotion: Motivational connections},
+	author={Lang, Peter J},
+	journal={Perspectives on anger and emotion: Advances in social cognition},
+	volume={6},
+	pages={109--133},
+	year={1993},
+	publisher={Lawrence Erlbaum Associates Hillsdale}
+}
+
+
+@article{plutchik1980general,
+	title = {A general psychoevolutionary theory of emotion},
+	author = {Plutchik, Robert},
+	journal = {Theories of emotion},
+	keywords = {basicemotions happyendecml kallimachos ma-zehe sentimentanalysis},
+	publisher = {Academic Press New York},
+	volume={1},
+	pages={3--31},
+	year={1980},
+
+}
+
+
+
+
+
+
+@book{osgood1957measurement,
+	title={The Measurement of Meaning},
+	author={Osgood, Charles Egerton and Suci, George J and Tannenbaum, Percy H},
+	number={47},
+	year={1957},
+	publisher={University of Illinois Press}
+}
+
+@article{russell1977evidence,
+	title={Evidence for a three-factor theory of emotions},
+	author={Russell, James A and Mehrabian, Albert},
+	journal={Journal of research in Personality},
+	volume={11},
+	number={3},
+	pages={273--294},
+	year={1977},
+	publisher={Elsevier}
+}
+
+@article{hayashi1998image,
+	title={Image query by impression words-the IQI system},
+	author={Hayashi, Takashi and Hagiwara, Masafumi},
+	journal={IEEE Transactions on Consumer Electronics},
+	volume={44},
+	number={2},
+	pages={347--352},
+	year={1998},
+	publisher={IEEE}
+}
+
+@inproceedings{you2015robust,
+ author = {You, Quanzeng and Luo, Jiebo and Jin, Hailin and Yang, Jianchao},
+title = {Robust Image Sentiment Analysis Using Progressively Trained and Domain Transferred Deep Networks},
+booktitle = {Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence},
+series = {AAAI'15},
+year = {2015},
+isbn = {0-262-51129-0},
+location = {Austin, Texas},
+pages = {381--388},
+numpages = {8},
+url = {http://dl.acm.org/citation.cfm?id=2887007.2887061},
+acmid = {2887061},
+publisher = {AAAI Press},
+}
+
+@inproceedings{chen2014predicting,
+	title={Predicting viewer affective comments based on image content in social media},
+	author={Chen, Yan-Ying and Chen, Tao and Hsu, Winston H and Liao, Hong-Yuan Mark and Chang, Shih-Fu},
+	booktitle={Proceedings of International Conference on Multimedia Retrieval},
+	pages={233},
+	year={2014},
+	organization={ACM}
+}
+@inproceedings{dietz1999affective,
+	title={Affective agents: Effects of agent affect on arousal, attention, liking and learning},
+	author={Dietz, Richard and Lang, Annie},
+	booktitle={In proceedings of the Cognitive technology conference},
+	year={1999}
+}
+@article{xu2014visual,
+	title={Visual sentiment prediction with deep convolutional neural networks},
+	author={Xu, Can and Cetintas, Suleyman and Lee, Kuang-Chih and Li, Li-Jia},
+	journal={arXiv preprint arXiv:1411.5731},
+	year={2014}
+}
+
+@article{hanjalic2005affective,
+	title={Affective video content representation and modeling},
+	author={Hanjalic, Alan and Xu, Li-Qun},
+	journal={IEEE transactions on multimedia},
+	volume={7},
+	number={1},
+	pages={143--154},
+	year={2005},
+	publisher={IEEE}
+}
+
+
+@inproceedings{parikh2011relative,
+	title={Relative attributes},
+	author={Parikh, Devi and Grauman, Kristen},
+	booktitle={IEEE International Conference on Computer Vision},
+	pages={503--510},
+	year={2011},
+	organization={IEEE}
+}
+
+@online{CTANacmart,
+	author =    {Boris Veytsman},
+	title =  {acmart---{C}lass for typesetting publications of {ACM}},
+	url =    {http://www.ctan.org/pkg/acmart},
+	lastaccessed = {May 27, 2017}
+}
+
+
+@misc{citysourced,
+	title = {City{S}ourced},
+	howpublished = {\url{http://www.citysourced.com/}},
+	note = {Accessed: 2017-02-11}
+}
+
+@misc{astrodrone,
+	title = {Astro{D}rone},
+	howpublished = {\url{http://www.esa.int/gsp/ACT/ai/projects/astrodrone.html}},
+	note = {Accessed: 2017-02-11}
+}
+
+
+@ARTICLE{Firstman:2014:Approach,
+	author = {Firstman, J. and Secondman, B. C.},
+	title = {{An Approach for This and That}},
+	journal = {Journal of Something},
+	year = {2014},
+	volume = {125},
+	pages = {1231--1238},
+	note = {{ISSN:} 9-9-9-9-9-9},
+	language = {english},
+}
+
+@INPROCEEDINGS{Firstman:2013:Ongoing,
+	author = {Firstman, J. and Secondman, B. C. and Thirdman, A. C.},
+	title = {{Ongoing Research for This and That}},
+	booktitle = {Proceedings of the
+	4$^{\textrm th}$ International Conference on This and That (ICTT)
+	July 12--14, 2013, Somecity, Somecountry},
+	publisher = {Worldwide Publisher},
+	year = {2013},
+	month = JUL,
+	pages = {1231--1238},
+	note = {{Edwards, C. U., Ed.}, {ISBN:} 9-9-9-9-9-9, {ISSN:} 99-99-99-99-99,
+	{URL:} \url{http://www.someworldwideindex.org/} [accessed: 2014-01-01]
+	},
+	language = {english},
+}
+
+@MISC{Webpage:2014:Somewebpage,
+	key = {{somewebpage}},
+	title = {{Some Webpage}},
+	year = {2014},
+	note = {
+	{URL:} \url{http://www.somewebpage.org/} [accessed: 2014-01-02]
+	},
+	language = {english},
+}
+
+@BOOK{Bookman:2014:Somebook,
+	editor = {Bookman, C. U.},
+	title = {{Some Book about This and That}},
+	publisher = {The Somebook Publisher Inc., Somewhere},
+	year = {2014},
+	month = JAN,
+	note = {{ISBN:} 978-99-99-99-99-9},
+	language = {english},
+}
+
+@INBOOK{Chapman:2014:Starting,
+	author = {Chapman, R. and Chapman Jr., S. A.},
+	title = {Starting with This and That},
+	booktitle = {{Some Book about This and That}},
+	publisher = {The Somebook Publisher Inc., Somewhere},
+	crossref = {Bookman:2014:Somebook},
+	year = {2014},
+	month = JAN,
+	note = {
+	Chapter 1, pp. 1--14,
+	in Bookman, C. U., Some Book about This and That,
+	{ISBN:} 978-99-99-99-99-9},
+	language = {english},
+}
+
+@article{dolmaya2011ethics,
+	title={The ethics of crowdsourcing},
+	author={Dolmaya, Julie McDonough},
+	journal={Linguistica Antverpiensia, New Series--Themes in Translation Studies},
+	number={10},
+	year={2011}
+}
+
+@inproceedings{battiato2016social,
+	title={The Social Picture},
+	author={Battiato, Sebastiano and Farinella, Giovanni Maria and Milotta, Filippo LM and Ortis, Alessandro and Addesso, Luca and Casella, Antonino and D'Amico, Valeria and Torrisi, Giovanni},
+	booktitle={Proceedings of the 2016 ACM on International Conference on Multimedia Retrieval},
+	pages={397--400},
+	year={2016},
+	organization={ACM}
+}

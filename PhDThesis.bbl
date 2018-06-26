@@ -16,5 +16,257 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}\enddatalist
+\datalist[entry]{none/global//global/global}
+  \entry{liu2012survey}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=LB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LBZL1}
+    \strng{fullhash}{LBZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Mining text data}
+    \field{pages}{415\bibrangedash 463}
+    \field{title}{A survey of opinion mining and sentiment analysis}
+    \field{year}{2012}
+  \endentry
+
+  \entry{tumasjan2010predicting}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TA}{%
+         family={Tumasjan},
+         familyi={T\bibinitperiod},
+         given={Andranik},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sprenger},
+         familyi={S\bibinitperiod},
+         given={Timm},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sandner},
+         familyi={S\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WI}{%
+         family={Welpe},
+         familyi={W\bibinitperiod},
+         given={Isabell},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Twitter; microblogging; politics; elections; sentiment analysis; data
+  mining}
+    \strng{namehash}{TASTSPWI1}
+    \strng{fullhash}{TASTSPWI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Predicting Elections with Twitter: What 140 Characters Reveal
+  about Political Sentiment}
+    \field{year}{2010}
+  \endentry
+
+  \entry{pang2008opinion}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PB}{%
+         family={Pang},
+         familyi={P\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Lillian},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Now Publishers Inc.}%
+    }
+    \strng{namehash}{PBLL1}
+    \strng{fullhash}{PBLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{1\bibrangedash 135}
+    \field{title}{Opinion mining and sentiment analysis}
+    \field{volume}{2}
+    \field{journaltitle}{Foundations and trends in information retrieval}
+    \field{year}{2008}
+  \endentry
+
+  \entry{dolmaya2011ethics}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DJM}{%
+         family={Dolmaya},
+         familyi={D\bibinitperiod},
+         given={Julie\bibnamedelima McDonough},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJM1}
+    \strng{fullhash}{DJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{title}{The ethics of crowdsourcing}
+    \field{journaltitle}{Linguistica Antverpiensia, New Series--Themes in
+  Translation Studies}
+    \field{year}{2011}
+  \endentry
+
+  \entry{battiato2016social}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=BS}{%
+         family={Battiato},
+         familyi={B\bibinitperiod},
+         given={Sebastiano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FGM}{%
+         family={Farinella},
+         familyi={F\bibinitperiod},
+         given={Giovanni\bibnamedelima Maria},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MFL}{%
+         family={Milotta},
+         familyi={M\bibinitperiod},
+         given={Filippo\bibnamedelima LM},
+         giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Ortis},
+         familyi={O\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AL}{%
+         family={Addesso},
+         familyi={A\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Casella},
+         familyi={C\bibinitperiod},
+         given={Antonino},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DV}{%
+         family={D'Amico},
+         familyi={D\bibinitperiod},
+         given={Valeria},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Torrisi},
+         familyi={T\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{BSFGMMFLOAALCADVTG1}
+    \strng{fullhash}{BSFGMMFLOAALCADVTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2016 ACM on International Conference
+  on Multimedia Retrieval}
+    \field{pages}{397\bibrangedash 400}
+    \field{title}{The Social Picture}
+    \field{year}{2016}
+  \endentry
+
+  \entry{zhou2014learning}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ZB}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Bolei},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lapedriza},
+         familyi={L\bibinitperiod},
+         given={Agata},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=XJ}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Jianxiong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Torralba},
+         familyi={T\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Oliva},
+         familyi={O\bibinitperiod},
+         given={Aude},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZBLAXJTAOA1}
+    \strng{fullhash}{ZBLAXJTAOA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{487\bibrangedash 495}
+    \field{title}{Learning deep features for scene recognition using places
+  database}
+    \field{year}{2014}
+  \endentry
+
+  \entry{karpathy2015deep}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Karpathy},
+         familyi={K\bibinitperiod},
+         given={Andrej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinitperiod-F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAFFL1}
+    \strng{fullhash}{KAFFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{pages}{3128\bibrangedash 3137}
+    \field{title}{Deep visual-semantic alignments for generating image
+  descriptions}
+    \field{year}{2015}
+  \endentry
+\enddatalist
 \endinput
