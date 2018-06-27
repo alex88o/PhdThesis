@@ -548,6 +548,43 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Mikulik2015}{inbook}{}
+    \name{author}{4}{}{%
+      {{hash=MA}{%
+         family={Mikul{\'i}k},
+         familyi={M\bibinitperiod},
+         given={Andrej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Radenovi{\'{c}}},
+         familyi={R\bibinitperiod},
+         given={Filip},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Chum},
+         familyi={C\bibinitperiod},
+         given={Ond{\v{r}}ej},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Matas},
+         familyi={M\bibinitperiod},
+         given={Ji{\v{r}}{\'i}},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MARFCOMJ1}
+    \strng{fullhash}{MARFCOMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{chapter}{Efficient Image Detail Mining}
+    \field{pages}{118\bibrangedash 132}
+    \field{title}{Asian Conference on Computer Vision}
+    \field{year}{2015}
+  \endentry
+
   \entry{wu2013towards}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=WC}{%
@@ -570,8 +607,14 @@
     \field{year}{2013}
   \endentry
 
-  \entry{karpathy2015deep}{inproceedings}{}
-    \name{author}{2}{}{%
+  \entry{johnson2015densecap}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JJ}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
       {{hash=KA}{%
          family={Karpathy},
          familyi={K\bibinitperiod},
@@ -585,15 +628,13 @@
          giveni={L\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KAFFL1}
-    \strng{fullhash}{KAFFL1}
+    \strng{namehash}{JJKAFFL1}
+    \strng{fullhash}{JJKAFFL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
-  Pattern Recognition}
-    \field{pages}{3128\bibrangedash 3137}
-    \field{title}{Deep visual-semantic alignments for generating image
-  descriptions}
+    \field{title}{DenseCap: Fully Convolutional Localization Networks for Dense
+  Captioning}
+    \field{journaltitle}{arXiv preprint arXiv:1511.07571}
     \field{year}{2015}
   \endentry
 \enddatalist

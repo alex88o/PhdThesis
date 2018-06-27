@@ -3,27 +3,27 @@
 \contentsline {chapter}{Abstract}{ii}{section*.1}
 \contentsline {chapter}{Acknowledgements}{iii}{section*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
-\contentsline {section}{\numberline {1.1}Dissertation Structure}{4}{section.5}
+\contentsline {section}{\numberline {1.1}Dissertation Structure}{2}{section.5}
 \contentsline {section}{\numberline {1.2}List of Publications}{4}{section.7}
 \contentsline {chapter}{\numberline {2}Crowdsourced Media Analysis}{5}{chapter.8}
 \contentsline {chapter}{\numberline {3}Image Sentiment Analysis}{8}{chapter.9}
 \contentsline {section}{\numberline {3.1}Introduction}{8}{section.10}
-\contentsline {section}{\numberline {3.2}The Social Picture}{9}{section.11}
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{9}{subsection.12}
-\contentsline {subsection}{\numberline {3.2.2}Architecture}{10}{subsection.14}
-\contentsline {subsection}{\numberline {3.2.3}User experience}{14}{subsection.17}
+\contentsline {section}{\numberline {3.2}The Social Picture}{10}{section.11}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{10}{subsection.12}
+\contentsline {subsection}{\numberline {3.2.2}Architecture}{11}{subsection.14}
+\contentsline {subsection}{\numberline {3.2.3}User experience}{15}{subsection.17}
 \contentsline {subsubsection}{Heat map exploration}{15}{section*.18}
-\contentsline {paragraph}{3D Reconstruction}{15}{section*.20}
-\contentsline {subsubsection}{t-SNE exploration}{16}{section*.21}
-\contentsline {paragraph}{Hierarchical t-SNE}{17}{section*.22}
-\contentsline {subsection}{\numberline {3.2.4}Other Advanced Tools}{18}{subsection.23}
-\contentsline {section}{\numberline {3.3}Image Polarity Prediction}{18}{section.24}
-\contentsline {section}{\numberline {3.4}Image Popularity Prediction}{18}{section.25}
-\contentsline {section}{\numberline {3.5}Conclusions}{18}{section.26}
-\contentsline {chapter}{\numberline {4}Video Sentiment Analysis}{19}{chapter.27}
-\contentsline {section}{\numberline {4.1}Introduction}{19}{section.28}
-\contentsline {section}{\numberline {4.2}RECfusion}{19}{section.29}
-\contentsline {section}{\numberline {4.3}RECfusion for lifelogging}{19}{section.30}
-\contentsline {section}{\numberline {4.4}Conclusions}{19}{section.31}
-\contentsline {chapter}{\numberline {5}Final Discussion, Remarks and Future Works}{20}{chapter.32}
-\contentsline {chapter}{Bibliography}{21}{chapter*.33}
+\contentsline {paragraph}{3D Reconstruction}{16}{section*.20}
+\contentsline {subsubsection}{t-SNE exploration}{17}{section*.21}
+\contentsline {paragraph}{Hierarchical t-SNE}{18}{section*.22}
+\contentsline {subsubsection}{Other Advanced Tools}{18}{section*.23}
+\contentsline {section}{\numberline {3.3}Image Polarity Prediction}{19}{section.24}
+\contentsline {section}{\numberline {3.4}Image Popularity Prediction}{19}{section.25}
+\contentsline {section}{\numberline {3.5}Conclusions}{19}{section.26}
+\contentsline {chapter}{\numberline {4}Video Sentiment Analysis}{20}{chapter.27}
+\contentsline {section}{\numberline {4.1}Introduction}{20}{section.28}
+\contentsline {section}{\numberline {4.2}RECfusion}{20}{section.29}
+\contentsline {section}{\numberline {4.3}RECfusion for lifelogging}{20}{section.30}
+\contentsline {section}{\numberline {4.4}Conclusions}{20}{section.31}
+\contentsline {chapter}{\numberline {5}Final Discussion, Remarks and Future Works}{21}{chapter.32}
+\contentsline {chapter}{Bibliography}{22}{chapter*.33}

@@ -1,8 +1,19 @@
-\chapter{Image Sentiment Analysis}
+\chapter{Image Sentiment Analysis}\label{ch3}
 \section{Introduction}
 TSP --> POPOLARITA IMMAGINI SU BASE EVENTI/LUOGHI --> IMMAGINI RAPPRESENTATIVE
 \\POLARITY --> SENTIMENT EVOCATO
 \\POPULARITY --> POPOLARITA' SU PIATTAFORMA SOCIAL I.E. QUANTE PERSONE RAGGIUNGE\\
+As instance, companies are interested in monitoring people opinions toward their products or services, as well as customers rely on feedbacks of other users to evaluate a product before they purchase it.
+%For example, companies always want to find public or consumer opinions toward their products and services. Furthermore, customers also want to know the opinions of other users before they use a service or purchase a product.
+With the growth of social media (i.e., reviews, forums, blogs and social networks), individuals and organizations are increasingly using public opinions  for their decision making~\cite{liu2012survey}.
+%The analysis of such social information enables applications such as brand monitoring, market prediction or political voting forecasting.
+
+
+The basic task in Sentiment Analysis is the polarity classification of an input text (e.g., taken from a review, a comment or a social post) in terms of positive, negative or neutral polarity. This analysis can be performed at document, sentence or feature level. The methods of this area are useful to capture public opinion about products, services, marketing, political preferences and social events. For example the analysis of the activity of Twitter's users can help to predict the popularity of parties or coalitions. The achieved results in Sentiment Analysis within micro-blogging have shown that Twitter posts reasonably reflect the political landscape~\cite{tumasjan2010predicting}.
+Historically, Sentiment Analysis techniques have been developed for the analysis of text~\cite{pang2008opinion}, whereas limited efforts have been employed to extract (i.e., infer) sentiments from visual contents~(e.g., images and videos). % which are becoming a pervasive media on the web.
+%Historically, the computational analysis of sentiment mostly concentrates on the textual contents~\cite{pang2008opinion}, whereas limited efforts have been conducted to analyse sentiments from visual contents such as images and videos, which are becoming a pervasive media type on the web.
+
+Even though the scientific research has already achieved notable results in the field of textual Sentiment Analysis in different contexts (e.g., social network posts analysis, product reviews, political preferences, etc.), the task to understand the mood from a text has several difficulties given by the inherent ambiguity of the various languages (e.g., ironic sentences), cultural factors, linguistic nuances and the difficulty of generalize any text analysis solution to different language vocabularies. The different solutions in the field of text Sentiment Analysis have not yet achieved a level of reliability good enough to be implemented without enclosing the related context. For example, despite the existence of natural language processing tools for the English language, the same tools cannot be used directly to analyse text written in other languages.
 In this Chapter we present three main inference tasks related to the image sentiment analysis that have been investigated in this research work: crowds behaviour, sentiment polarity, sentiment popularity. 
 
 First, we present \textit{The Social Picture}~\cite{battiato2016social}, a framework to collect and explore huge amount of crowdsourced social images about public events, cultural heritage sites and other customized private events, with the aim to extract insights about the behaviour of people attending the same event or visiting the same place. 
@@ -95,7 +106,7 @@ http://iplab.dmi.unict.it/TSP
 
 \subsubsection{Heat map exploration}
 In a cultural heritage site, people usually take pictures from different points of view and considering different details of parts related to famous and appreciated attractions and artworks. The heat map exploration tool of \textit{The Social Picture} aims to infer the ``interest'' of people with respect to the different parts of a site. An example of heat map generated from data in \textit{The Social Picture} is shown in Figure \ref{heatmap}. Through this visualization tool, an organizer of a collection will be able to know which parts of the site captures people's interests.
-On the other hand, users can explore the collection related to a site in a very simple and intuitive way. So, to highlight the ``interest'' of people related to parts of a site, the proposed system creates an heat map by aligning images in \textit{The Social Picture} with respect to panoramic images of the site of interest~\cite{Mikulík2015}.
+On the other hand, users can explore the collection related to a site in a very simple and intuitive way. So, to highlight the ``interest'' of people related to parts of a site, the proposed system creates an heat map by aligning images in \textit{The Social Picture} with respect to panoramic images of the site of interest~\cite{Mikulik2015}.
 
 The heat map is a visualization used to depict the intensity of images at spatial points. The heat map consists of a colored overlay applied to the original image. Areas of higher intensity will be colored red, and areas of lower intensity will appear blue. The intensity of the heat map is given by the number of collected pictures that contain that visual area.
 By clicking on a point of the heat map, the user can visualize the subject of images that contribuited to generate the map intensity at that point. This set of pictures can be further refined by selecting one of the images and asking the system to search similar pictures, or use the image subset as a starting point for furhter analysis. In other words, the heat map visualization gives the possibility to understand the behaviour of the people. Also it can be considered as a powerful and intuitive image retrieval tool for the collections related to cultural heritage sites.
@@ -131,7 +142,7 @@ When this new version of the t-SNE tool (hierarchical t-SNE) is executed, it sho
 
 
 
-\subsection{Other Advanced Tools}
+\subsubsection{Other Advanced Tools}
 %\begin{itemize}
 %	\item Subsampling from set of images 
 %	\item Captioning-Image Description:
@@ -142,7 +153,7 @@ When this new version of the t-SNE tool (hierarchical t-SNE) is executed, it sho
 %
 Among the tools included in \textit{The Social Picture} there is the one useful to generate automatic subsets of images from a specific photo collection. This tool allows the user to set the number of images to obtain as output for a collection in TSP, and automatically generates the subset of images taking into account visual features as well as EXIF information related to the images composing the photo collection (e.g., GPS location, TAGS, day, time, etc). In this way, the user can have some representative image prototypes related to the collection to be used for different purposes (e.g., printing the most significative pictures of paintings of a museum for a specific social group).
 
-One more feature included in The Social Picture is the automatic image captioning as described in \cite{Johnson2015densecap}. With the aim to help the user to include a description to an uploaded image, \textit{The Social Picture} automatically generates and suggests a description to the user that can then refine it.  The descriptions of images can be used for text based query performed by the user.
+One more feature included in The Social Picture is the automatic image captioning as described in~\cite{johnson2015densecap}. With the aim to help the user to include a description to an uploaded image, \textit{The Social Picture} automatically generates and suggests a description to the user that can then refine it.  The descriptions of images can be used for text based query performed by the user.
 
 
 \section{Image Polarity Prediction}

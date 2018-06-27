@@ -4,10 +4,6 @@ A level-1 auxiliary file: ./TeX_files/frontespizio.aux
 A level-1 auxiliary file: ./TeX_files/chap1.aux
 A level-1 auxiliary file: ./TeX_files/chap2.aux
 A level-1 auxiliary file: ./TeX_files/chap3.aux
-White space in argument---line 81 of file PhDThesis.aux
- : \citation{Mikul\IeC
- :                     {\'\i }k2015}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: ./TeX_files/chap4.aux
 A level-1 auxiliary file: ./TeX_files/chap5.aux
 Database file #1: PhDThesis-blx.bib
@@ -40,6 +36,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 1672 of file sample-bibliography.bib
  : @article{van2008visualizing
  :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1689 of file sample-bibliography.bib
+ : @article{johnson2015densecap
+ :                             ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 1697 of file sample-bibliography.bib
  : @inproceedings {Milotta2016n544
