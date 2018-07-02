@@ -17,6 +17,26 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{dolmaya2011ethics}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DJM}{%
+         family={Dolmaya},
+         familyi={D\bibinitperiod},
+         given={Julie\bibnamedelima McDonough},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJM1}
+    \strng{fullhash}{DJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{title}{The ethics of crowdsourcing}
+    \field{journaltitle}{Linguistica Antverpiensia, New Series--Themes in
+  Translation Studies}
+    \field{year}{2011}
+  \endentry
+
   \entry{liu2012survey}{incollection}{}
     \name{author}{2}{}{%
       {{hash=LB}{%
@@ -111,26 +131,6 @@
     \field{volume}{2}
     \field{journaltitle}{Foundations and trends in information retrieval}
     \field{year}{2008}
-  \endentry
-
-  \entry{dolmaya2011ethics}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DJM}{%
-         family={Dolmaya},
-         familyi={D\bibinitperiod},
-         given={Julie\bibnamedelima McDonough},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DJM1}
-    \strng{fullhash}{DJM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{10}
-    \field{title}{The ethics of crowdsourcing}
-    \field{journaltitle}{Linguistica Antverpiensia, New Series--Themes in
-  Translation Studies}
-    \field{year}{2011}
   \endentry
 
   \entry{battiato2016social}{inproceedings}{}
