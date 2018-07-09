@@ -17,6 +17,70 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{chesbrough2006open}{book}{}
+    \name{author}{3}{}{%
+      {{hash=CH}{%
+         family={Chesbrough},
+         familyi={C\bibinitperiod},
+         given={Henry},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=VW}{%
+         family={Vanhaverbeke},
+         familyi={V\bibinitperiod},
+         given={Wim},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={West},
+         familyi={W\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press on Demand}%
+    }
+    \strng{namehash}{CHVWWJ1}
+    \strng{fullhash}{CHVWWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Open innovation: Researching a new paradigm}
+    \field{year}{2006}
+  \endentry
+
+  \entry{sesia2011lte}{book}{}
+    \name{author}{3}{}{%
+      {{hash=SS}{%
+         family={Sesia},
+         familyi={S\bibinitperiod},
+         given={Stefania},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Baker},
+         familyi={B\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TI}{%
+         family={Toufik},
+         familyi={T\bibinitperiod},
+         given={Issam},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{SSBMTI1}
+    \strng{fullhash}{SSBMTI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{LTE-the UMTS long term evolution: from theory to practice}
+    \field{year}{2011}
+  \endentry
+
   \entry{dolmaya2011ethics}{article}{}
     \name{author}{1}{}{%
       {{hash=DJM}{%
@@ -35,102 +99,6 @@
     \field{journaltitle}{Linguistica Antverpiensia, New Series--Themes in
   Translation Studies}
     \field{year}{2011}
-  \endentry
-
-  \entry{liu2012survey}{incollection}{}
-    \name{author}{2}{}{%
-      {{hash=LB}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Bing},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=ZL}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Lei},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{LBZL1}
-    \strng{fullhash}{LBZL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Mining text data}
-    \field{pages}{415\bibrangedash 463}
-    \field{title}{A survey of opinion mining and sentiment analysis}
-    \field{year}{2012}
-  \endentry
-
-  \entry{tumasjan2010predicting}{article}{}
-    \name{author}{4}{}{%
-      {{hash=TA}{%
-         family={Tumasjan},
-         familyi={T\bibinitperiod},
-         given={Andranik},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ST}{%
-         family={Sprenger},
-         familyi={S\bibinitperiod},
-         given={Timm},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=SP}{%
-         family={Sandner},
-         familyi={S\bibinitperiod},
-         given={Philipp},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=WI}{%
-         family={Welpe},
-         familyi={W\bibinitperiod},
-         given={Isabell},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \keyw{Twitter; microblogging; politics; elections; sentiment analysis; data
-  mining}
-    \strng{namehash}{TASTSPWI1}
-    \strng{fullhash}{TASTSPWI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Predicting Elections with Twitter: What 140 Characters Reveal
-  about Political Sentiment}
-    \field{year}{2010}
-  \endentry
-
-  \entry{pang2008opinion}{article}{}
-    \name{author}{2}{}{%
-      {{hash=PB}{%
-         family={Pang},
-         familyi={P\bibinitperiod},
-         given={Bo},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=LL}{%
-         family={Lee},
-         familyi={L\bibinitperiod},
-         given={Lillian},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Now Publishers Inc.}%
-    }
-    \strng{namehash}{PBLL1}
-    \strng{fullhash}{PBLL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1-2}
-    \field{pages}{1\bibrangedash 135}
-    \field{title}{Opinion mining and sentiment analysis}
-    \field{volume}{2}
-    \field{journaltitle}{Foundations and trends in information retrieval}
-    \field{year}{2008}
   \endentry
 
   \entry{battiato2016social}{inproceedings}{}
@@ -239,8 +207,8 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{OAFGMDVALTGBS1}
-    \strng{fullhash}{OAFGMDVALTGBS1}
+    \strng{namehash}{OAFGMDVALTGBS2}
+    \strng{fullhash}{OAFGMDVALTGBS2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{booktitle}{ACM Multimedia}
@@ -636,6 +604,4423 @@
   Captioning}
     \field{journaltitle}{arXiv preprint arXiv:1511.07571}
     \field{year}{2015}
+  \endentry
+
+  \entry{liu2012survey}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=LB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LBZL1}
+    \strng{fullhash}{LBZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Mining text data}
+    \field{pages}{415\bibrangedash 463}
+    \field{title}{A survey of opinion mining and sentiment analysis}
+    \field{year}{2012}
+  \endentry
+
+  \entry{tumasjan2010predicting}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TA}{%
+         family={Tumasjan},
+         familyi={T\bibinitperiod},
+         given={Andranik},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sprenger},
+         familyi={S\bibinitperiod},
+         given={Timm},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sandner},
+         familyi={S\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WI}{%
+         family={Welpe},
+         familyi={W\bibinitperiod},
+         given={Isabell},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Twitter; microblogging; politics; elections; sentiment analysis; data
+  mining}
+    \strng{namehash}{TASTSPWI1}
+    \strng{fullhash}{TASTSPWI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Predicting Elections with Twitter: What 140 Characters Reveal
+  about Political Sentiment}
+    \field{year}{2010}
+  \endentry
+
+  \entry{pang2008opinion}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PB}{%
+         family={Pang},
+         familyi={P\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Lillian},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Now Publishers Inc.}%
+    }
+    \strng{namehash}{PBLL1}
+    \strng{fullhash}{PBLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{1\bibrangedash 135}
+    \field{title}{Opinion mining and sentiment analysis}
+    \field{volume}{2}
+    \field{journaltitle}{Foundations and trends in information retrieval}
+    \field{year}{2008}
+  \endentry
+
+  \entry{colombo1999semantics}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CC}{%
+         family={Colombo},
+         familyi={C\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DBA}{%
+         family={Del\bibnamedelima Bimbo},
+         familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Pala},
+         familyi={P\bibinitperiod},
+         given={Pietro},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CCDBAPP1}
+    \strng{fullhash}{CCDBAPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{38\bibrangedash 53}
+    \field{title}{Semantics in visual information retrieval}
+    \field{volume}{6}
+    \field{journaltitle}{IEEE Multimedia}
+    \field{year}{1999}
+  \endentry
+
+  \entry{schmidt2009collective}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SS}{%
+         family={Schmidt},
+         familyi={S\bibinitperiod},
+         given={Stefanie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SWG}{%
+         family={Stock},
+         familyi={S\bibinitperiod},
+         given={Wolfgang\bibnamedelima G},
+         giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SSSWG1}
+    \strng{fullhash}{SSSWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{863\bibrangedash 876}
+    \field{title}{Collective indexing of emotions in images. A study in
+  emotional information retrieval}
+    \field{volume}{60}
+    \field{journaltitle}{Journal of the American Society for Information
+  Science and Technology}
+    \field{year}{2009}
+  \endentry
+
+  \entry{wei2006image}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=WnW}{%
+         family={Wei-ning},
+         familyi={W\bibinitperiod-n\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YlY}{%
+         family={Ying-lin},
+         familyi={Y\bibinitperiod-l\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SmJ}{%
+         family={Sheng-ming},
+         familyi={S\bibinitperiod-m\bibinitperiod},
+         given={Jiang},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WnWYlYSmJ1}
+    \strng{fullhash}{WnWYlYSmJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE International Conference on Systems, Man and
+  Cybernetics}
+    \field{pages}{3534\bibrangedash 3539}
+    \field{title}{Image retrieval by emotional semantics: A study of emotional
+  space and feature extraction}
+    \field{volume}{4}
+    \field{year}{2006}
+  \endentry
+
+  \entry{zhao2014affective}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=ZS}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Sicheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Hongxun},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={You},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yanhao},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{ZSYHYYZY1}
+    \strng{fullhash}{ZSYHYYZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 22nd ACM international conference on
+  Multimedia}
+    \field{pages}{1025\bibrangedash 1028}
+    \field{title}{Affective image retrieval via multi-graph learning}
+    \field{year}{2014}
+  \endentry
+
+  \entry{bradley1994emotional}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BMM}{%
+         family={Bradley},
+         familyi={B\bibinitperiod},
+         given={Margaret\bibnamedelima M},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMM1}
+    \strng{fullhash}{BMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{97\bibrangedash 134}
+    \field{title}{Emotional memory: A dimensional analysis}
+    \field{journaltitle}{Emotions: Essays on emotion theory}
+    \field{year}{1994}
+  \endentry
+
+  \entry{itten1973art}{book}{}
+    \name{author}{1}{}{%
+      {{hash=IJ}{%
+         family={Itten},
+         familyi={I\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons Inc}%
+    }
+    \strng{namehash}{IJ1}
+    \strng{fullhash}{IJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{0442240376}
+    \field{title}{The Art of Color: The Subjective Experience and Objective
+  Rationale of Color.}
+    \field{year}{1973}
+  \endentry
+
+  \entry{lang1993network}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LPJ}{%
+         family={Lang},
+         familyi={L\bibinitperiod},
+         given={Peter\bibnamedelima J},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Lawrence Erlbaum Associates Hillsdale}%
+    }
+    \strng{namehash}{LPJ1}
+    \strng{fullhash}{LPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{109\bibrangedash 133}
+    \field{title}{The network model of emotion: Motivational connections}
+    \field{volume}{6}
+    \field{journaltitle}{Perspectives on anger and emotion: Advances in social
+  cognition}
+    \field{year}{1993}
+  \endentry
+
+  \entry{osgood1952nature}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OCE}{%
+         family={Osgood},
+         familyi={O\bibinitperiod},
+         given={Charles\bibnamedelima E},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{OCE1}
+    \strng{fullhash}{OCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{197}
+    \field{title}{The nature and measurement of meaning.}
+    \field{volume}{49}
+    \field{journaltitle}{Psychological bulletin}
+    \field{year}{1952}
+  \endentry
+
+  \entry{russell1977evidence}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RJA}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={James\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mehrabian},
+         familyi={M\bibinitperiod},
+         given={Albert},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RJAMA1}
+    \strng{fullhash}{RJAMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{273\bibrangedash 294}
+    \field{title}{Evidence for a three-factor theory of emotions}
+    \field{volume}{11}
+    \field{journaltitle}{Journal of research in Personality}
+    \field{year}{1977}
+  \endentry
+
+  \entry{valdez1994effects}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VP}{%
+         family={Valdez},
+         familyi={V\bibinitperiod},
+         given={Patricia},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mehrabian},
+         familyi={M\bibinitperiod},
+         given={Albert},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{VPMA1}
+    \strng{fullhash}{VPMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{394}
+    \field{title}{Effects of color on emotions.}
+    \field{volume}{123}
+    \field{journaltitle}{Journal of experimental psychology: General}
+    \field{year}{1994}
+  \endentry
+
+  \entry{datta2006studying}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=DR}{%
+         family={Datta},
+         familyi={D\bibinitperiod},
+         given={Ritendra},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Joshi},
+         familyi={J\bibinitperiod},
+         given={Dhiraj},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Jia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WJZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={James\bibnamedelima Z},
+         giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DRJDLJWJZ1}
+    \strng{fullhash}{DRJDLJWJZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{European Conference on Computer Vision}
+    \field{pages}{288\bibrangedash 301}
+    \field{title}{Studying aesthetics in photographic images using a
+  computational approach}
+    \field{year}{2006}
+  \endentry
+
+  \entry{joshi2011aesthetics}{article}{}
+    \name{author}{7}{}{%
+      {{hash=JD}{%
+         family={Joshi},
+         familyi={J\bibinitperiod},
+         given={Dhiraj},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Datta},
+         familyi={D\bibinitperiod},
+         given={Ritendra},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Fedorovskaya},
+         familyi={F\bibinitperiod},
+         given={Elena},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LQT}{%
+         family={Luong},
+         familyi={L\bibinitperiod},
+         given={Quang-Tuan},
+         giveni={Q\bibinitperiod-T\bibinitperiod},
+      }}%
+      {{hash=WJZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={James\bibnamedelima Z},
+         giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Jia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Jiebo},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{JDDRFELQTWJZLJLJ1}
+    \strng{fullhash}{JDDRFELQTWJZLJLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{94\bibrangedash 115}
+    \field{title}{Aesthetics and emotions in images}
+    \field{volume}{28}
+    \field{journaltitle}{IEEE Signal Processing Magazine}
+    \field{year}{2011}
+  \endentry
+
+  \entry{marchesotti2011assessing}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=ML}{%
+         family={Marchesotti},
+         familyi={M\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Perronnin},
+         familyi={P\bibinitperiod},
+         given={Florent},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Larlus},
+         familyi={L\bibinitperiod},
+         given={Diane},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Csurka},
+         familyi={C\bibinitperiod},
+         given={Gabriela},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{MLPFLDCG1}
+    \strng{fullhash}{MLPFLDCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2011 International Conference on Computer Vision}
+    \field{pages}{1784\bibrangedash 1791}
+    \field{title}{Assessing the aesthetic quality of photographs using generic
+  image descriptors}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Ravi2012}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RF}{%
+         family={Rav\'{i}},
+         familyi={R\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Battiato},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SPIE-IS\&T}%
+    }
+    \strng{namehash}{RFBS1}
+    \strng{fullhash}{RFBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of 6th European Conference on Colour in
+  Graphics, Imaging, and Vision}
+    \field{pages}{1\bibrangedash 5}
+    \field{pubstate}{published}
+    \field{title}{A Novel Computational Tool for Aesthetic Scoring of Digital
+  Photography}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{isola2011makes}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=IP}{%
+         family={Isola},
+         familyi={I\bibinitperiod},
+         given={Phillip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=XJ}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Jianxiong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Torralba},
+         familyi={T\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Oliva},
+         familyi={O\bibinitperiod},
+         given={Aude},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{IPXJTAOA1}
+    \strng{fullhash}{IPXJTAOA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Conference on Computer Vision and Pattern
+  Recognition}
+    \field{pages}{145\bibrangedash 152}
+    \field{title}{What makes an image memorable?}
+    \field{year}{2011}
+  \endentry
+
+  \entry{jia2012can}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=JJ}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Jia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Sen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xiaohui},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Peiyun},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Lianhong},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{JJWSWXHPCLTJ1}
+    \strng{fullhash}{JJWSWXHPCLTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 20th ACM international conference on
+  Multimedia}
+    \field{pages}{857\bibrangedash 860}
+    \field{title}{Can we understand van gogh's mood?: learning to infer affects
+  from images in social networks}
+    \field{year}{2012}
+  \endentry
+
+  \entry{gelli2015image}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=GF}{%
+         family={Gelli},
+         familyi={G\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=UT}{%
+         family={Uricchio},
+         familyi={U\bibinitperiod},
+         given={Tiberio},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bertini},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DBA}{%
+         family={Del\bibnamedelima Bimbo},
+         familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{GFUTBMDBACSF1}
+    \strng{fullhash}{GFUTBMDBACSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 23rd ACM international conference on
+  Multimedia}
+    \field{pages}{907\bibrangedash 910}
+    \field{title}{Image popularity prediction in social media using sentiment
+  and context features}
+    \field{year}{2015}
+  \endentry
+
+  \entry{khosla2014makes}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Khosla},
+         familyi={K\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DSA}{%
+         family={Das\bibnamedelima Sarma},
+         familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Atish},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hamid},
+         familyi={H\bibinitperiod},
+         given={Raffay},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{KADSAHR1}
+    \strng{fullhash}{KADSAHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 23rd international conference on World
+  wide web}
+    \field{pages}{867\bibrangedash 876}
+    \field{title}{What makes an image popular?}
+    \field{year}{2014}
+  \endentry
+
+  \entry{mcparlane2014nobody}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MPJ}{%
+         family={McParlane},
+         familyi={M\bibinitperiod},
+         given={Philip\bibnamedelima J},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Moshfeghi},
+         familyi={M\bibinitperiod},
+         given={Yashar},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JJM}{%
+         family={Jose},
+         familyi={J\bibinitperiod},
+         given={Joemon\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{MPJMYJJM1}
+    \strng{fullhash}{MPJMYJJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of International Conference on Multimedia
+  Retrieval}
+    \field{pages}{385}
+    \field{title}{Nobody comes here anymore, it's too crowded; Predicting Image
+  Popularity on Flickr}
+    \field{year}{2014}
+  \endentry
+
+  \entry{totti2014impact}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=TLC}{%
+         family={Totti},
+         familyi={T\bibinitperiod},
+         given={Luam\bibnamedelima Catao},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=CFA}{%
+         family={Costa},
+         familyi={C\bibinitperiod},
+         given={Felipe\bibnamedelima Almeida},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Avila},
+         familyi={A\bibinitperiod},
+         given={Sandra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VE}{%
+         family={Valle},
+         familyi={V\bibinitperiod},
+         given={Eduardo},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MJW}{%
+         family={Meira\bibnamedelima Jr},
+         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Wagner},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=AV}{%
+         family={Almeida},
+         familyi={A\bibinitperiod},
+         given={Virgilio},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{TLCCFAASVEMJWAV1}
+    \strng{fullhash}{TLCCFAASVEMJWAV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2014 ACM conference on Web science}
+    \field{pages}{42\bibrangedash 51}
+    \field{title}{The impact of visual attributes on online image diffusion}
+    \field{year}{2014}
+  \endentry
+
+  \entry{siersdorfer2010analyzing}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SS}{%
+         family={Siersdorfer},
+         familyi={S\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Minack},
+         familyi={M\bibinitperiod},
+         given={Enrico},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Fan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hare},
+         familyi={H\bibinitperiod},
+         given={Jonathon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{SSMEDFHJ1}
+    \strng{fullhash}{SSMEDFHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 18th ACM international conference on
+  Multimedia}
+    \field{pages}{715\bibrangedash 718}
+    \field{title}{Analyzing and predicting sentiment of images on the social
+  web}
+    \field{year}{2010}
+  \endentry
+
+  \entry{esuli2006sentiwordnet}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=EA}{%
+         family={Esuli},
+         familyi={E\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sebastiani},
+         familyi={S\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{EASF1}
+    \strng{fullhash}{EASF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of LREC}
+    \field{pages}{417\bibrangedash 422}
+    \field{title}{Sentiwordnet: A publicly available lexical resource for
+  opinion mining}
+    \field{volume}{6}
+    \field{year}{2006}
+  \endentry
+
+  \entry{machajdik2010affective}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MJ}{%
+         family={Machajdik},
+         familyi={M\bibinitperiod},
+         given={Jana},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hanbury},
+         familyi={H\bibinitperiod},
+         given={Allan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{MJHA1}
+    \strng{fullhash}{MJHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 18th ACM international conference on
+  Multimedia}
+    \field{pages}{83\bibrangedash 92}
+    \field{title}{Affective image classification using features inspired by
+  psychology and art theory}
+    \field{year}{2010}
+  \endentry
+
+  \entry{mikels2005emotional}{article}{}
+    \name{author}{6}{}{%
+      {{hash=MJA}{%
+         family={Mikels},
+         familyi={M\bibinitperiod},
+         given={Joseph\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=FBL}{%
+         family={Fredrickson},
+         familyi={F\bibinitperiod},
+         given={Barbara\bibnamedelima L},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=LGR}{%
+         family={Larkin},
+         familyi={L\bibinitperiod},
+         given={Gregory\bibnamedelima R},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LCM}{%
+         family={Lindberg},
+         familyi={L\bibinitperiod},
+         given={Casey\bibnamedelima M},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Maglio},
+         familyi={M\bibinitperiod},
+         given={Sam\bibnamedelima J},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RLPA}{%
+         family={Reuter-Lorenz},
+         familyi={R\bibinitperiod-L\bibinitperiod},
+         given={Patricia\bibnamedelima A},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MJAFBLLGRLCMMSJRLPA1}
+    \strng{fullhash}{MJAFBLLGRLCMMSJRLPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{626\bibrangedash 630}
+    \field{title}{Emotional category data on images from the International
+  Affective Picture System}
+    \field{volume}{37}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2005}
+  \endentry
+
+  \entry{borth2013large}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=BD}{%
+         family={Borth},
+         familyi={B\bibinitperiod},
+         given={Damian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Rongrong},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Breuel},
+         familyi={B\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{BDJRCTBTCSF1}
+    \strng{fullhash}{BDJRCTBTCSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 21st ACM international conference on
+  Multimedia}
+    \field{pages}{223\bibrangedash 232}
+    \field{title}{Large-scale visual sentiment ontology and detectors using
+  adjective noun pairs}
+    \field{year}{2013}
+  \endentry
+
+  \entry{plutchik1980general}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PR}{%
+         family={Plutchik},
+         familyi={P\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press New York}%
+    }
+    \keyw{basicemotions happyendecml kallimachos ma-zehe sentimentanalysis}
+    \strng{namehash}{PR1}
+    \strng{fullhash}{PR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{3\bibrangedash 31}
+    \field{title}{A general psychoevolutionary theory of emotion}
+    \field{volume}{1}
+    \field{journaltitle}{Theories of emotion}
+    \field{year}{1980}
+  \endentry
+
+  \entry{yuan2013sentribute}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=YJ}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Jianbo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mcdonough},
+         familyi={M\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YQ}{%
+         family={You},
+         familyi={Y\bibinitperiod},
+         given={Quanzeng},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Jiebo},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{YJMSYQLJ1}
+    \strng{fullhash}{YJMSYQLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Second International Workshop on
+  Issues of Sentiment Discovery and Opinion Mining}
+    \field{pages}{10}
+    \field{title}{Sentribute: image sentiment analysis from a mid-level
+  perspective}
+    \field{year}{2013}
+  \endentry
+
+  \entry{yang2014your}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=YY}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Jia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Shumei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Boya},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CQ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Qicong},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Juanzi},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XC}{%
+         family={Xing},
+         familyi={X\bibinitperiod},
+         given={Chunxiao},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AAAI Press}%
+    }
+    \strng{namehash}{YYJJZSWBCQLJXCTJ1}
+    \strng{fullhash}{YYJJZSWBCQLJXCTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Twenty-Eighth AAAI Conference on
+  Artificial Intelligence}
+    \field{pages}{306\bibrangedash 312}
+    \field{series}{AAAI'14}
+    \field{title}{How Do Your Friends on Social Media Disclose Your Emotions?}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=2893873.2893922
+    \endverb
+    \list{location}{1}{%
+      {Qu\&\#233;bec City, Qu\&\#233;bec, Canada}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{ekman1987universals}{article}{}
+    \name{author}{13}{}{%
+      {{hash=EP}{%
+         family={Ekman},
+         familyi={E\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FWV}{%
+         family={Friesen},
+         familyi={F\bibinitperiod},
+         given={Wallace\bibnamedelima V},
+         giveni={W\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={O'Sullivan},
+         familyi={O\bibinitperiod},
+         given={Maureen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={Anthony},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DTI}{%
+         family={Diacoyanni-Tarlatzis},
+         familyi={D\bibinitperiod-T\bibinitperiod},
+         given={Irene},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Heider},
+         familyi={H\bibinitperiod},
+         given={Karl},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Krause},
+         familyi={K\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LWA}{%
+         family={LeCompte},
+         familyi={L\bibinitperiod},
+         given={William\bibnamedelima Ayhan},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pitcairn},
+         familyi={P\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RBP}{%
+         family={Ricci-Bitti},
+         familyi={R\bibinitperiod-B\bibinitperiod},
+         given={Pio},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Scherer},
+         familyi={S\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tomita},
+         familyi={T\bibinitperiod},
+         given={Masatoshi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tzavaras},
+         familyi={T\bibinitperiod},
+         given={Athanase},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{EP+1}
+    \strng{fullhash}{EPFWVOMCADTIHKKRLWAPTRBPSKTMTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{712}
+    \field{title}{Universals and cultural differences in the judgments of
+  facial expressions of emotion.}
+    \field{volume}{53}
+    \field{journaltitle}{Journal of personality and social psychology}
+    \field{year}{1987}
+  \endentry
+
+  \entry{chen2014deepsentibank}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Borth},
+         familyi={B\bibinitperiod},
+         given={Damian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Darrell},
+         familyi={D\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTBDDTCSF1}
+    \strng{fullhash}{CTBDDTCSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Deepsentibank: Visual sentiment concept classification with
+  deep convolutional neural networks}
+    \field{journaltitle}{arXiv preprint arXiv:1410.8586}
+    \field{year}{2014}
+  \endentry
+
+  \entry{chen2014predicting}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=CYY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yan-Ying},
+         giveni={Y\bibinitperiod-Y\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HWH}{%
+         family={Hsu},
+         familyi={H\bibinitperiod},
+         given={Winston\bibnamedelima H},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LHYM}{%
+         family={Liao},
+         familyi={L\bibinitperiod},
+         given={Hong-Yuan\bibnamedelima Mark},
+         giveni={H\bibinitperiod-Y\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{CYYCTHWHLHYMCSF1}
+    \strng{fullhash}{CYYCTHWHLHYMCSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of International Conference on Multimedia
+  Retrieval}
+    \field{pages}{233}
+    \field{title}{Predicting viewer affective comments based on image content
+  in social media}
+    \field{year}{2014}
+  \endentry
+
+  \entry{xu2014visual}{article}{}
+    \name{author}{4}{}{%
+      {{hash=XC}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Can},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cetintas},
+         familyi={C\bibinitperiod},
+         given={Suleyman},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LKC}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kuang-Chih},
+         giveni={K\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=LLJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li-Jia},
+         giveni={L\bibinitperiod-J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XCCSLKCLLJ1}
+    \strng{fullhash}{XCCSLKCLLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Visual sentiment prediction with deep convolutional neural
+  networks}
+    \field{journaltitle}{arXiv preprint arXiv:1411.5731}
+    \field{year}{2014}
+  \endentry
+
+  \entry{you2015robust}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=YQ}{%
+         family={You},
+         familyi={Y\bibinitperiod},
+         given={Quanzeng},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Jiebo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Hailin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jianchao},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AAAI Press}%
+    }
+    \strng{namehash}{YQLJJHYJ1}
+    \strng{fullhash}{YQLJJHYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Twenty-Ninth AAAI Conference on
+  Artificial Intelligence}
+    \field{isbn}{0-262-51129-0}
+    \field{pages}{381\bibrangedash 388}
+    \field{series}{AAAI'15}
+    \field{title}{Robust Image Sentiment Analysis Using Progressively Trained
+  and Domain Transferred Deep Networks}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=2887007.2887061
+    \endverb
+    \list{location}{1}{%
+      {Austin, Texas}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{peng2015mixed}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=PKC}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Kuan-Chuan},
+         giveni={K\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tsuhan},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sadovnik},
+         familyi={S\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GAC}{%
+         family={Gallagher},
+         familyi={G\bibinitperiod},
+         given={Andrew\bibnamedelima C},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PKCCTSAGAC1}
+    \strng{fullhash}{PKCCTSAGAC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{pages}{860\bibrangedash 868}
+    \field{title}{A mixed bag of emotions: Model, predict, and transfer emotion
+  distributions}
+    \field{year}{2015}
+  \endentry
+
+  \entry{wang2015unsupervised}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yilin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Suhang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Jiliang},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Huan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LB}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Baoxin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AAAI Press}%
+    }
+    \strng{namehash}{WYWSTJLHLB1}
+    \strng{fullhash}{WYWSTJLHLB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 24th International Conference on
+  Artificial Intelligence}
+    \field{isbn}{978-1-57735-738-4}
+    \field{pages}{2378\bibrangedash 2379}
+    \field{series}{IJCAI'15}
+    \field{title}{Unsupervised Sentiment Analysis for Social Media Images}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=2832415.2832579
+    \endverb
+    \list{location}{1}{%
+      {Buenos Aires, Argentina}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{campos2015diving}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CV}{%
+         family={Campos},
+         familyi={C\bibinitperiod},
+         given={V{\'\i}ctor},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Salvador},
+         familyi={S\bibinitperiod},
+         given={Amaia},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GiNX}{%
+         prefix={Gir\'{o}-i},
+         prefixi={G\bibinitperiod-i\bibinitperiod},
+         family={Nieto},
+         familyi={N\bibinitperiod},
+         given={Xavier},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=JB}{%
+         family={Jou},
+         familyi={J\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{convolutional neural networks, fine-tuning strategies, sentiment,
+  social multimedia}
+    \strng{namehash}{CVSANXGiJB1}
+    \strng{fullhash}{CVSANXGiJB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 1st International Workshop on Affect
+  \&\#38; Sentiment in Multimedia}
+    \verb{doi}
+    \verb 10.1145/2813524.2813530
+    \endverb
+    \field{isbn}{978-1-4503-3750-2}
+    \field{pages}{57\bibrangedash 62}
+    \field{series}{ASM '15}
+    \field{title}{Diving Deep into Sentiment: Understanding Fine-tuned CNNs for
+  Visual Sentiment Prediction}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2813524.2813530
+    \endverb
+    \list{location}{1}{%
+      {Brisbane, Australia}%
+    }
+    \field{year}{2015}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{jou2015visual}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=JB}{%
+         family={Jou},
+         familyi={J\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Pappas},
+         familyi={P\bibinitperiod},
+         given={Nikolaos},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Redi},
+         familyi={R\bibinitperiod},
+         given={Miriam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Topkara},
+         familyi={T\bibinitperiod},
+         given={Mercan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{JBCTPNRMTMCSF1}
+    \strng{fullhash}{JBCTPNRMTMCSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 23rd ACM international conference on
+  Multimedia}
+    \field{pages}{159\bibrangedash 168}
+    \field{title}{Visual affect around the world: A large-scale multilingual
+  visual sentiment ontology}
+    \field{year}{2015}
+  \endentry
+
+  \entry{sun2016discovering}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SM}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jufeng},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SMYJWKSH1}
+    \strng{fullhash}{SMYJWKSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE International Conference on Multimedia and Expo.}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Discovering affective regions in deep convolutional neural
+  networks for visual sentiment prediction}
+    \field{year}{2016}
+  \endentry
+
+  \entry{katsurai2016image}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KM}{%
+         family={Katsurai},
+         familyi={K\bibinitperiod},
+         given={Marie},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Satoh},
+         familyi={S\bibinitperiod},
+         given={Shin'ichi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KMSS1}
+    \strng{fullhash}{KMSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE International Conference on Acoustics, Speech and
+  Signal Processing}
+    \field{pages}{2837\bibrangedash 2841}
+    \field{title}{Image sentiment analysis using latent correlations among
+  visual, textual, and sentiment views}
+    \field{year}{2016}
+  \endentry
+
+  \entry{yu2013designing}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YFX}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Felix\bibnamedelima X},
+         giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Liangliang},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=FRS}{%
+         family={Feris},
+         familyi={F\bibinitperiod},
+         given={Rogerio\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SJR}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YFXCLFRSSJRCSF1}
+    \strng{fullhash}{YFXCLFRSSJRCSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{pages}{771\bibrangedash 778}
+    \field{title}{Designing category-level attributes for discriminative visual
+  recognition}
+    \field{year}{2013}
+  \endentry
+
+  \entry{yang2017learning}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jufeng},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SX}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xiaoxiao},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YJSMSX1}
+    \strng{fullhash}{YJSMSX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{AAAI}
+    \field{pages}{224\bibrangedash 230}
+    \field{title}{Learning Visual Sentiment Distributions via Augmented
+  Conditional Probability Neural Network.}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ijcai2017-456}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=JYMSDS}{%
+         family={Jufeng\bibnamedelima Yang},
+         familyi={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
+         suffix={Dongyu\bibnamedelima She},
+         suffixi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Ming\bibnamedelima Sun},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JYDSMS1}
+    \strng{fullhash}{JYDSMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Twenty-Sixth International Joint
+  Conference on Artificial Intelligence, {IJCAI-17}}
+    \verb{doi}
+    \verb 10.24963/ijcai.2017/456
+    \endverb
+    \field{pages}{3266\bibrangedash 3272}
+    \field{title}{Joint Image Emotion Classification and Distribution Learning
+  via Deep Convolutional Neural Network}
+    \field{year}{2017}
+  \endentry
+
+  \entry{campos2017pixels}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CV}{%
+         family={Campos},
+         familyi={C\bibinitperiod},
+         given={V{\'\i}ctor},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=JB}{%
+         family={Jou},
+         familyi={J\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=iNXG}{%
+         prefix={i},
+         prefixi={i},
+         family={Nieto},
+         familyi={N\bibinitperiod},
+         given={Xavier\bibnamedelima Gir\'{o}},
+         giveni={X\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \keyw{Sentiment, Convolutional Neural Networks, Social multimedia,
+  Fine-tuning strategies}
+    \strng{namehash}{CVJBNXGi1}
+    \strng{fullhash}{CVJBNXGi1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.imavis.2017.01.011
+    \endverb
+    \field{issn}{0262-8856}
+    \field{note}{Multimodal Sentiment Analysis and Mining in the Wild Image and
+  Vision Computing}
+    \field{pages}{15 \bibrangedash  22}
+    \field{title}{From pixels to sentiment: Fine-tuning CNNs for visual
+  sentiment prediction}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0262885617300355
+    \endverb
+    \field{volume}{65}
+    \field{journaltitle}{Image and Vision Computing}
+    \field{year}{2017}
+  \endentry
+
+  \entry{vadicamo2017cross}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=VL}{%
+         family={Vadicamo},
+         familyi={V\bibinitperiod},
+         given={Lucia},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Carrara},
+         familyi={C\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Cimino},
+         familyi={C\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cresci},
+         familyi={C\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={Dell'Orletta},
+         familyi={D\bibinitperiod},
+         given={Felice},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Falchi},
+         familyi={F\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tesconi},
+         familyi={T\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VLCFCACSDFFFTM1}
+    \strng{fullhash}{VLCFCACSDFFFTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{pages}{308\bibrangedash 317}
+    \field{title}{Cross-Media Learning for Image Sentiment Analysis in the
+  Wild}
+    \field{year}{2017}
+  \endentry
+
+  \entry{simonyan2014very}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKZA1}
+    \strng{fullhash}{SKZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Very deep convolutional networks for large-scale image
+  recognition}
+    \field{journaltitle}{arXiv preprint arXiv:1409.1556}
+    \field{year}{2014}
+  \endentry
+
+  \entry{li2018image}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LZ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Zuhe},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=FY}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Yangyu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Weihua},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Fengqin},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LZFYLWWF1}
+    \strng{fullhash}{LZFYLWWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1115\bibrangedash 1132}
+    \field{title}{Image sentiment prediction based on textual descriptions with
+  adjective noun pairs}
+    \field{volume}{77}
+    \field{journaltitle}{Multimedia Tools and Applications}
+    \field{year}{2018}
+  \endentry
+
+  \entry{thelwall2010sentiment}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TM}{%
+         family={Thelwall},
+         familyi={T\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Buckley},
+         familyi={B\bibinitperiod},
+         given={Kevan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Paltoglou},
+         familyi={P\bibinitperiod},
+         given={Georgios},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Di},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kappas},
+         familyi={K\bibinitperiod},
+         given={Arvid},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{TMBKPGCDKA1}
+    \strng{fullhash}{TMBKPGCDKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{pages}{2544\bibrangedash 2558}
+    \field{title}{Sentiment strength detection in short informal text}
+    \field{volume}{61}
+    \field{journaltitle}{Journal of the Association for Information Science and
+  Technology}
+    \field{year}{2010}
+  \endentry
+
+  \entry{soleymani2017survey}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SM}{%
+         family={Soleymani},
+         familyi={S\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Garcia},
+         familyi={G\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JB}{%
+         family={Jou},
+         familyi={J\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schuller},
+         familyi={S\bibinitperiod},
+         given={Bj{\"o}rn},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CSF}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Shih-Fu},
+         giveni={S\bibinitperiod-F\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pantic},
+         familyi={P\bibinitperiod},
+         given={Maja},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SMGDJBSBCSFPM1}
+    \strng{fullhash}{SMGDJBSBCSFPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{3\bibrangedash 14}
+    \field{title}{A survey of multimodal sentiment analysis}
+    \field{volume}{65}
+    \field{journaltitle}{Image and Vision Computing}
+    \field{year}{2017}
+  \endentry
+
+  \entry{hayashi1998image}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HT}{%
+         family={Hayashi},
+         familyi={H\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hagiwara},
+         familyi={H\bibinitperiod},
+         given={Masafumi},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HTHM1}
+    \strng{fullhash}{HTHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{347\bibrangedash 352}
+    \field{title}{Image query by impression words-the IQI system}
+    \field{volume}{44}
+    \field{journaltitle}{IEEE Transactions on Consumer Electronics}
+    \field{year}{1998}
+  \endentry
+
+  \entry{hanjalic2005affective}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HA}{%
+         family={Hanjalic},
+         familyi={H\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=XLQ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Li-Qun},
+         giveni={L\bibinitperiod-Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HAXLQ1}
+    \strng{fullhash}{HAXLQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{143\bibrangedash 154}
+    \field{title}{Affective video content representation and modeling}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE transactions on multimedia}
+    \field{year}{2005}
+  \endentry
+
+  \entry{lang1999international}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LPJ}{%
+         family={Lang},
+         familyi={L\bibinitperiod},
+         given={Peter\bibnamedelima J},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BMM}{%
+         family={Bradley},
+         familyi={B\bibinitperiod},
+         given={Margaret\bibnamedelima M},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CBN}{%
+         family={Cuthbert},
+         familyi={C\bibinitperiod},
+         given={Bruce\bibnamedelima N},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LPJBMMCBN1}
+    \strng{fullhash}{LPJBMMCBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{International affective picture system (IAPS): Technical
+  manual and affective ratings}
+    \field{journaltitle}{Gainesville, FL: The Center for Research in
+  Psychophysiology, University of Florida}
+    \field{year}{1999}
+  \endentry
+
+  \entry{shaver1987emotion}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SP}{%
+         family={Shaver},
+         familyi={S\bibinitperiod},
+         given={Phillip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={Judith},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kirson},
+         familyi={K\bibinitperiod},
+         given={Donald},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=OC}{%
+         family={O'connor},
+         familyi={O\bibinitperiod},
+         given={Cary},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{SPSJKDOC1}
+    \strng{fullhash}{SPSJKDOC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{1061}
+    \field{title}{Emotion knowledge: further exploration of a prototype
+  approach.}
+    \field{volume}{52}
+    \field{journaltitle}{Journal of personality and social psychology}
+    \field{year}{1987}
+  \endentry
+
+  \entry{yanulevskaya2008emotional}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=YV}{%
+         family={Yanulevskaya},
+         familyi={Y\bibinitperiod},
+         given={Victoria},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=VGJ}{%
+         family={Van\bibnamedelima Gemert},
+         familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={JC},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Roth},
+         familyi={R\bibinitperiod},
+         given={Katharina},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HAK}{%
+         family={Herbold},
+         familyi={H\bibinitperiod},
+         given={Ann-Katrin},
+         giveni={A\bibinitperiod-K\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sebe},
+         familyi={S\bibinitperiod},
+         given={Nicu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GJM}{%
+         family={Geusebroek},
+         familyi={G\bibinitperiod},
+         given={Jan-Mark},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{YVVGJRKHAKSNGJM1}
+    \strng{fullhash}{YVVGJRKHAKSNGJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{15th IEEE International Conference on Image Processing}
+    \field{pages}{101\bibrangedash 104}
+    \field{title}{Emotional valence categorization using holistic image
+  features}
+    \field{year}{2008}
+  \endentry
+
+  \entry{dan2011geneva}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DGES}{%
+         family={Dan-Glauser},
+         familyi={D\bibinitperiod-G\bibinitperiod},
+         given={Elise\bibnamedelima S},
+         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SKR}{%
+         family={Scherer},
+         familyi={S\bibinitperiod},
+         given={Klaus\bibnamedelima R},
+         giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DGESSKR1}
+    \strng{fullhash}{DGESSKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{468\bibrangedash 477}
+    \field{title}{The Geneva affective picture database (GAPED): a new
+  730-picture database focusing on valence and normative significance}
+    \field{volume}{43}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2011}
+  \endentry
+
+  \entry{zhao2014exploring}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=ZS}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Sicheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JX}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Xiaolei},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Hongxun},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CTS}{%
+         family={Chua},
+         familyi={C\bibinitperiod},
+         given={Tat-Seng},
+         giveni={T\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=SX}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xiaoshuai},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{ZSGYJXYHCTSSX1}
+    \strng{fullhash}{ZSGYJXYHCTSSX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 22nd ACM international conference on
+  Multimedia}
+    \field{pages}{47\bibrangedash 56}
+    \field{title}{Exploring principles-of-art features for image emotion
+  recognition}
+    \field{year}{2014}
+  \endentry
+
+  \entry{stottinger2009translating}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SJ}{%
+         family={Stottinger},
+         familyi={S\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Banova},
+         familyi={B\bibinitperiod},
+         given={Jana},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Ponitz},
+         familyi={P\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sebe},
+         familyi={S\bibinitperiod},
+         given={Nicu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hanbury},
+         familyi={H\bibinitperiod},
+         given={Allan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SJBJPTSNHA1}
+    \strng{fullhash}{SJBJPTSNHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{15th International Conference on Virtual Systems and
+  Multimedia.}
+    \field{pages}{149\bibrangedash 153}
+    \field{title}{Translating journalists' requirements into features for image
+  search}
+    \field{year}{2009}
+  \endentry
+
+  \entry{van2007learning}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=VdWJ}{%
+         prefix={Van\bibnamedelima de},
+         prefixi={V\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Weijer},
+         familyi={W\bibinitperiod},
+         given={Joost},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Schmid},
+         familyi={S\bibinitperiod},
+         given={Cordelia},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Verbeek},
+         familyi={V\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WJVdSCVJ1}
+    \strng{fullhash}{WJVdSCVJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2007 IEEE Conference on Computer Vision and Pattern
+  Recognition}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Learning color names from real-world images}
+    \field{year}{2007}
+  \endentry
+
+  \entry{tamura1978textural}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TH}{%
+         family={Tamura},
+         familyi={T\bibinitperiod},
+         given={Hideyuki},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Shunji},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YT}{%
+         family={Yamawaki},
+         familyi={Y\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{THMSYT1}
+    \strng{fullhash}{THMSYT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{460\bibrangedash 473}
+    \field{title}{Textural features corresponding to visual perception}
+    \field{volume}{8}
+    \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics}
+    \field{year}{1978}
+  \endentry
+
+  \entry{liu2012sentiment}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Morgan \& Claypool Publishers}%
+    }
+    \strng{namehash}{LB1}
+    \strng{fullhash}{LB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 167}
+    \field{title}{Sentiment analysis and opinion mining}
+    \field{volume}{5}
+    \field{journaltitle}{Synthesis lectures on human language technologies}
+    \field{year}{2012}
+  \endentry
+
+  \entry{alexe2012measuring}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AB}{%
+         family={Alexe},
+         familyi={A\bibinitperiod},
+         given={Bogdan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Deselaers},
+         familyi={D\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FV}{%
+         family={Ferrari},
+         familyi={F\bibinitperiod},
+         given={Vittorio},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ABDTFV1}
+    \strng{fullhash}{ABDTFV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{2189\bibrangedash 2202}
+    \field{title}{Measuring the objectness of image windows}
+    \field{volume}{34}
+    \field{journaltitle}{IEEE transactions on pattern analysis and machine
+  intelligence}
+    \field{year}{2012}
+  \endentry
+
+  \entry{hanjalic2006extracting}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HA}{%
+         family={Hanjalic},
+         familyi={H\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HA1}
+    \strng{fullhash}{HA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{90\bibrangedash 100}
+    \field{title}{Extracting moods from pictures and sounds: Towards truly
+  personalized TV}
+    \field{volume}{23}
+    \field{journaltitle}{IEEE Signal Processing Magazine}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Karpathy_2015_CVPR}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Karpathy},
+         familyi={K\bibinitperiod},
+         given={Andrej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinitperiod-F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAFFL1}
+    \strng{fullhash}{KAFFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{The IEEE Conference on Computer Vision and Pattern
+  Recognition}
+    \field{title}{Deep Visual-Semantic Alignments for Generating Image
+  Descriptions}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{karpathy2015deep}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Karpathy},
+         familyi={K\bibinitperiod},
+         given={Andrej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinitperiod-F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAFFL1}
+    \strng{fullhash}{KAFFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{pages}{3128\bibrangedash 3137}
+    \field{title}{Deep visual-semantic alignments for generating image
+  descriptions}
+    \field{year}{2015}
+  \endentry
+
+  \entry{ORTIS2017207}{article}{}
+    \name{author}{6}{}{%
+      {{hash=OA}{%
+         family={Ortis},
+         familyi={O\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FGM}{%
+         family={Farinella},
+         familyi={F\bibinitperiod},
+         given={Giovanni\bibnamedelima Maria},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DV}{%
+         family={D'Amico},
+         familyi={D\bibinitperiod},
+         given={Valeria},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=AL}{%
+         family={Addesso},
+         familyi={A\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Torrisi},
+         familyi={T\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Battiato},
+         familyi={B\bibinitperiod},
+         given={Sebastiano},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OAFGMDVALTGBS1}
+    \strng{fullhash}{OAFGMDVALTGBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.patcog.2017.07.010
+    \endverb
+    \field{issn}{0031-3203}
+    \field{number}{Supplement C}
+    \field{pages}{207 \bibrangedash  218}
+    \field{title}{Organizing egocentric videos of daily living activities}
+    \verb{url}
+    \verb http://iplab.dmi.unict.it/dailylivingactivities
+    \endverb
+    \field{volume}{72}
+    \field{journaltitle}{Pattern Recognition}
+    \field{year}{2017}
+  \endentry
+
+  \entry{furnari2018personal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FA}{%
+         family={Furnari},
+         familyi={F\bibinitperiod},
+         given={Antonino},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Battiato},
+         familyi={B\bibinitperiod},
+         given={Sebastiano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FGM}{%
+         family={Farinella},
+         familyi={F\bibinitperiod},
+         given={Giovanni\bibnamedelima Maria},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FABSFGM1}
+    \strng{fullhash}{FABSFGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{1047-3203}
+    \field{pages}{1\bibrangedash 12}
+    \field{title}{Personal-Location-Based Temporal Segmentation of Egocentric
+  Video for Lifelogging Applications}
+    \verb{url}
+    \verb http://iplab.dmi.unict.it/PersonalLocationSegmentation/
+    \endverb
+    \field{volume}{52}
+    \verb{file}
+    \verb publications/furnari2018personal.pdf
+    \endverb
+    \field{journaltitle}{Journal of Visual Communication and Image
+  Representation}
+    \field{year}{2018}
+  \endentry
+
+  \entry{li2016socializing}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xirong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=UT}{%
+         family={Uricchio},
+         familyi={U\bibinitperiod},
+         given={Tiberio},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Ballan},
+         familyi={B\bibinitperiod},
+         given={Lamberto},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bertini},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SCG}{%
+         family={Snoek},
+         familyi={S\bibinitperiod},
+         given={Cees\bibnamedelima GM},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BAD}{%
+         family={Bimbo},
+         familyi={B\bibinitperiod},
+         given={Alberto\bibnamedelima Del},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{LXUTBLBMSCGBAD1}
+    \strng{fullhash}{LXUTBLBMSCGBAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{14}
+    \field{title}{Socializing the semantic gap: A comparative survey on image
+  tag assignment, refinement, and retrieval}
+    \field{volume}{49}
+    \field{journaltitle}{ACM Computing Surveys (CSUR)}
+    \field{year}{2016}
+  \endentry
+
+  \entry{gong2014multi}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GY}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Yunchao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KQ}{%
+         family={Ke},
+         familyi={K\bibinitperiod},
+         given={Qifa},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Isard},
+         familyi={I\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lazebnik},
+         familyi={L\bibinitperiod},
+         given={Svetlana},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GYKQIMLS1}
+    \strng{fullhash}{GYKQIMLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{210\bibrangedash 233}
+    \field{title}{A multi-view embedding space for modeling internet images,
+  tags, and their semantics}
+    \field{volume}{106}
+    \field{journaltitle}{International journal of computer vision}
+    \field{year}{2014}
+  \endentry
+
+  \entry{googlenet}{inproceedings}{}
+    \name{author}{9}{}{%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Yangqing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sermanet},
+         familyi={S\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Reed},
+         familyi={R\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Anguelov},
+         familyi={A\bibinitperiod},
+         given={Dragomir},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Erhan},
+         familyi={E\bibinitperiod},
+         given={Dumitru},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vanhoucke},
+         familyi={V\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rabinovich},
+         familyi={R\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCLWJYSPRSADEDVVRA1}
+    \strng{fullhash}{SCLWJYSPRSADEDVVRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{title}{Going Deeper with Convolutions}
+    \field{year}{2015}
+  \endentry
+
+  \entry{sang2012user}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJ}{%
+         family={Sang},
+         familyi={S\bibinitperiod},
+         given={Jitao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XC}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Changsheng},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SJXCLJ1}
+    \strng{fullhash}{SJXCLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{883\bibrangedash 895}
+    \field{title}{User-aware image tag refinement via ternary semantic
+  analysis}
+    \field{volume}{14}
+    \field{journaltitle}{IEEE Transactions on Multimedia}
+    \field{year}{2012}
+  \endentry
+
+  \entry{xu2009tag}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=XH}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jingdong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HXS}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Xian-Sheng},
+         giveni={X\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Shipeng},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{XHWJHXSLS1}
+    \strng{fullhash}{XHWJHXSLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 17th ACM international conference on
+  Multimedia}
+    \field{pages}{573\bibrangedash 576}
+    \field{title}{Tag refinement by regularized LDA}
+    \field{year}{2009}
+  \endentry
+
+  \entry{wu2013tag}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WL}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Rong},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JAK}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anil\bibnamedelima K},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WLJRJAK1}
+    \strng{fullhash}{WLJRJAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{716\bibrangedash 727}
+    \field{title}{Tag completion for image retrieval}
+    \field{volume}{35}
+    \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+    \field{year}{2013}
+  \endentry
+
+  \entry{wang2008survey}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Weining},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HQ}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Qianhua},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \keyw{emotion recognition;feature extraction;image retrieval;emotion
+  recognition;emotional semantic image retrieval;emotional semantic
+  representation;image feature extraction;Content based retrieval;Emotion
+  recognition;Feature extraction;Helium;Humans;Image analysis;Image color
+  analysis;Image retrieval;Indexing;Information retrieval;emotion
+  recognition;emotional semantics;image retrieval}
+    \strng{namehash}{WWHQ1}
+    \strng{fullhash}{WWHQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{15th IEEE International Conference on Image Processing}
+    \verb{doi}
+    \verb 10.1109/ICIP.2008.4711705
+    \endverb
+    \field{issn}{1522-4880}
+    \field{pages}{117\bibrangedash 120}
+    \field{title}{A survey on emotional semantic image retrieval}
+    \field{year}{2008}
+  \endentry
+
+  \entry{lockner2014emotion}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=LD}{%
+         family={Lockner},
+         familyi={L\bibinitperiod},
+         given={Damien},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bonnardel},
+         familyi={B\bibinitperiod},
+         given={Nathalie},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bouchard},
+         familyi={B\bibinitperiod},
+         given={Carole},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Rieuf},
+         familyi={R\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{LDBNBCRV1}
+    \strng{fullhash}{LDBNBCRV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2014 Ergonomie et Informatique
+  Avanc{\'e}e Conference-Design, Ergonomie et IHM: quelle articulation pour la
+  co-conception de l'interaction}
+    \field{pages}{33\bibrangedash 40}
+    \field{title}{Emotion and interface design}
+    \field{year}{2014}
+  \endentry
+
+  \entry{emoji2015w}{online}{}
+    \name{author}{1}{}{%
+      {{hash=KS}{%
+         family={Kazim},
+         familyi={K\bibinitperiod},
+         given={Sherine},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS1}
+    \strng{fullhash}{KS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2018-04-17}
+    \field{title}{An Introduction to Emotive UI}
+    \verb{url}
+    \verb https://www.hugeinc.com/articles/an-introduction-to-emotive-ui.
+    \endverb
+    \field{month}{04}
+    \field{year}{2016}
+  \endentry
+
+  \entry{reece2016instagram}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RAG}{%
+         family={Reece},
+         familyi={R\bibinitperiod},
+         given={Andrew\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=DCM}{%
+         family={Danforth},
+         familyi={D\bibinitperiod},
+         given={Christopher\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RAGDCM1}
+    \strng{fullhash}{RAGDCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1140/epjds/s13688-017-0110-z
+    \endverb
+    \field{issn}{2193-1127}
+    \field{number}{1}
+    \field{pages}{15}
+    \field{title}{Instagram photos reveal predictive markers of depression}
+    \field{volume}{6}
+    \field{journaltitle}{EPJ Data Science}
+    \field{year}{2017}
+  \endentry
+
+  \entry{khosla2012memorability}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=KA}{%
+         family={Khosla},
+         familyi={K\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=XJ}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Jianxiong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Torralba},
+         familyi={T\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Oliva},
+         familyi={O\bibinitperiod},
+         given={Aude},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAXJTAOA1}
+    \strng{fullhash}{KAXJTAOA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{pages}{305\bibrangedash 313}
+    \field{title}{Memorability of image regions}
+    \field{year}{2012}
+  \endentry
+
+  \entry{yamasaki2014social}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=YT}{%
+         family={Yamasaki},
+         familyi={Y\bibinitperiod},
+         given={Toshihiko},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sano},
+         familyi={S\bibinitperiod},
+         given={Shumpei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Aizawa},
+         familyi={A\bibinitperiod},
+         given={Kiyoharu},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{YTSSAK1}
+    \strng{fullhash}{YTSSAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the First International Workshop on
+  Internet-Scale Multimedia Management}
+    \field{pages}{3\bibrangedash 8}
+    \field{title}{Social popularity score: Predicting numbers of views,
+  comments, and favorites of social photos using only annotations}
+    \field{year}{2014}
+  \endentry
+
+  \entry{valafar2009beyond}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=VM}{%
+         family={Valafar},
+         familyi={V\bibinitperiod},
+         given={Masoud},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rejaie},
+         familyi={R\bibinitperiod},
+         given={Reza},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Willinger},
+         familyi={W\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{VMRRWW1}
+    \strng{fullhash}{VMRRWW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2nd ACM workshop on Online social
+  networks}
+    \field{pages}{25\bibrangedash 30}
+    \field{title}{Beyond friendship graphs: a study of user interactions in
+  Flickr}
+    \field{year}{2009}
+  \endentry
+
+  \entry{cappallo2015latent}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CS}{%
+         family={Cappallo},
+         familyi={C\bibinitperiod},
+         given={Spencer},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mensink},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SCG}{%
+         family={Snoek},
+         familyi={S\bibinitperiod},
+         given={Cees\bibnamedelima GM},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{CSMTSCG1}
+    \strng{fullhash}{CSMTSCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 5th ACM on International Conference on
+  Multimedia Retrieval}
+    \field{pages}{195\bibrangedash 202}
+    \field{title}{Latent factors of visual popularity prediction}
+    \field{year}{2015}
+  \endentry
+
+  \entry{almgren2016predicting}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{2}{}{%
+      {{hash=AK}{%
+         family={Almgren},
+         familyi={A\bibinitperiod},
+         given={Khaled},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jeongkyu},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{AKLJ+1}
+    \strng{fullhash}{AKLJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the The 3rd Multidisciplinary
+  International Social Networks Conference on SocialInformatics 2016, Data
+  Science 2016}
+    \field{pages}{15}
+    \field{title}{Predicting the future popularity of images on social
+  networks}
+    \field{year}{2016}
+  \endentry
+
+  \entry{huiskes2010new}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HMJ}{%
+         family={Huiskes},
+         familyi={H\bibinitperiod},
+         given={Mark\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Thomee},
+         familyi={T\bibinitperiod},
+         given={Bart},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LMS}{%
+         family={Lew},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima S},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{HMJTBLMS1}
+    \strng{fullhash}{HMJTBLMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the international conference on Multimedia
+  information retrieval}
+    \field{pages}{527\bibrangedash 536}
+    \field{title}{New trends and ideas in visual concept detection: the MIR
+  flickr retrieval evaluation initiative}
+    \field{year}{2010}
+  \endentry
+
+  \entry{lin2013overview}{report}{}
+    \name{author}{2}{}{%
+      {{hash=LJ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Jimmy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Efron},
+         familyi={E\bibinitperiod},
+         given={Miles},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {TREC}%
+    }
+    \strng{namehash}{LJEM1}
+    \strng{fullhash}{LJEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Overview of the trec2013 microblog track}
+    \field{type}{techreport}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Wu2016TimeMatters}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WB}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CWH}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Wen-Huang},
+         giveni={W\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yongdong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WBCWHZYMT1}
+    \strng{fullhash}{WBCWHZYMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2016 ACM on Multimedia Conference (ACM
+  MM)}
+    \field{title}{Time Matters: Multi-scale Temporalization of Social Media
+  Popularity}
+    \list{location}{1}{%
+      {Amsterdam, The Netherlands}%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{Wu2017DTCN}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=WB}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CWH}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Wen-Huang},
+         giveni={W\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yongdong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=QH}{%
+         family={Qiushi},
+         familyi={Q\bibinitperiod},
+         given={Huang},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jintao},
+         familyi={J\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WBCWHZYQHJLMT1}
+    \strng{fullhash}{WBCWHZYQHJLMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Joint Conference on Artificial Intelligence
+  (IJCAI)}
+    \field{title}{Sequential Prediction of Social Media Popularity with Deep
+  Temporal Context Networks}
+    \list{location}{1}{%
+      {Melbourne, Australia}%
+    }
+    \field{year}{2017}
+  \endentry
+
+  \entry{Wu2016TemporalPrediction}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WB}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CWH}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Wen-Huang},
+         giveni={W\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yongdong},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WBMTCWHZY1}
+    \strng{fullhash}{WBMTCWHZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Thirtieth AAAI Conference on
+  Artificial Intelligence (AAAI)}
+    \field{title}{Unfolding Temporal Dynamics: Predicting Social Media
+  Popularity Using Multi-scale Temporal Decomposition}
+    \list{location}{1}{%
+      {Phoenix, Arizona}%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{li2017hybrid}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Liuwu},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Situ},
+         familyi={S\bibinitperiod},
+         given={Runwei},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Junyan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YZ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Zhenguo},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wenyin},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{convolution neural network, popularity prediction, regression.,
+  social media mining}
+    \strng{namehash}{LLSRGJYZLW1}
+    \strng{fullhash}{LLSRGJYZLW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2017 ACM on Multimedia Conference}
+    \verb{doi}
+    \verb 10.1145/3123266.3127902
+    \endverb
+    \field{isbn}{978-1-4503-4906-2}
+    \field{pages}{1912\bibrangedash 1917}
+    \field{series}{MM '17}
+    \field{title}{A Hybrid Model Combining Convolutional Neural Network with
+  XGBoost for Predicting Social Media Popularity}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3123266.3127902
+    \endverb
+    \list{location}{1}{%
+      {Mountain View, California, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{hidayati2017popularity}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HSC}{%
+         family={Hidayati},
+         familyi={H\bibinitperiod},
+         given={Shintami\bibnamedelima Chusnul},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=CYL}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yi-Ling},
+         giveni={Y\bibinitperiod-L\bibinitperiod},
+      }}%
+      {{hash=YCL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Chao-Lung},
+         giveni={C\bibinitperiod-L\bibinitperiod},
+      }}%
+      {{hash=HKL}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Kai-Lung},
+         giveni={K\bibinitperiod-L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{HSCCYLYCLHKL1}
+    \strng{fullhash}{HSCCYLYCLHKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2017 ACM on Multimedia Conference}
+    \field{pages}{1918\bibrangedash 1923}
+    \field{title}{Popularity Meter: An Influence-and Aesthetics-aware Social
+  Media Popularity Predictor}
+    \field{year}{2017}
+  \endentry
+
+  \entry{parikh2011relative}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=PD}{%
+         family={Parikh},
+         familyi={P\bibinitperiod},
+         given={Devi},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Grauman},
+         familyi={G\bibinitperiod},
+         given={Kristen},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PDGK1}
+    \strng{fullhash}{PDGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE International Conference on Computer Vision}
+    \field{pages}{503\bibrangedash 510}
+    \field{title}{Relative attributes}
+    \field{year}{2011}
+  \endentry
+
+  \entry{altwaijry2013relative}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AH}{%
+         family={Altwaijry},
+         familyi={A\bibinitperiod},
+         given={Hani},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Belongie},
+         familyi={B\bibinitperiod},
+         given={Serge},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AHBS1}
+    \strng{fullhash}{AHBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Workshop on Applications of Computer Vision (WACV)}
+    \field{pages}{117\bibrangedash 124}
+    \field{title}{Relative ranking of facial attractiveness}
+    \field{year}{2013}
+  \endentry
+
+  \entry{fan2013relative}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=FQ}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Quanfu},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gabbur},
+         familyi={G\bibinitperiod},
+         given={Prasad},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pankanti},
+         familyi={P\bibinitperiod},
+         given={Sharath},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FQGPPS1}
+    \strng{fullhash}{FQGPPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE International Conference on
+  Computer Vision}
+    \field{pages}{2736\bibrangedash 2743}
+    \field{title}{Relative attributes for large-scale abandoned object
+  detection}
+    \field{year}{2013}
+  \endentry
+
+  \entry{yu2015just}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=YA}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Aron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Grauman},
+         familyi={G\bibinitperiod},
+         given={Kristen},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YAGK1}
+    \strng{fullhash}{YAGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE International Conference on
+  Computer Vision}
+    \field{pages}{2416\bibrangedash 2424}
+    \field{title}{Just noticeable differences in visual attributes}
+    \field{year}{2015}
+  \endentry
+
+  \entry{agarwal2015sentiment}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AB}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Basant},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Mittal},
+         familyi={M\bibinitperiod},
+         given={Namita},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bansal},
+         familyi={B\bibinitperiod},
+         given={Pooja},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Garg},
+         familyi={G\bibinitperiod},
+         given={Sonal},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hindawi Publishing Corp.}%
+    }
+    \strng{namehash}{ABMNBPGS1}
+    \strng{fullhash}{ABMNBPGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Sentiment analysis using common-sense and context
+  information}
+    \field{journaltitle}{Computational intelligence and neuroscience}
+    \field{year}{2015}
+  \endentry
+
+  \entry{liu2004conceptnet}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LHSP1}
+    \strng{fullhash}{LHSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1023/B:BTTJ.0000047600.45421.6d
+    \endverb
+    \field{issn}{1573-1995}
+    \field{number}{4}
+    \field{pages}{211\bibrangedash 226}
+    \field{title}{ConceptNet --- A Practical Commonsense Reasoning Tool-Kit}
+    \verb{url}
+    \verb https://doi.org/10.1023/B:BTTJ.0000047600.45421.6d
+    \endverb
+    \field{volume}{22}
+    \field{journaltitle}{BT Technology Journal}
+    \field{year}{2004}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{xu2015show}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=XK}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Kelvin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Ba},
+         familyi={B\bibinitperiod},
+         given={Jimmy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kiros},
+         familyi={K\bibinitperiod},
+         given={Ryan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={Kyunghyun},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Salakhudinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zemel},
+         familyi={Z\bibinitperiod},
+         given={Rich},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XKBJKRCKCASRZRBY1}
+    \strng{fullhash}{XKBJKRCKCASRZRBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{2048\bibrangedash 2057}
+    \field{title}{Show, attend and tell: Neural image caption generation with
+  visual attention}
+    \field{year}{2015}
+  \endentry
+
+  \entry{you2016image}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YQ}{%
+         family={You},
+         familyi={Y\bibinitperiod},
+         given={Quanzeng},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Hailin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhaowen},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Jiebo},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YQJHWZFCLJ1}
+    \strng{fullhash}{YQJHWZFCLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}
+    \field{pages}{4651\bibrangedash 4659}
+    \field{title}{Image captioning with semantic attention}
+    \field{year}{2016}
+  \endentry
+
+  \entry{hogenboom2013exploiting}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=HA}{%
+         family={Hogenboom},
+         familyi={H\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Bal},
+         familyi={B\bibinitperiod},
+         given={Daniella},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Frasincar},
+         familyi={F\bibinitperiod},
+         given={Flavius},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bal},
+         familyi={B\bibinitperiod},
+         given={Malissa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=dJF}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Jong},
+         familyi={J\bibinitperiod},
+         given={Franciska},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KU}{%
+         family={Kaymak},
+         familyi={K\bibinitperiod},
+         given={Uzay},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{HABDFFBMJFdKU1}
+    \strng{fullhash}{HABDFFBMJFdKU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 28th Annual ACM Symposium on Applied
+  Computing}
+    \field{pages}{703\bibrangedash 710}
+    \field{title}{Exploiting emoticons in sentiment analysis}
+    \field{year}{2013}
+  \endentry
+
+  \entry{instagram2015}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DT}{%
+         family={Dimson},
+         familyi={D\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+    }
+    \strng{namehash}{DT1}
+    \strng{fullhash}{DT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://instagram-engineering.com/emojineering-part-1-machine-learning-for-emoji-trendsmachine-learning-for-emoji-trends-7f5f9cb979ad}}
+    \field{note}{Accessed: 2018-04-17}
+    \field{title}{Emojineering part 1: Machine learning for emoji trends}
+    \field{year}{2015}
+  \endentry
+
+  \entry{cappallo2015image2emoji}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CS}{%
+         family={Cappallo},
+         familyi={C\bibinitperiod},
+         given={Spencer},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mensink},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SCG}{%
+         family={Snoek},
+         familyi={S\bibinitperiod},
+         given={Cees\bibnamedelima GM},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{CSMTSCG1}
+    \strng{fullhash}{CSMTSCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 23rd ACM international conference on
+  Multimedia}
+    \field{pages}{1311\bibrangedash 1314}
+    \field{title}{Image2emoji: Zero-shot emoji prediction for visual media}
+    \field{year}{2015}
+  \endentry
+
+  \entry{CappalloTEMP18}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CS}{%
+         family={Cappallo},
+         familyi={C\bibinitperiod},
+         given={Spencer},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Svetlichnaya},
+         familyi={S\bibinitperiod},
+         given={Stacey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Garrigues},
+         familyi={G\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mensink},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SCGM}{%
+         family={Snoek},
+         familyi={S\bibinitperiod},
+         given={Cees G.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CSSSGPMTSCGM1}
+    \strng{fullhash}{CSSSGPMTSCGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Pending minor revision}
+    \field{title}{The New Modality: Emoji Challenges in Prediction,
+  Anticipation, and Retrieval}
+    \verb{file}
+    \verb https://arxiv.org/abs/1801.10253
+    \endverb
+    \field{journaltitle}{{IEEE} Transactions on Multimedia}
+    \field{year}{2018}
+  \endentry
+
+  \entry{novak2015sentiment}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KNP}{%
+         family={Kralj\bibnamedelima Novak},
+         familyi={K\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={Petra},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Smailovi\'{c}},
+         familyi={S\bibinitperiod},
+         given={Jasmina},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sluban},
+         familyi={S\bibinitperiod},
+         given={Borut},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Mozeti\v{c}},
+         familyi={M\bibinitperiod},
+         given={Igor},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{KNPSJSBMI1}
+    \strng{fullhash}{KNPSJSBMI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1371/journal.pone.0144296
+    \endverb
+    \field{number}{12}
+    \field{pages}{1\bibrangedash 22}
+    \field{title}{Sentiment of Emojis}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pone.0144296
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{PLOS ONE}
+    \field{month}{12}
+    \field{year}{2015}
+  \endentry
+
+  \entry{wilson2005recognizing}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=WT}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Theresa},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wiebe},
+         familyi={W\bibinitperiod},
+         given={Janyce},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Hoffmann},
+         familyi={H\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{WTWJHP1}
+    \strng{fullhash}{WTWJHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the conference on human language
+  technology and empirical methods in natural language processing}
+    \field{pages}{347\bibrangedash 354}
+    \field{title}{Recognizing contextual polarity in phrase-level sentiment
+  analysis}
+    \field{year}{2005}
+  \endentry
+
+  \entry{fu2014transductive}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=FY}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Yanwei},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HTM}{%
+         family={Hospedales},
+         familyi={H\bibinitperiod},
+         given={Timothy\bibnamedelima M},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=XT}{%
+         family={Xiang},
+         familyi={X\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FZ}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Zhenyong},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Shaogang},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FYHTMXTFZGS1}
+    \strng{fullhash}{FYHTMXTFZGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{European Conference on Computer Vision}
+    \field{pages}{584\bibrangedash 599}
+    \field{title}{Transductive multi-view embedding for zero-shot recognition
+  and annotation}
+    \field{year}{2014}
+  \endentry
+
+  \entry{gong2014improving}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=GY}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Yunchao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Liwei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hodosh},
+         familyi={H\bibinitperiod},
+         given={Micah},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hockenmaier},
+         familyi={H\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lazebnik},
+         familyi={L\bibinitperiod},
+         given={Svetlana},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GYWLHMHJLS1}
+    \strng{fullhash}{GYWLHMHJLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{European Conference on Computer Vision}
+    \field{pages}{529\bibrangedash 545}
+    \field{title}{Improving image-sentence embeddings using large weakly
+  annotated photo collections}
+    \field{year}{2014}
+  \endentry
+
+  \entry{guillaumin2010multimodal}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Guillaumin},
+         familyi={G\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Verbeek},
+         familyi={V\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Schmid},
+         familyi={S\bibinitperiod},
+         given={Cordelia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE Computer Society}%
+    }
+    \strng{namehash}{GMVJSC1}
+    \strng{fullhash}{GMVJSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Conference on Computer Vision \& Pattern
+  Recognition}
+    \field{pages}{902\bibrangedash 909}
+    \field{title}{Multimodal semi-supervised learning for image classification}
+    \field{year}{2010}
+  \endentry
+
+  \entry{katsurai2014cross}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KM}{%
+         family={Katsurai},
+         familyi={K\bibinitperiod},
+         given={Marie},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OT}{%
+         family={Ogawa},
+         familyi={O\bibinitperiod},
+         given={Takahiro},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Haseyama},
+         familyi={H\bibinitperiod},
+         given={Miki},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KMOTHM1}
+    \strng{fullhash}{KMOTHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{1059\bibrangedash 1074}
+    \field{title}{A cross-modal approach for extracting semantic relationships
+  between concepts using tagged images}
+    \field{volume}{16}
+    \field{journaltitle}{IEEE Transactions on Multimedia}
+    \field{year}{2014}
+  \endentry
+
+  \entry{li2015robust}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LZ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Zechao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Jinhui},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Hanqing},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LZLJTJLH1}
+    \strng{fullhash}{LZLJTJLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{2085\bibrangedash 2098}
+    \field{title}{Robust structured subspace learning for data representation}
+    \field{volume}{37}
+    \field{journaltitle}{IEEE transactions on pattern analysis and machine
+  intelligence}
+    \field{year}{2015}
+  \endentry
+
+  \entry{rasiwasia2010new}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=RN}{%
+         family={Rasiwasia},
+         familyi={R\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CPJ}{%
+         family={Costa\bibnamedelima Pereira},
+         familyi={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Jose},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Coviello},
+         familyi={C\bibinitperiod},
+         given={Emanuele},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Doyle},
+         familyi={D\bibinitperiod},
+         given={Gabriel},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LGR}{%
+         family={Lanckriet},
+         familyi={L\bibinitperiod},
+         given={Gert\bibnamedelima RG},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Levy},
+         familyi={L\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VN}{%
+         family={Vasconcelos},
+         familyi={V\bibinitperiod},
+         given={Nuno},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{RNCPJCEDGLGRLRVN1}
+    \strng{fullhash}{RNCPJCEDGLGRLRVN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 18th ACM international conference on
+  Multimedia}
+    \field{pages}{251\bibrangedash 260}
+    \field{title}{A new approach to cross-modal multimedia retrieval}
+    \field{year}{2010}
   \endentry
 \enddatalist
 \endinput

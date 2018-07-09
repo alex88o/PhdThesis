@@ -8,6 +8,14 @@ A level-1 auxiliary file: ./TeX_files/chap4.aux
 A level-1 auxiliary file: ./TeX_files/chap5.aux
 Database file #1: PhDThesis-blx.bib
 Database file #2: sample-bibliography.bib
+Repeated entry---line 712 of file sample-bibliography.bib
+ : @inproceedings{esuli2006sentiwordnet
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 929 of file sample-bibliography.bib
+ : @inproceedings{wei2006image
+ :                            ,
+I'm skipping whatever remains of this entry
 You're missing a field name---line 1518 of file sample-bibliography.bib
  :  
  :  %organization = {ACM MM 2015},
@@ -67,11 +75,15 @@ while executing---line 2637 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
 while executing---line 2643 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
+while executing---line 2643 of file biblatex.bst
+Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
 while executing---line 2647 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
 while executing---line 2647 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
 while executing---line 2651 of file biblatex.bst
+Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
+while executing---line 2657 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
 while executing---line 2657 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
@@ -92,4 +104,4 @@ Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeri
 while executing---line 2749 of file biblatex.bst
 Name 1 in "Ortis, Alessandro, and Farinella, Giovanni, Maria and D'Amico, Valeria and Addesso, Luca and Torrisi, Giovanni and Battiato, Sebastiano" has a comma at the end for entry Ortis2015n525
 while executing---line 2749 of file biblatex.bst
-(There were 30 error messages)
+(There were 34 error messages)

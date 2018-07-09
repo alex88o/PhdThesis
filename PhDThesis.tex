@@ -34,23 +34,16 @@ onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespa
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
 %parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
-headsepline, % Uncomment to get a line under the header
+headsepline% Uncomment to get a line under the header
 ]{MastersDoctoralThesis} % The class file specifying the document structure
-
 \usepackage{pdfx}
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 %\usepackage[T1]{fontenc} % Output font encoding for international characters
-
 %\usepackage{palatino} % Use the Palatino font by default
-
 \usepackage[backend=bibtex,style=numeric,natbib=true,sorting=none,maxbibnames=199,minbibnames=10,maxcitenames=10,firstinits=true]{biblatex} % User the bibtex backend with the authoryear citation style (which resembles APA)
 %\usepackage{biblatex}
-
 \addbibresource{sample-bibliography.bib} % The filename of the bibliography
-
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
-
-
 \usepackage{graphicx}
 \usepackage{subfigure}
 
@@ -66,12 +59,18 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{tabularx} 
 \usepackage{bbm}
 \usepackage{epstopdf}
+\usepackage{multirow, array} 
+%\usepackage[dvips]{graphics}
 %\usepackage[]{bibentry}
 
 %\usepackage{showframe}
 \graphicspath{ {images/} }
 \newcommand{\virgolette}[1]{``#1''}
 \newcommand{\minus}{\scalebox{0.35}[0.65]{$-$}}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+%\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 %\renewcommand{\floatpagefraction}{.7}
 %\renewcommand{\topfraction}{0.3}
 %\renewcommand{\textfraction }{0.05}

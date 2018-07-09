@@ -1,0 +1,43 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{Abstract}{ii}{section*.1}
+\contentsline {chapter}{Acknowledgements}{iii}{section*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
+\contentsline {section}{\numberline {1.1}Dissertation Structure}{4}{section.5}
+\contentsline {section}{\numberline {1.2}List of Publications}{6}{section.7}
+\contentsline {chapter}{\numberline {2}Crowdsourced Media Analysis}{8}{chapter.8}
+\contentsline {section}{\numberline {2.1}The Social Picture}{11}{section.9}
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{11}{subsection.10}
+\contentsline {subsection}{\numberline {2.1.2}Architecture}{12}{subsection.12}
+\contentsline {subsection}{\numberline {2.1.3}User experience}{16}{subsection.15}
+\contentsline {subsubsection}{Heat map exploration}{16}{section*.16}
+\contentsline {paragraph}{3D Reconstruction}{17}{section*.18}
+\contentsline {subsubsection}{t-SNE exploration}{17}{section*.19}
+\contentsline {paragraph}{Hierarchical t-SNE}{19}{section*.20}
+\contentsline {subsubsection}{Other Advanced Tools}{19}{section*.21}
+\contentsline {chapter}{\numberline {3}Image Sentiment Analysis}{21}{chapter.22}
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.23}
+\contentsline {section}{\numberline {3.2}State of the Art}{24}{section.24}
+\contentsline {section}{\numberline {3.3}Visual Sentiment Analysis Systems}{31}{section.26}
+\contentsline {subsection}{\numberline {3.3.1}How to represent the emotions?}{31}{subsection.27}
+\contentsline {subsection}{\numberline {3.3.2}Existing datasets}{34}{subsection.29}
+\contentsline {subsection}{\numberline {3.3.3}Features}{37}{subsection.35}
+\contentsline {section}{\numberline {3.4}Problem analysis}{39}{section.36}
+\contentsline {subsection}{\numberline {3.4.1}Entity and Aspects}{42}{subsection.39}
+\contentsline {subsection}{\numberline {3.4.2}Holder}{45}{subsection.42}
+\contentsline {subsection}{\numberline {3.4.3}Time}{46}{subsection.43}
+\contentsline {section}{\numberline {3.5}Challenges}{47}{section.45}
+\contentsline {subsection}{\numberline {3.5.1}Popularity}{48}{subsection.46}
+\contentsline {subsection}{\numberline {3.5.2}Relative Attributes}{52}{subsection.50}
+\contentsline {subsection}{\numberline {3.5.3}Common Sense}{53}{subsection.52}
+\contentsline {subsection}{\numberline {3.5.4}Emoticon/Emoji}{54}{subsection.53}
+\contentsline {section}{\numberline {3.6}Image Polarity Prediction}{56}{section.57}
+\contentsline {section}{\numberline {3.7}Image Popularity Prediction}{56}{section.58}
+\contentsline {section}{\numberline {3.8}Conclusions}{56}{section.59}
+\contentsline {chapter}{\numberline {4}Video Sentiment Analysis}{59}{chapter.60}
+\contentsline {section}{\numberline {4.1}Introduction}{59}{section.61}
+\contentsline {section}{\numberline {4.2}RECfusion}{59}{section.62}
+\contentsline {section}{\numberline {4.3}RECfusion for lifelogging}{59}{section.63}
+\contentsline {section}{\numberline {4.4}Conclusions}{59}{section.64}
+\contentsline {chapter}{\numberline {5}Final Discussion, Remarks and Future Works}{60}{chapter.65}
+\contentsline {chapter}{Bibliography}{61}{chapter*.66}

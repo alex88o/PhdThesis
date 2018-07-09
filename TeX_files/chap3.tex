@@ -1,166 +1,762 @@
 \chapter{Image Sentiment Analysis}\label{ch3}
 \section{Introduction}
-TSP --> POPOLARITA IMMAGINI SU BASE EVENTI/LUOGHI --> IMMAGINI RAPPRESENTATIVE
-\\POLARITY --> SENTIMENT EVOCATO
-\\POPULARITY --> POPOLARITA' SU PIATTAFORMA SOCIAL I.E. QUANTE PERSONE RAGGIUNGE\\
-As instance, companies are interested in monitoring people opinions toward their products or services, as well as customers rely on feedbacks of other users to evaluate a product before they purchase it.
-%For example, companies always want to find public or consumer opinions toward their products and services. Furthermore, customers also want to know the opinions of other users before they use a service or purchase a product.
+
+
 With the growth of social media (i.e., reviews, forums, blogs and social networks), individuals and organizations are increasingly using public opinions  for their decision making~\cite{liu2012survey}.
 %The analysis of such social information enables applications such as brand monitoring, market prediction or political voting forecasting.
-
+As instance, companies are interested in monitoring people opinions toward their products or services, as well as customers rely on feedbacks of other users to evaluate a product before they purchase it.
 
 The basic task in Sentiment Analysis is the polarity classification of an input text (e.g., taken from a review, a comment or a social post) in terms of positive, negative or neutral polarity. This analysis can be performed at document, sentence or feature level. The methods of this area are useful to capture public opinion about products, services, marketing, political preferences and social events. For example the analysis of the activity of Twitter's users can help to predict the popularity of parties or coalitions. The achieved results in Sentiment Analysis within micro-blogging have shown that Twitter posts reasonably reflect the political landscape~\cite{tumasjan2010predicting}.
 Historically, Sentiment Analysis techniques have been developed for the analysis of text~\cite{pang2008opinion}, whereas limited efforts have been employed to extract (i.e., infer) sentiments from visual contents~(e.g., images and videos). % which are becoming a pervasive media on the web.
 %Historically, the computational analysis of sentiment mostly concentrates on the textual contents~\cite{pang2008opinion}, whereas limited efforts have been conducted to analyse sentiments from visual contents such as images and videos, which are becoming a pervasive media type on the web.
 
 Even though the scientific research has already achieved notable results in the field of textual Sentiment Analysis in different contexts (e.g., social network posts analysis, product reviews, political preferences, etc.), the task to understand the mood from a text has several difficulties given by the inherent ambiguity of the various languages (e.g., ironic sentences), cultural factors, linguistic nuances and the difficulty of generalize any text analysis solution to different language vocabularies. The different solutions in the field of text Sentiment Analysis have not yet achieved a level of reliability good enough to be implemented without enclosing the related context. For example, despite the existence of natural language processing tools for the English language, the same tools cannot be used directly to analyse text written in other languages.
-In this Chapter we present three main inference tasks related to the image sentiment analysis that have been investigated in this research work: crowds behaviour, sentiment polarity, sentiment popularity. 
+%CSUR ABSTRACT
+Section~\ref{csurRelatedWorks} reviews relevant publications and present a complete view of the field. After a description of the task and the related applications, the subject is tackled under different main headings. 
+Then, principles of design of general Visual Sentiment Analysis systems are described in Section~\ref{systems} and discussed under three main points of view: emotional models, dataset definition, feature design.
+A formalization of the problem is discussed in Section~\ref{problem}, considering different levels of granularity, as well as the components that can affect the sentiment toward an image in different ways. To this aim, Section~\ref{systems} considers a structured formalization of the problem which is usually used for the analysis of text, and discusses it's suitability in the context of Visual Sentiment Analysis. 
+The Chapter also includes a description of new challenges in Section~\ref{challenges}, the evaluation from the viewpoint of progress toward more sophisticated systems and related practical applications, as well as a summary of the insights resulting from this study.
+Two main inference tasks related to the image sentiment analysis that have been investigated in this research work are further presented in this Chapter: sentiment polarity (Section~\ref{(secPolarity)}) and sentiment popularity (Section~\ref{secPopularity}). 
+%In this Chapter we present three main inference tasks related to the image sentiment analysis that have been investigated in this research work: crowds behaviour, sentiment polarity, sentiment popularity. 
 
-First, we present \textit{The Social Picture}~\cite{battiato2016social}, a framework to collect and explore huge amount of crowdsourced social images about public events, cultural heritage sites and other customized private events, with the aim to extract insights about the behaviour of people attending the same event or visiting the same place. 
-Through \textit{The Social Picture} users contributes to the creation of image collections about common interests. %Users can add an image to a collection by using either a mobile application and a website interface. Furthermore, an event collection can be populated by selecting images from the most common social networks for images (e.g., Flickr, Panoramio, Instagram).
-The collections can be explored through a number of advanced Computer Vision and Machine Learning algorithms, able to capture the visual content of images in order to organize them in a semantic way. The interfaces of \textit{The Social Picture} allow the users to create customized collections by exploiting semantic filters based on visual features, social network tags, geolocation, and other information related to the images.
-Although the number of images could be huge, the system provides tools for the summary of the useful collection insights and statistics. It is able to automatically organize the pictures in semantic groups, according to several and live customizable criteria.
-\textit{The Social Picture} can be used as a tool for analysing the multimedia activity of the audience of an organized event, or the activity of people visiting a cultural heritage site, performing inferences on the attitude of the participating people. The obtained information can be then exploited by the event organizers for the event evaluation and further planning or marketing strategies.
+Given an image, the proposed method described in Section~\ref{(secPolarity)} properly combines visual and textual features to define an embedding space, then a classifier is trained on the embedded features. The novelty of the proposed method consists on the fact that we don't lean on the text provided by users, which is often noisy. Indeed we propose an alternative subjective source of text, directly extracted from images.
+%TOMM ABSTRACT
+%This paper addresses the problem of Visual Sentiment Analysis focusing on the estimation of the polarity of the sentiment evoked by an image.  
+Starting from an embedding approach which exploits both visual and textual features, we attempt to boost the contribute of each input view. We propose to extract and employ an \textit{Objective Text} description of images rather than the classic \textit{Subjective Text} provided by the users (i.e., title, tags and image description) which is extensively exploited in the state of the art to infer the sentiment associated to social images. \textit{Objective Text} is obtained from the visual content of the images through recent deep learning architectures which are used to classify object, scene and to perform image captioning. \textit{Objective Text} features are then combined with visual features in an embedding space obtained with Canonical Correlation Analysis. The sentiment polarity is then inferred by a supervised Support Vector Machine.
+During the evaluation, we compared an extensive number of text and visual features combinations and baselines obtained by considering the state of the art methods. 
+Experiments performed on a representative dataset of 47235 labelled samples demonstrate that the exploitation of \textit{Objective Text} helps to outperform state-of-the-art for sentiment polarity estimation. 
 
-Then we present our work on the classic task of sentiment polarity prediction. Given an image, the proposed method properly combines visual and textual features to define an embedding space, then a classifier is trained on the embedded features. The novelty of the proposed method consists on the fact that we don't lean on the text provided by users, which is often noisy. Indeed we propose an alternative subjective source of text, directly extracted from images.
-ABSTRACT
+% POPULARITY
+Then, in Section~\ref{secPopularity}, we present a work which addresses the task of image popularity prediction.
+% ACM 18 ABSTRACT
+In particular, we introduce the new challenge of forecasting the engagement score reached by social images over time. We call this task \virgolette{Popularity Dynamic Prediction}. The work is motivated by the fact that the popularity of social images, which is usually estimated at a precise instant of the post lifecycle, could be affected by the period of the post (i.e., how old is the post).
+The task is hence the estimation, in advance, of the engagement score dynamic over a period of time (e.g., 30 days) by exploiting visual and social features.
+To this aim, we propose a benchmark dataset that consists of~$\sim20K$ Flickr images labelled with their engagement scores~(i.e., views, comments and favorites) in a period of 30 days from the upload in the social platform.
+For each image, the dataset also includes user's and photo's social features that have been proven to have an influence on the image popularity on Flickr (e.g., number of user's contacts, number of user's groups, mean views of the user's images, photo tags, etc.). 
+The proposed dataset is publicly available for research purposes. We also present a method to address the aforementioned problem. The proposed approach models the problem as the combination of two prediction tasks, which are addressed individually. Then, the two outputs are properly combined to obtain the prediction of the whole engagement sequence. %we provide details of the images gathering process as well as an in-depth analysis of the image lifecycles on Flickr. Furthermore, we propose a method to predict the popularity dynamics for a new uploaded image.
+Our approach is able to forecast the daily number of views reached by a photo posted on Flickr for a period of 30 days, by exploiting features extracted from the post. This means that the prediction can be performed before posting the photo. 
+The proposed method is compared with respect to different baselines. %This study and the provided dataset pose new challenges to the community.
 
-The third work presented in this Chapter is related to the task of image popularity prediction.
-ABSTRACT
-\section{State of the Art}
+
+
+\section{State of the Art}\label{csurRelatedWorks}
 
 % CSUR18
+%While Sentiment Analysis of text contents is rather mature~\cite{pang2008opinion}, 
+Visual Sentiment Analysis is a recent research area.
+%""Different from text, where Sentiment Analysis can use easily accessible semantic and context information, how to extract and interpret the sentiment of an image remains quite challenging.""
+%due to the subjective evaluation and the \virgolette{affective gap}, which can be defined as the lack of coincidence between the measurable image properties (i.e., visual features), and the expected affective state of the user~\cite{hanjalic2006extracting}.
+Most of the works in this new research field rely on previous studies on emotional semantic image retrieval~\cite{colombo1999semantics, schmidt2009collective, wei2006image, zhao2014affective}, which make connections between low-level image features and emotions with the aim to perform automatic image retrieval and categorization. These works have been also influenced by empirical studies from psychology and art theory~\cite{bradley1994emotional,itten1973art, lang1993network, osgood1952nature, russell1977evidence, valdez1994effects}.
+Other research fields close to Visual Sentiment Analysis are those considering the analysis of the image aesthetic~\cite{datta2006studying, joshi2011aesthetics, marchesotti2011assessing,Ravi2012}, interestingness~\cite{isola2011makes}, affect~\cite{jia2012can} and popularity~\cite{gelli2015image,khosla2014makes,mcparlane2014nobody,totti2014impact}.
 
-\section{The Social Picture}\label{TSP}
-\subsection{Introduction}
-Images and videos have become one of the most popular media by which users express their emotions and share their experiences in the social networks. Nowadays the diffusion of social networks plays a crucial role in collecting information about people opinion and trends.
-The proliferation of mobile devices and the diffusion of social media have changed the communication paradigm of people that share multimedia data by allowing new interaction models (e.g., social networks). In social events (e.g., concerts), the audience typically produces and share a lot of multimedia data with mobile devices (e.g., images, videos, geolocation, tags, etc.) related to what has captured their interest. The redundancy in these data can be exploited to infer social information about the attitude of the attending people. For example, systems such as RECfusion \cite{Ortis2015n525} can be developed to understand if there are groups of people interested to specific scenes. In the context of big social data, Machine Learning and Computer Vision algorithms can be used to develop new advanced analysis systems to automatically infer knowledge from large scale visual data \cite{weyand2015visual}, and other multimedia information gathered by multiple sources.
+% and emotion analysis performed by~\cite{datta2006studying} and~\cite{yanulevskaya2008emotional} respectively.
+%The work presented in~\cite{datta2006studying} explores the correlations between image visual properties of photographic images and their aesthetic ratings, whereas~\cite{yanulevskaya2008emotional} propose an emotion categorization system.
 
-In this paper we introduce a framework called \textit{The Social Picture} (TSP) to collect, analyze and organize huge flows of visual data, and to allow users the navigation of image collections generated by the community.
-We designed the system to be applied on three main scenarios: public events, cultural heritage sites, private events. TSP is a social framework populated by images uploaded by users or collected from other social media. The social peculiarities of such collections can be exploited not only by the people who partecipate to an event, in fact each scenario distinguishes two kind of users: the event organizer and the event partecipant.
-Imagine an art-gallery manager who leases a famous Picasso's painting with the aim to include it in a event exhibition, together with other famous and expensive artworks. How does he know he did a good investment? Which was the more attractive artwork? From which position of the hall have people taken the most number of pictures?
+The first paper on Visual Sentiment Analysis aims to classify images as \virgolette{positive} or \virgolette{negative} and dates back on 2010~\cite{siersdorfer2010analyzing}.
+In this work the authors studied the correlations between the sentiment of images and their visual content. 
+They assigned numerical sentiment scores to each picture based on their accompanying text (i.e., meta-data). To this aim, the authors used the  SentiWordNet~\cite{esuli2006sentiwordnet} lexicon to extract sentiment score values from the text associated to images.
+This work revealed that there are strong correlations between sentiment scores extracted from Flickr meta-data (e.g., image title, description and tags provided by the user) and visual features (i.e., SIFT based bag-of-visual words, and local/global RGB histograms). 
 
-These information can be inferred by analysing the multimedia audience activity (i.e., uploaded images) of the organized event in \textit{The Social Picture}. The collection of the uploaded images for an event, gives the sources analysed in TSP to answer the aforementioned questions. The obtained information can be then exploited by the event organizers for their event evaluation and further planning.
+In~\cite{machajdik2010affective} a study on the features useful to the task of affective classification of images is presented. The insights from the experimental observation of emotional responses with respect to colors and art have been exploited to empirically select the image features. 
+%The results of psychological experiments on emotional response to color and art have been exploited to select the image features.
+To perform the emotional image classification, the authors considered the 8 emotional output categories as defined in~\cite{mikels2005emotional} (i.e., Awe,  Anger, Amusement, Contentment, Excitement, Disgust, Sad, and Fear). 
 
-On the other hand, from the user point of view, the collection of an event can be exploited in a visualization tool which uses Computer Vision algorithms to organize images by visual content. In this way, the ``social picture'' of the event can be captured and shared among users.
 
-In Figure \ref{heatmap}, an example of visual output produced by the proposed framework. It is computed by considering images automatically gathered from social media and related to the cultural heritage site of Teatro Massimo, in Catania. As detailed in the following sections, the interaction with the heat map allows the users to explore all the images contributing in each part of the analyzed cultural heritage site.
-\begin{figure}
+In~\cite{borth2013large} the authors built a large scale Visual Sentiment Ontology (VSO) of semantic concepts based on psychological theories and web mining (SentiBank). A concept is expressed as an adjective-noun combination called Adjective Noun Pair (ANP) such as \virgolette{beautiful flowers} or \virgolette{sad eyes}. After building the ontology consisting of 1.200 ANP, they trained a set of 1.200 visual concept detectors which responses can be exploited as a sentiment representation for a given image. Indeed, the 1.200 dimension ANP outputs (i.e., the outputs of the ANP detectors) can be exploited as features to train a sentiment classifier. To perform this work the authors extracted adjectives and nouns from videos and images tags retrieved from YouTube and Flickr respectively. These images and videos have been searched using the words corresponding to the 24 emotions defined in the Plutchik Wheel of Emotion~\cite{plutchik1980general}, a well known psychological model of human emotions. The authors released a large labelled image dataset composed by half million Flickr images regarding to 1.200 ANPs. %The SentiBank framework gives an expressive mid-level representation of visual concept. In fact, for each image SentiBank provides a 1.200 dimension ANP response, which can be used as an input feature for sentiment classification.
+Results show that the approach based on SentiBank concepts outperforms text based method in tweet sentiment prediction experiments. %It's also very interesting that combining text and SentiBank features further improves accuracy. 
+Furthermore, the authors compared the SentiBank representation with shallow features (colour histogram, GIST, LBP, BoW) to predict the sentiment reflected in images. To this end, they used two different classification models (LinearSVM and Logistic Regression) achieving significant performance improvements when using the SentiBank representation.
+The proposed mid-level representation has been further evaluated in the emotion classification task considered in~\cite{machajdik2010affective}, obtaining better results. %Results show that SentiBank slightly outperformed the best results in~\cite{machajdik2010affective}.
+%Following papers such as~\cite{narihira2015mapping} and~\cite{jou2016deep} addressed the task of mapping images to ANPs by splitting the representation learning step in Adjectives-only and Noun-only representations. Then, the two learned representations are merged to perform the ANP classification of the image. 
+
+In 2013, Yuan et al.~\cite{yuan2013sentribute} employed scene-based attributes to define mid-level features, and built a binary sentiment classifier on top of them. 
+Furthermore, their experiments demonstrated that adding a facial expression recognition step helps the sentiment prediction task when applied to images with faces.
+
+In 2014, Yang et al.~\cite{yang2014your} proposed a Sentiment Analysis approach based on a graphical model which is used to represent the connections between visual features and friends interactions (i.e., comments) related to the shared images.
+%In 2014, Yang et al.~\cite{yang2014your} proposed a Sentiment Analysis approach based on a graphical model which models the sentiment by low-level visual features and friends information. 
+The exploited visual features include saturation, saturation contrast, bright contrast, cool color ratio, figure-ground color difference, figure-ground area difference, background texture complexity, and foreground texture complexity. In this work the authors considered the Ekman's emotion model~\cite{ekman1987universals}.
+
+Chen et al.~\cite{chen2014deepsentibank} introduced a CNN (Convolutional Neural Network) based approach, also known as \virgolette{SentiBank 2.0} or \virgolette{DeepSentiBank}. They performed a fine-tuning training on a CNN model previously trained for the task of object classification to classify images in one of a 2.096 ANP category (obtained by extending the previous SentiBank ontology~\cite{borth2013large}). This approach significantly improved the ANP detection with respect to~\cite{borth2013large}. Similarly to~\cite{borth2013large}, this approach provides a sentiment feature (i.e., a representation) of an image that can be exploited by further systems.
+
+In contrast to the common task of infer the affective concepts intended by the media content publisher (i.e., by analysing the text associated to the image by the publisher), the method proposed in~\cite{chen2014predicting} tries to predict what concepts will be evoked to the image viewers.
+%This is the first work which distinguishes publisher affect and viewer affect related to the visual content. 
+%This branch of research can be useful to understanding the relation between the publisher affect concepts and the evoked viewer one, allowing new user centric applications.
+
+In~\cite{xu2014visual} a pre-trained CNN is used as a provider of high-level attribute descriptors in order to train two sentiment classifiers based on Logistic Regression. Two types of activations are used as visual features, namely the fc7 and fc8 features (i.e., the activations of the seventh and eighth fully connected layers of the CNN respectively). %These two sets of features are used to train two different classifiers. 
+The authors propose a fine-grained sentiment categorization, classifying the polarity of a given image through a 5-scale labelling scheme: \textit{\virgolette{strong negative}, \virgolette{weak negative}, \virgolette{neutral}, \virgolette{weak positive}, and \virgolette{strong positive}}.
+The evaluation of this approach considers two baseline methods taken from the state of the art, namely low-level visual features and SentiBank, both introduced in~\cite{borth2013large}, in comparison with their approaches (the fc7 and fc8 based classifiers). The experimental setting evaluates all the considered methods on two real-world dataset related to Twitter and Tumblr, whose images have been manually labelled considering the above described 5-scale score scheme.
+The results suggest that the methods proposed in~\cite{xu2014visual} outperform the baseline methods in visual sentiment prediction.%, furthermore SentiBank is able to benefit more from a cleaner dataset then the Low-level features method.
+
+The authors of~\cite{you2015robust} proposed to use a progressive approach for training a CNN (called Progressive CNN or PCNN) in order to perform visual Sentiment Analysis in terms of \virgolette{positive} or \virgolette{negative} polarity. They first trained a CNN architecture with a dataset of half million Flickr images introduced in~\cite{borth2013large}. At training time, the method selects a subset of training images which achieve high prediction scores. Then, this subset is used to further fine-tune the obtained CNN. %This kind of architecture is called Progressive CNN (PCNN).
+In the architecture design they considered a last fully connected layer with 24 neurons. This design decision has been taken with the aim to let the CNN learn the respones of the 24 Plutchik's emotions~\cite{plutchik1980general}.
+An implementation of the architecture proposed in~\cite{you2015robust} is publicly available. The results of experiments performed on a set of manually labelled Twitter images show that the progressive CNN approach obtain better results with respect to other previous algorithms, such as~\cite{borth2013large} and~\cite{yuan2013sentribute}. %Moreover, the authors further improved their model by fine-tuning it with a Twitter image dataset.
+%Experimental results of several recent works suggest that CNNs that are properly trained can outperform other approaches for the challenging problem of Visual Sentiment Analysis due to the advantage that with the CNNs we can transfer the knowledge to other domains by using a simple fine tuning of a pre-trained CNN. 
+
+
+%Considering that a person may have multiple emotional reactions to an image,
+Considering that the emotional response of a person viewing an image may include multiple emotions, the authors of~\cite{peng2015mixed} aimed to predict a distribution representation of the emotions rather than a single dominant emotion from (see Figure~\ref{figDistribution}). The authors compared three methods to predict such emotion distributions: a Suppor Vector Regressor (based on hand crafted features related to edge, color, texture, shape and saliency), a CNN for both classification and regression. They also proposed a method to change the evoked emotion distribution of an image by editing its texture and colors. Given a source image and a target one, the proposed method transforms the color tone and textures of the source image to those of the target one. 
+The result is that the edited image evokes emotions closer to the target image than the original one. This approach has been quantitatively evaluated by using four similarity measures between distributions.
+For the experiments, the authors consider a set of 7 emotion categories, corresponding to the 6 basic emotions defined by Ekman in~\cite{ekman1987universals} and the neutral emotion. Furthermore, the authors proposed a sentiment database called~Emotion6. The experiments on evoked emotion transfer suggest that holistic features such as the color tone can influence the evoked emotion, albeit the emotion related to images with high level semantics are difficult to be shaped according to an arbitrary target image.
+
+\begin{figure}[t]
 	\centering
-	%\epsfig{file=architecture.eps, width=2.72in}
-	\includegraphics[width=1\linewidth]{heatmap}
-	\caption{Heat map visualization.}
-	\label{heatmap}
+	%\includegraphics[width=0.6\linewidth]{distribution.png}
+	%\caption{Examples of image emotion distributions, picture borrowed from~\cite{peng2015mixed}.}
+	\includegraphics[width=0.8\linewidth]{distribution_public.png}
+	\caption{Examples of image emotion distributions.}
+	\label{figDistribution}
 \end{figure}
 
-\subsection{Architecture}
-The architecture of the developed framework is shown in Figure \ref{architecture}.
-Users can add an image to an event's collection by using a mobile application which gives access to \textit{The Social Picture} repository (TSP). The new images can be uploaded in TSP by using the mobile camera or by selecting images from the most common social networks for images (e.g. Flickr, Panoramio).
-Once an image is uploaded, it is analysed by a set of Computer Vision algorithms, and then stored in the database together with the extracted features and the inferred high level attributes (e.g., type of scene recognized by the algorithm). These information are exploited in TSP to create smart interfaces for the users, which can be used during the exploration of the images related to an event's collection.
-The framework collects all the data uploaded by the users of an event, and exploits this crowdsourced multimedia flow of pictures to infer social behavioural information about the event considering the popularity of the uploaded scenes \cite{Ortis2015n525}.
+%The study in~\cite{wang2015unsupervised} addresses the problem of understanding human sentiments from social media images. 
+In~\cite{wang2015unsupervised} the textual data, such as comments and captions, related to the images are considered as contextual information. Differently from the previous approaches, which exploit low-level features~\cite{jia2012can}, mid-level features~\cite{borth2013large, yuan2013sentribute} and Deep Learning architectures~\cite{you2015robust, peng2015mixed}, the framework in~\cite{wang2015unsupervised} implements an unsupervised approach~(USEA - Unsupervised SEntiment Analysis).
+In~\cite{campos2015diving} a CNN pre-trained for the task of Object Classification is fine-tuned to accomplish the task of visual sentiment prediction. Then, with the aim to understand the contribution of each CNN layer for the task, the authors performed an exhaustive layer-per-layer analysis of the fine-tuned model. Indeed, the traditional approach consists in initializing the weights obtained by training a CNN for a specific task, and replacing the last layer with a new one containing a number of units corresponding to the number of classes of the new target dataset.
+The experiments performed in this paper explored the possibility to use each layer as a feature extractor and training individual classifiers. This layer by layer study allows measuring the performance of the different layers which is useful to understand how the layers affect the whole CNN performances. Based on the layer by layer analysis, the authors proposed several CNN architectures obtained by either removing or adding layers from the original CNN.
 
-The collections can be explored from smartphones, tablet or desktop computers via a web application, which exhibits a range of filtering tools to better explore the huge amount of data (see Figure \ref{interface}).
-%\subsubsection{Database}
-%When a new image is added to the system, it is analysed by a set of algorithms with the aim to extract pre-defined features (both visual and textual), as well as semantic information. The image is collected, entered, processed and all the analysis results are stored in the Database. 
-%\subsubsection{Mobile App}
-%The mobile application allows users to upload their visual contributes to the event's collection. Other users can also contribute to the creation of the collection by posting their contents through the considered social netwoks, by adding a specific event's hashtag.
-%\subsubsection{Web Application}
-The web application shows different interfaces depending of the specific user and the event in which he has joined after an invitation from the event manager (the person who created the event). To join an event's collection, the user must upload at least one picture related to that event. Collections can be explored by several data visualization enviroments, which are selected by the event manager. Anyone registered to \textit{The Social Picture} can become event manager and start a social collection: this follows the ``prosumer'' paradigm, where the users are both producers and consumers of the service.
-The developed framework is characterized by a modular architecture: new visualization interfaces, as well as new semantic filters can be independently created and futher added to the system. 
-Thus, when an event manager creates a new collection, he is allowed to specify several options to customize the image gathering, the social analysis to be performed and the visualization tools for the users of that collection.
-The event manager is also allowed to set a range of statistics, which will be available after the analysis of the collected images. These statistics helps organizators to extract useful social information from the crowdsourced pictures \cite{Milotta2016n544}. For example, what is the most popular artwork of a museum? What is the least considered? From which perspective these pictures were taken?
-These information could be exploited, for example, to perform aimed investments. The system can suggest what is the better subject to use for the advertising campaign of the event, or which of the attractions it worth to mainly reproduce in the souvenir shop products, to support merchandising strategies. Feedback about what is the most interesting part (i.e., the most photo captured) of a landmark building can help on taking decisions about renovating some parts of the building rather than other as first investment, where the connotation of importance is achieved by the crowd who generated ``the social picture'' for that building by uploading related images.
-\begin{figure}
-%	\vspace{-0.3in}
+Even though the conceptual meaning of an image is the same for all cultures, each culture may have a different sentimental expression of a given concept. %For instance, the concept \virgolette{good food} can be associated to very different instances of food from an Italian person than a Chinese one. 
+Motivated by this observation, Jou et al.~\cite{jou2015visual} extended the ANP ontology defined in~\cite{borth2013large} for a multi-lingual context. Specifically, the method provides a multilingual sentiment driven visual concept detector in 12 languages. The resulting Multilingual Visual Sentiment Ontology (MVSO) provides a rich information source for the analysis of cultural connections and the study of the visual sentiment across languages.
+
+Starting by the fact that either global features and dominant objects bring massive sentiment cues, Sun et al.~\cite{sun2016discovering} proposed an algorithm that extracts and combines features from either the whole image and \virgolette{salient} regions. These regions have been selected by considering proper objectness and sentiment scores  aimed to discover affective local regions.
+%, with the aim to discover affective local regions which are likely containing objects carrying massive emotions.
+The proposed method obtained good results compared with~\cite{borth2013large} and~\cite{you2015robust} on three widely used datasets presented in~\cite{borth2013large} and~\cite{you2015robust}.
+
+In~\cite{katsurai2016image} Katsurai and Satoh exploited visual, textual and sentiment features to build a latent embedding space where the correlation between the projected features from different views is maximized. This work implements the CCA (Canonical Correlation Analysis) technique to build a 3-view embedding which provides a tool to encode inputs from different sources (i.e., a text and an image with similar meaning/sentiment are projected nearby in the embedding space) and a method to obtain a sentiment representation of images (by simply projeting an input feature to the latent embedding space). This representation is exploited to train a linear SVM classifier to infer positive or negative polarity. The authors used a composition of RGB histograms, GIST, SIFT based Bag of Words and two mid-level features defined in~\cite{yu2013designing} and~\cite{borth2013large} as visual features. The textual feature is obtained using a Bag of Words approach form text associated to the image, crawled from Flickr and Instagram. The sentiment features are obtained starting from the input text and exploiting an external knowledge base, called SentiWordNet~\cite{esuli2006sentiwordnet}, a well-known lexical resource used in opinion mining to assign sentiment scores to words. 
+
+The works in~\cite{yang2017learning} and in~\cite{ijcai2017-456} perform emotional image classification of images considering multiple emotional labels.
+As previously proposed in 2015 by Peng~\cite{peng2015mixed}, instead of training a model to predict only one sentiment label, the authors considered a distribution over a set of pre-defined emotional labels. To this aim, they proposed a multi-task system which optimizes the classification and the distribution prediction simultaneously. 
+In~\cite{yang2017learning} the authors proposed two Conditional Probability Neural Networks (CPNN), called Binary CPNN (BCPNN) and Augmented CPNN (ACPNN). 
+A CPNN is a neural network with one hidden layer which takes either features and labels as input and outputs the label distribution. Indeed, the aim of a CPNN is to predict the probability distribution over a set of considered labels.
+The authors of~\cite{ijcai2017-456} changed the dimension of the last layer of a CNN pre-trained for Object Classification in order to extract a probability distribution with respect to the considered emotional labels, and replaced the original loss layer with a function that integrates the classification loss and sentiment
+distribution loss through a weighted combination. Then the modified CNN has been fine-tuned to predict sentiment distributions.
+Since the majority of the existing datasets are built to assign a single emotion ground truth to each image, the authors of~\cite{ijcai2017-456} proposed two approaches to convert the single labels to emotional distribution vectors, which elements represent the degree to which each emotion category is associated to the considered image.
+This is obtained considering the similarities between the pairwise emotion categories~\cite{plutchik1980general}.
+%Either~\cite{yang2017learning} and~\cite{ijcai2017-456} consider the same datasets (Flickr\&Instagram, Emotion6, and the Flickr\_LDL and Twitter\_LDL datasets proposed in~\cite{yang2017learning}). 
+The experimental results show that the approach proposed in~\cite{ijcai2017-456} outperforms eleven baseline Label Distribution Learning (LDL) methods, including BCPNN and ACPNN proposed in~\cite{yang2017learning}.
+
+In~\cite{campos2017pixels} the authors extended their previous work~\cite{campos2015diving} in which they first trained a CNN for sentiment analysis and then empirically studied the contribute of each layer. 
+In particular, they used the activations in each layer to train different linear classifiers. In this work the authors also studied the effect of weight initialization for fine-tuning by changing the task (i.e., the output domain) for which the fine-tuned CNN has been originally trained.
+Then, the authors propose an improved CNN architecture based on the experimental results and observations. 
+%In particular, the activations in each layer are used as visual descriptors to train different linear classifiers. In this work the authors also studied the impact of weight initialization for fine-tuning by varying the domain from which the fine-tuned CNN has been originally trained.
+Then, the authors propose an improved CNN architecture based on the empirical insights. 
+
+% TROPPO SCARSO -->> \cite{gaikwad2017social}
+
+The authors of~\cite{vadicamo2017cross} crawled $\sim3M$ tweets within a period of 6 months.
+Then, the text contained in the tweets has been labelled using a sentiment polarity classifier. 
+%The output of the classifier is exploited to filter the related images.
+The selected images have been used to build a dataset named Twitter for Sentiment Analysis~(T4SA). 
+The authors exploited this dataset to finetune existing CNN previously trained for objects and places classification (VGG19~\cite{simonyan2014very} and HybridNet~\cite{zhou2014learning}).
+%SEMPLICE FINETUNING.... PUBBLICATO SU CVPR!!!
+The proposed system has been compared with the CNN and PCNN presented in~\cite{you2015robust}, DeepSentiBank~\cite{chen2014deepsentibank} and MVSO~\cite{jou2015visual} obtaining better results on the built dataset.
+
+% l articolo li2018image era referenziato come li2017image xke non era ancora stato pubblicato
+%@article{li2017image,
+%	title={Image sentiment prediction based on textual descriptions with adjective noun pairs},
+%	author={Li, Zuhe and Fan, Yangyu and Liu, Weihua and Wang, Fengqin},
+%	journal={Multimedia Tools and Applications},
+%	pages={1--18},
+%	year={2017},
+%	publisher={Springer}
+%}
+The system proposed in~\cite{li2018image} represents the sentiment of an image by extracting a set of ANPs describing the image. Then, the weighted sum of the extracted textual sentiment values is computed, by using the related ANP responses as weights. The approach proposed in this paper takes advantage of the sentiment of the text composing the ANPs extracted from images, instead of only considering the ANPs responses defined in SentiBank~\cite{borth2013large} as mid-level representations. 
+In particular, the sentiment value of an extracted ANP is defined by summing the sentiment scores defined in SentiWordNet~\cite{esuli2006sentiwordnet} and SentiStrength~\cite{thelwall2010sentiment} for the pair of adjective and the noun words of th ANP. 
+A logistic regressor is used to infer the sentiment orientation by exploiting the scores extracted from the textual information, and a logistic classifier is trained for polarity prediction by exploiting the traditional ANP responses as representations. Then, the two schemes are combined by employing a late fusion approach.
+The authors compared their method with respect to three baselines: a logistic regression model based on the SentiBank mid-level representation, the CNN and PCNN methods proposed in~\cite{you2015robust}.
+Experiments show that the proposed late fusion method outperforms the method based only on the mid-level representation defined in SentiBank, demonstrating the contribute given by the sentiment coefficients associated to the text composing the extracted ANPs. However, the CNN and PCNN approaches proposed in~\cite{you2015robust} exhibit better performances than the late fusion method.
+
+Lastly, is worth mentioning a survey recently presented by Soleymani et al.~\cite{soleymani2017survey} which provides a review of the latest works in the research community about three major fields:
+\begin{itemize}
+	\item multimodal spoken reviews and vlogs (audio-visual context);
+	\item sentiment analysis in the interactions between humans and machines~(face to face interactions);
+	\item sentiment analysis of images and tags shared in social media (photo sharing platforms).
+\end{itemize}
+The survey presents a brief overview of the methods adopted to address the three different tasks.
+\\
+
+The works described in this section have led to significant improvements in the field of Visual Sentiment Analysis.
+However these works address the problem considering different emotion models, datasets and evaluation methods.
+So far, researchers formulated this task as a classification problem among a number of polarity levels or emotional categories, but the number and the type of the emotional outputs adopted for the classification are arbitrary. The difference in the adopted emotion categories makes result comparison difficult.
+Moreover, there is not a strong agreement in the research community about the use of an universal benchmark dataset. Indeed, several works evaluated their methods on their own datasets.
+Many of the mentioned works present at least one of the said issues.
+
+\section{Visual Sentiment Analysis Systems}\label{systems}
+
+%CRITICHE DATASETS
+%Katsurai critica IAPS, machajdik critica sebe e borth.. Borth critica tutti i precedenti (eccetto Siersdorfer perchè non lo tiene nemmeno in considerazione) per le dimensioni...  Diving into (M. Redi) critica Borth perche crowdsourced e preferisce You(PCNN).. ecc
+This section provides a complete overview of the system design choices, with the aim to provide a comprehensive debate about each specific issue, with proper references to the state of the art.
+
+\subsection{How to represent the emotions?}\label{secEmotionModels}
+Basically, the goal of a Visual Sentiment Analysis system is to determine the sentiment polarity of an input image (i.e., positive or negative). Several works aims to classify the sentiment conveyed by images into 2 (positive, negative) or 3 polarity levels (positive, neutral, negative)~\cite{ borth2013large, siersdorfer2010analyzing,you2015robust}. However, there are also systems that adopt more then 3 levels, such as the 5-level sentiment scheme used by Xu et al.~\cite{xu2014visual} or the 35 ``impression words" used by Hayashi et al.~\cite{hayashi1998image}. 
+Beside the polarity estimation, there are systems that perform the sentiment classification by using a set of emotional categories, according to an established emotion model based on previous psychological studies. However, each emotional category usually corresponds to a positive or negative polarity~\cite{machajdik2010affective}. Thus, these systems can be evaluated also for the task of polarity estimation.
+Generally, there are two main approaches for emotion modelling:
+\begin{itemize}
+	\item \textit{\textbf{Dimensional approach:}} this model represents emotions as points in a 2 or 3 dimensional space. %(see Figures~\ref{figVAC} and~\ref{figVA}). 
+	Indeed, as discussed in several studies~\cite{bradley1994emotional, lang1993network, osgood1952nature, russell1977evidence}, emotions have three basic underlying dimensions: valence, arousal and control (or dominance). %This 3D emotion space is shown in Figure~\ref{figVAC}. 
+	However, %as can be seen from Figure~\ref{figVAC}, 
+	the control dimension has a small effect. Therefore, a 2D emotion space is often considered. This space is obtained by considering only the arousal and the valence axis. %(Figure~\ref{figVA}). 
+	Indeed, for example, Hanjalic et al.~\cite{hanjalic2005affective} considered the VA (Valence-Arousal) space to model the affective video content.
+	
+	\item \textit{\textbf{Category approach:}} this model defines a set of descriptive words that are assigned to regions of the VAC (Valence-Arousal-Control) space. Thus it can be considered a quantized version of the dimensional approach.
+\end{itemize}
+
+Considering the category approach, there are several emotion models that can be defined. The choice of the emotional categories in not an easy task.
+Since emotion belongs to the psychology domain, the insights and achievements in psychology can be beneficial for this problem.
+
+%\begin{figure}
+%	\centering
+%	\begin{minipage}{.41\textwidth}
+%		\centering
+%		\includegraphics[width=1\linewidth]{AVCspace.png}		
+%		\caption{Illustration of the 3D emotion space (VAC space), image borrowed from~\cite{dietz1999affective}.}
+%		\label{figVAC}
+%	\end{minipage}
+%	\hspace{0.8cm}
+%	\begin{minipage}{.4\textwidth}
+%		\centering
+%		\includegraphics[width=1\linewidth]{AVspace.png}
+%		\caption{Illustration of the 2D emotion space (VA space) obtained considering just the arousal and the valence axis. Image borrowed from~\cite{dietz1999affective}.}
+%		\label{figVA}
+%	\end{minipage}
+%	\vspace{-0.5cm}
+%\end{figure}
+
+
+
+\begin{figure}[t]
 	\centering
-	%\epsfig{file=architecture.eps, width=2.72in}
-	\includegraphics[width=0.7\linewidth]{architecture}
-	\caption{The Social Picture's architecture.}
-	\label{architecture}
+	\includegraphics[width=0.6\linewidth]{Plutchik-wheel.png}
+	\caption{Plutchik's Wheel of Emotions.}
+	\label{figWheel}
 \end{figure}
 
+What are the basic emotions? There are several works that aim to ask this question. As we observed in Section~\ref{stateoftheart}, the most adopted model is the Plutchnik's Wheel of Emotions~\cite{plutchik1980general}. 
+This model defines 8 basic emotions with 3 valences each (see Figure~\ref{figWheel}). Thus it defines a total of 24 emotions:
+\begin{itemize}
+	\item \virgolette{ecstasy} $\rightarrow$ \virgolette{joy} $\rightarrow$ \virgolette{serenity}
+	\item \virgolette{admiration} $\rightarrow$ \virgolette{trust} $\rightarrow$ \virgolette{acceptance}
+	\item \virgolette{terror} $\rightarrow$ \virgolette{fear} $\rightarrow$ \virgolette{apprehension}
+	\item \virgolette{amazement} $\rightarrow$ \virgolette{surprise} $\rightarrow$ \virgolette{distraction}
+	\item \virgolette{grief} $\rightarrow$ \virgolette{sadness} $\rightarrow$ \virgolette{pensiveness}
+	\item \virgolette{loathing} $\rightarrow$ \virgolette{disgust} $\rightarrow$ \virgolette{boredom}
+	\item \virgolette{rage} $\rightarrow$ \virgolette{anger} $\rightarrow$ \virgolette{annoyance}
+	\item \virgolette{vigilance} $\rightarrow$ \virgolette{anticipation} $\rightarrow$ \virgolette{interest}
+\end{itemize}
+
+According to Ekman's theory~\cite{ekman1987universals} there are just five basic emotions (\virgolette{anger}, \virgolette{fear}, \virgolette{disgust}, \virgolette{surprise} and \virgolette{sadness}).
+Another emotions categorization is the one defined in a psychological study by Mikell et al.~\cite{mikels2005emotional}. In this work the authors perform an intensive study on the \textit{International Affective Picture System} (IAPS) in order to extract a categorical structure of such dataset~\cite{lang1999international}. As result, a subset of IAPS have been categorized in eight distinct emotions: \virgolette{amusement}, \virgolette{awe}, \virgolette{anger}, \virgolette{contentment}, \virgolette{disgust}, \virgolette{excitement}, \virgolette{fear} and \virgolette{sad}.
+A deeper list of emotion is described in Shaver et al.~\cite{shaver1987emotion}, where emotion concepts are organized in a hierarchical structure.
+\\
+\\
+As we discussed in this Section, there is a wide range of research on identification of basic emotions. By way of conclusion, the 24 emotions model defined in Plutchnik's theory~\cite{plutchik1980general} is a well established psychological model of emotions. This model is inspired by chromatics in which emotions are organized along a wheel scheme where bipolar elements are placed opposite one to each other. Moreover the three intensities provides a richer set of emotional valences. For these reasons it can be considered the reference model for the identification of the emotional categories.
+
+\subsection{Existing datasets}
+There are several sources that can be exploited to build Sentiment Analysis datasets. The general procedure to obtain a human labelled set of data is to perform surveys over a large number of people, but in the context of Sentiment Analysis the collection of huge opinion data can be alternatively obtained by exploiting the most common social platforms (Instagram, Flickr, Twitter, Facebook, etc.), as well as websites for collecting business and products reviews (Amazon, Tripadvisor, Ebay, etc.). Indeed, nowadays people are used to express their opinions and share their daily experiences through the Internet Social Platforms.
+\\
+\\
+In the context of Visual Sentiment Analysis, one of the first published dataset is the International Affective Picture System (IAPS)~\cite{lang1999international}. This dataset has been developed with the aim to produce a set of evocative color images that includes contents from a wide range of semantic categories. This work provides a set of standardized stimuli for the study of human emotional process. %It also provides normative ratings of emotion (pleasure, arousal, dominance) for a set of color photographs. 
+The dataset is composed by hundreds of pictures related to several scenes including images of insects, children, portraits, poverty, puppies and diseases, which have been manually rated by humans by means of affective words.
+This dataset has been used in~\cite{machajdik2010affective} in combination with other two datasets built by the authors, which are publicly available\footnote{www.imageemotion.org}.
+
+In~\cite{yanulevskaya2008emotional} the authors considered a subset of IAPS extended with subject annotations to obtain a training set categorized in distinct emotions according to the emotional model described in~\cite{mikels2005emotional}~(see Section~\ref{secEmotionModels}). %(Amusement, Awe, Contentment, Excitement as positive emotions and Anger, Disgust, Fear, and Sad to represent negative emotions).
+However, the number of images of this dataset is very low.
+
+In~\cite{machajdik2010affective}, the authors presented the Affective Image Classification Dataset. It consists of two image sets: one containing 228 abstract painting and the other containing 807 artistic photos. These images have been labelled by using the 8 emotions defined in~\cite{mikels2005emotional}.
+
+The authors of the dataset presented in~\cite{siersdorfer2010analyzing} considered the top 1.000 positive and negative words in SentiWordNet~\cite{esuli2006sentiwordnet} as keywords to search and crawl over 586.000 images from Flickr. The list of image URLs as well as the collected including title, image resolution, description and the list of the associated tags is available for comparisons~\footnote{http://www.l3s.de/~minack/flickr-sentiment}.
+%The dataset presented in~\cite{siersdorfer2010analyzing} has been obtained by crawling over 586.000 images from Flickr using the top 1.000 positive/negative terms of the SentiWordNet~\cite{esuli2006sentiwordnet} dictionary as query terms. The list of image URLs as well as the collected including resolution, title, description and list of tags is available for comparisons~\footnote{http://www.l3s.de/~minack/flickr-sentiment}.
+
+The Geneva Affective Picture Database (GAPED)~\cite{dan2011geneva} dataset includes 730 pictures labelled considering negative (e.g., images depicting human rights violation scenes), positive (e.g., human and puppies) as well as neutral pictures which show static objects.
+All dataset images have been rated considering the valence, arousal, and the coherence of the scene.
+The dataset is available for research purposes~\footnote{http://www.affective-sciences.org/home/research/materials-and-online-research/research-material/}.
+
+In 2013 Borth et al.~\cite{borth2013large} proposed a very large dataset ($\sim$~0.5 million) of pictures gathered from social media and labelled with ANP (Adjective Noun Pair) concepts. Furthermore, they proposed Twitter benchmark dataset which includes 603 tweets with photos. It is intended for evaluating the performance of automatic sentiment prediction using features of different modalities (text only, image only, and text-image combined). This dataset has been used by most of the state-of-the-art works as evaluation benchmark for Visual Sentiment Analysis, especially when the designed approaches involve the use of Machine Learning methods such as in~\cite{you2015robust} and in~\cite{yuan2013sentribute} for instance, due to the large scale of this dataset.
+
+The Emotion6 dataset, presented and used in~\cite{peng2015mixed}, has been built considering the Elkman's 6 basic emotion categories~\cite{ekman1987universals}. The number of images is balanced over the considered categories and the emotions associated with each image is expressed as a probability distribution instead of as a single dominant emotion.
+
+In~\cite{you2015robust} You et al. proposed a dataset with 1,269 Twitter images labelled into positive or negative by 5 different annotators. Given the subjective nature of sentiment, this dataset has the advantage to be manually labelled by human annotators, differently than other datasets that have been created collecting images by automatic systems based on textual tags or predefined concepts such as the VSO dataset used in~\cite{borth2013large}. %For this reason, the authors of~\cite{campos2015diving} used a subset of the images in~\cite{you2015robust} considering only the images that built consensus among all the 5 annotators (5-agree subset). The resulting dataset is composed by 880 images.
+
+In~\cite{katsurai2016image} the authors crawled two large sets of social pictures from Instagram and Flickr~(CrossSentiment). The list of labelled Instagram and Flickr image URLs is available on the Web~\footnote{http://mm.doshisha.ac.jp/senti/CrossSentiment.html}.
+
+% DATASET PER POPULARITY
+%The Micro-Blog Images 1 Million (MBI-1M) dataset is a collection of 1M images from Twitter, along with accompanying tweets and metadata. The dataset was introduced by the work in~\cite{cappallo2015latent}, in which the authors selected a subset of the 240 million tweets collected for the Trec 2013 microblog track~\cite{lin2013overview}.
+% DATASET PER POPULARITY
+%The MIR-1M dataset~\cite{huiskes2010new} is a collection of 1M images from Flickr with a creative commons licence. These images have been selected based on the Flickr interestingness scores.
+
+Vadicamo et al.~\cite{vadicamo2017cross} crawled~$\sim3M$ tweets from July to December 2016. The collected tweets have been filtered considering only the ones written in English and including at least an image. 
+The sentiment of the text extracted from the tweets has been classified using a polarity classifier based on a paired LSTM-SVM architecture. The data with the most confident prediction have been used to determine the sentiment labels of the images in terms of positive, negative and neutral. The resulting Twitter for Sentiment Analysis dataset~(T4SA) consists of~$\sim1M$ tweets and related~$\sim1.5M$ images.
+\\
+\begin{table}[]
+	\small
+	\centering
+	\caption{Main benchmark datasets for Visual Sentiment Analysis. Some datasets contains several additional information and annotations.}
+	\label{tabDataset}
+	\scalebox{0.7}{
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			%	\begin{tabular}{|c|c|c|c|}
+			\hline
+			\textbf{Year} & \textbf{Dataset}                                                                                                 & \textbf{Size}                                     & \textbf{Labelling}     
+			& \begin{tabular}[c]{@{}c@{}}\textbf{Social} \\ \textbf{Media}\end{tabular}                       & \textbf{Polarity}                                   
+			& \begin{tabular}[c]{@{}c@{}}\textbf{Additional} \\ \textbf{Metadata}\end{tabular}                                                        %&\textbf{Notes}
+			\\ \hline
+			1999          & IAPS~\cite{lang1999international}                                                                              & 716   photos                                            & \begin{tabular}[c]{@{}c@{}}Pleasure, arousal and\\  dominance\end{tabular}                               & \xmark 
+			&  \xmark                                              	& \xmark
+			
+			%      & Human rated.        
+			\\ \hline
+			2005          &Mikels et al.~\cite{mikels2005emotional}                                                                                     & 369 photos                                              & \begin{tabular}[c]{@{}c@{}}Awe, amusement,\\ contentment, excitement,\\disgust, anger, fear, sad\end{tabular}                                   
+			& \xmark 
+			&  \xmark
+			& \xmark
+			%                                   & \begin{tabular}[c]{@{}c@{}}Subset of IAPS~\cite{lang1999international}\\  labelled using discrete emotions.\end{tabular}                                                                                                                                                                                                                
+			\\ \hline
+			2010          & \begin{tabular}[c]{@{}c@{}}Affective Image\\Classification\\Dataset~\cite{machajdik2010affective}\end{tabular} & \begin{tabular}[c]{@{}c@{}}
+				228 paintings\\807 photos
+			\end{tabular}                      & \begin{tabular}[c]{@{}c@{}}Awe, amusement,\\ contentment, excitement,\\disgust, anger, fear, sad\end{tabular}                                        
+			& \xmark 
+			&  \xmark
+			& \xmark
+			% & \begin{tabular}[c]{@{}c@{}}Crowdsourcing labelling \\ through a web-survey\\  where the participants could \\select the best fitting \\emotional category\\ for 20 images per session. \\ Each image was rated about 14 times.\end{tabular}                                             
+			\\ \hline
+			2010          & Flickr-sentiment~\cite{siersdorfer2010analyzing}                                                                & 586.000 Flickr photos                             & Positive, negative.                                                                                                 & \checkmark 
+			&  \checkmark                                              	& \checkmark                                                   %& \begin{tabular}[c]{@{}c@{}}For all images some\\ metadata are available \\ (url, resolution, title, \\description, and a list of tags).\end{tabular}                                                                                                                                                                                         
+			
+			\\ \hline
+			2011          & GAPED~\cite{dan2011geneva}                                                  & 730 pictures                                      & \begin{tabular}[c]{@{}c@{}}Positive, negative,\\  neutral.\end{tabular}                                                                                                                                         & \xmark 
+			&  \checkmark                                              	& \xmark   
+			%&                                                                                                        
+			\\ \hline
+			2013          & VSO~\cite{borth2013large}                                                                                        &
+			\begin{tabular}[c]{@{}c@{}} 0,5 M Flickr Photos\\603 Twitter Images          
+			\end{tabular}
+			& \begin{tabular}[c]{@{}c@{}}%Two types of annotation:\\  
+				- Adjective-Noun Pairs\\
+				- Positive or negative
+			\end{tabular}    
+			
+			& \checkmark 
+			&  \checkmark                                              	& \checkmark  
+			
+			
+			%                &        
+			\\ \hline
+			%		2013          & VSO Twitter~\cite{borth2013large}                                                                             & 603 Twitter Images                                & \begin{tabular}[c]{@{}c@{}}Two types of annotation:\\  Adjective-Noun Pairs (ANP),\\  positive or negative.\end{tabular}                                                                   &
+			%                                                                                                                                                                                                                                                                                                                                    \\ \hline
+			2015          & Emotion6~\cite{peng2015mixed}                                                                                  & 1.980 Flickr photos                               
+			& \begin{tabular}[c]{@{}c@{}}%Two types of annotation:\\
+				- Valence-Arousal score\\
+				- 7 emotions distribution %\\(Ekman's 6 basic emotions and neutral)
+			\end{tabular}
+			
+			& \checkmark 
+			&  \xmark                                              	& \xmark  
+			
+			%		 & \begin{tabular}[c]{@{}c@{}}Amazon Mechanical Turk (AMT)\\ has been used to collect\\  emotional responses from subjects. \\For each image, each subject\\  rates the evoked emotion \\in terms of VA scores, \\and chooses the keyword(s)\\  best describing the\\ evoked emotion among \\the 6 Ekman's  basic emotions \\ and neutral.\end{tabular} 
+			
+			\\ \hline
+			2015          & You et al.~\cite{you2015robust}                                                                                                   & 1.269 Twitter images                              & Positive, negative.            
+			& \checkmark 
+			&  \checkmark                                              	& \xmark  
+			
+			%  & Human labelled by 5 annotators. 
+			\\ \hline
+			2016          & CrossSentiment~\cite{katsurai2016image}                                                                         & \begin{tabular}[c]{@{}c@{}}
+				90.139 Flickr photos\\65.439 Instagram images
+			\end{tabular} & Positive, negative, neutral.                                            
+			& \checkmark 
+			&  \checkmark                                              	& \xmark  
+			%&                                                                       
+			\\ \hline
+			2017          & T4SA~\cite{vadicamo2017cross}                                                  & 1,5 M Twitter images                          & Positive, negative, neutral.
+			& \checkmark 
+			&  \checkmark                                              	& \xmark  
+			%   & \begin{tabular}[c]{@{}c@{}}A total of 3.4M Tweets has \\been collected, corresponding to 4M images. \\ Then,  a filtering based on the\\ sentiment polarity \\of the texts has been performed\\ to build the final dataset.\end{tabular}  
+			\\ \hline
+		\end{tabular}
+		}
+\end{table}
+Datasets such as GAPED and IAPS rely on emotion induction. %However, extensive use of previously validated databases lowers the impact of the images by increasing the knowledge that participants have of them. 
+This kind of datasets are very difficult to be built in large scale and maintained over time. %Moreover, the number of images in these datasets is rather low.
+The Machine Learning techniques and the recent Deep Learning methods are able to obtain impressive results as long as these systems are trained with very large scale datasets (e.g., VSO~\cite{borth2013large}). Such datasets can be easily obtained by exploiting the social network platforms by which people share their pictures every day.
+%Indeed, among the aforementioned dataset, the most used by the community are VSO~\cite{borth2013large} and MIR-1M~\cite{huiskes2010new}. 
+These datasets allowed the extensive use of Machine Learning systems that requires large scale datasets. This furthered the building of very large datasets such as T4SA in the last few years.
+Table~\ref{tabDataset} summarizes the main dataset just reported with details about the number of images, the source (e.g., Social Platform, paintings, etc.) and the labelling options.
+
+\subsection{Features}
+One of the most difficult step for the design of a Visual Sentiment Analysis system, and in general for the design of a data analysis approach is the selection of the data features that better encode the information that the system is aimed to infer.
+Image features for Visual Sentiment Analysis can be categorized within three levels of semantics:
+\begin{itemize}
+	\item \textit{\textbf{Low-level features - }} These features describe distinct visual phenomena in an image mainly related in some way to the color values of the image pixels. They usually includes generic features such as color histograms, HOG, GIST. In the context of Visual Sentiment Analysis, previous works can be exploited to extract particular low-level features derived from proper studies on art and perception theory. These studies suggest that some low-level features, such as colors and texture can be used to express the emotional effect of an image~\cite{machajdik2010affective}.
+	\item \textit{\textbf{Mid-level features - }}This group of features bring more semantic, thus they are more interpretable and have stronger associations with emotions~\cite{zhao2014exploring}. One example is given by the scene-based 102-dimensional feature defined in~\cite{yuan2013sentribute}. Furthermore, many of the aforementioned works on Visual Sentiment Analysis exploit 
+	the 1200-dimensional mid-level representation given by the 1200 Adjective-Noun Pairs (ANP) classifiers defined by Borth et al.~\cite{borth2013large}.
+	\item \textit{\textbf{High-level features - }} These features describe the semantic concepts shown in the images. Such a feature representation can be obtained by using pre-trained classification methods or semantic embeddings~\cite{katsurai2016image}.
+\end{itemize}
+
+In 2010 Machajdik and Hanbury~\cite{machajdik2010affective} performed an intensive study on image emotion classification by properly combining the use of several low and high visual features. These features have been obtained by exploiting concepts from and art theory~\cite{itten1973art, valdez1994effects}, or exploited in image retrieval~\cite{stottinger2009translating} and image classification~\cite{datta2006studying, wei2006image} tasks.
+They selected 17 visual features, categorized in 4 groups:
+\begin{itemize}
+	\item \textbf{color:} mean saturation and brightness, 3-dimensional emotion representation by Valdez et al.~\cite{valdez1994effects}, hue statistics, colorfulness measure according to~\cite{datta2006studying}, number of pixels of each of the 11 basic colors~\cite{van2007learning}, Itten contrast~\cite{itten1973art}, color histogram designed by Wang Wei-ning et al.~\cite{wei2006image};
+	% to express the emotional impact of images;
+	
+	\item \textbf{texture:} wavelet textures for each HSB channel, features by Tamura et al.~\cite{tamura1978textural}, and features based on GLCM (i.e., correlation, contrast, homogeneity, and energy for the HSB channels);
+	
+	\item \textbf{composition:} the number of resulting segments obtained after the application of a waterfall segmentation (denoted as \virgolette{level of detail} in~\cite{machajdik2010affective}), depth of field (DOF)~\cite{datta2006studying}, statistics on the line slopes by using the Hough transform (denoted as \virgolette{dynamics}), rule of thirds;
+	
+	\item \textbf{content:} number of detected front faces, number of the biggest face pixels, count of skin pixels, ratio of the skin pixels over the face size.
+	
+\end{itemize}
+
+Most of the mentioned works in Visual Sentiment Analysis combine huge number of hand-crafted visual features. Although all the exploited features have been proven to have a direct influence on the perceived emotion by previous studies, there is not agreement about which of them give the most of the contribution on the aimed task.
+Besides the selection of proper hand-crafted features, designed with the aim to encode the sentiment content conveyed by images, there are other kind of approaches that lean on representation learning techniques based on Deep Learning~\cite{chen2014deepsentibank, xu2014visual, you2015robust}. By employing such representation methods image features are learned from the data. This avoid the designing of a proper feature for the task of Visual Sentiment Analysis, because the system automatically learns how to extract the needed information from the input data. These methods requires huge amounts of labelled training data, and an intensive learning phase, but obtain better performances in general.
+
+Another approach, borrowed from the image retrieval methods, consists on combining textual and visual information through multimodal embedding systems~\cite{katsurai2016image}. In this case, features taken from different modalities (e.g., visual, textual, etc.) are combined to create a common vector space in which the correlations between projections of the different modalities are maximized (i.e., an embedding space).
+\\
+\\
+So far, there is not an established strategy to select of visual features that allows to  address the problem. Most of the previous exploited features demonstrated to be useful, but recent results on Visual Sentiment Analysis %(and other application fields of Machine Learnign)
+suggest that it's worth investigating the use of representation learning approaches such as Convolutional Neural Networks and multimodal embedding.
+
+
+\section{Problem analysis}\label{problem}
+
+%In the few last years several works to predict visual sentiment have been proposed. 
+%However, all these works show that there is an ample variability on both the problem definition and evaluation that exhibits the need of a structured formalization. 
+%Is not easy to compare these works one with the other because they address the problem at different levels of detail, use different datasets, evaluation methods and measures.
+
+In this section we propose a formulation of the problem, which highlights the related issues and the key tasks of Visual Sentiment Analysis. This allows to better focus the related sub-issues which form the Visual Sentiment Analysis problem and support the designing of more robust approaches. Moreover, to address the overall structure of the problem is useful to suggest a common framework helping researchers to design more robust approaches.
+Starting from the definition of the Sentiment Analysis problem applied to the natural language text given by Liu~\cite{liu2012sentiment}, we propose to generalize the definition in the context of Visual Sentiment Analysis.  % we assess its suitability to be adopted for the problem of Visual Sentiment Analysis. 
+
+Text based Sentiment Analysis can be performed considering different levels of detail: 
+
+\begin{itemize}
+	\item at the \textbf{document level} the task is to classify whether a whole document (i.e., the whole input) expresses a positive or negative sentiment. This model works on the underling assumption that the whole input discusses only one topic;
+	\item at the \textbf{sentence level} the task is to find each phrase within the input document and determine if each sentence express a positive or negative (or neutral) sentiment;
+	\item the \textbf{entity and aspect level} performs finer-grained analysis by considering all the opinions expressed in the input document and defining a sentiment score (positive or negative) for each detected target.
+\end{itemize}
+Similarly, if the subject of the analysis is an image, we can:
+\begin{itemize}
+	\item consider a Sentiment Analysis evaluation for the whole image. These systems work with global image features (e.g., color histograms, saturation, brightness, colorfulness, color harmony, etc.);
+	\item consider an image as a composition of several sub-images according to its specific content. A number of sub-images is extracted and the sentiment analysis is performed on each sub-image obtained by exploiting methods such as multi-object detection, image segmentation, objectness extraction~\cite{alexe2012measuring};
+	\item define a set of image aspects, in terms of low level features, each one associated to a sentiment polarity based on previous studies~\cite{machajdik2010affective,yanulevskaya2008emotional}. %The association between low level visual features and sentiments has been investigated based on psychology and art theory~\cite{machajdik2010affective,yanulevskaya2008emotional}.
+	This is essentially the most fine-grained analysis to be considered.
+\end{itemize}
+
+
+%\newtheorem{defn}{Definition}
+%\begin{defn}[\textbf{Opinion}]
+When a system aims to perform Sentiment Analysis on some textual content, basically it is looking for the opinions in the content and extracting the associated sentiment. An opinion consists of two main components: a target (or topic), and a sentiment. The opinions can be taken from more than one person, this means that the system has to take into account also the opinion holder. Furthermore, opinions can change over time, thus also the time an opinion is expressed has to be taken into account.
+According to Liu~\cite{liu2012sentiment}, an opinion (or sentiment) is a quintuple 
+%\vspace{0.2cm}
+\begin{equation}
+\left( e_i, a_{ij}, s_{ijkh}, h_k, t_l \right) 
+\end{equation}
+where \boldmath{$e_i$} is the name of an entity, $a_{ij}$ is an aspect related to $e_i$, $s_{ijkh}$ is the sentiment score with respect to the aspect $a_{ij}$, $h_k$ is the opinion holder, and $t_l$ is the time when the opinion is expressed by the opinion holder $h_k$.
+The sentiment score $s_{ijkh}$ can be expressed in terms of polarity, considering positive, negative or neutral polarity; or with different levels of intensity. %(e.g., five levels, or expressed with a intensity value between 0 and 1, etc.).
+The special aspect \virgolette{GENERAL} is used when the sentiment is expressed for the whole entity. In this case, either the entity $e_{i}$ and the aspect $a_{ij}$ represent the opinion target. 
+%\end{defn}
+
+This definition is given in the context of opinion analysis applied on textual contents which express positive or negative sentiments.
+In the case of Sentiment Analysis applied on visual contents there are some differences. Indeed, when the input is a text, Sentiment Analysis can easily lean on context and semantic information extracted directly from the text. Thus the problem is to be considered into the NLP domain. %, and the sentiment polarity is obtained by using a polarity lexicon~\cite{esuli2006sentiwordnet, wilson2005recognizing}. Moreover, the analysis of a text opinion (e.g., a movie review, a tweet, a post comment, etc.) is focused on a specific user that expressed that opinion in a specific moment (i.e., date and hour).
+When the input is an image, because of the \textit{affective gap} between visual content representations and semantic concepts such as human sentiments, the task to associate the visual features with sentiment labels or polarity scores results challenging.
+Such \textit{affective gap} can be defined as: 
+\\
+
+\textit{\virgolette{the lack of coincidence between the measurable signal properties, commonly referred to as features, and the expected affective state in which the user is brought by perceiving the signal}}~\cite{hanjalic2006extracting}.
+\\
+
+In the following paragraphs each of the sentiment components previously defined (entity, aspect, holder and time) are discussed in the context of Visual Sentiment Analysis.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.65\linewidth]{sentiDefinition.png}
+	\caption{Relationship between an entity and its aspects.}
+	\label{figDefinition}
+\end{figure}
+
+\subsection{Entity and Aspects}
+The entity is the subject (or target) of the analysis. In the case of Visual Sentiment Analysis the entity is the input image. 
+In general, an entity can be viewed as a set of \virgolette{parts} and \virgolette{attributes}. The set of the entity's parts, its attributes, plus the special aspect \virgolette{GENERAL} forms the set of the aspects (see Figure~\ref{figDefinition}).
+This structure can be transferred to the visual domain considering different levels of visual features.
+Indeed, as mentioned above, in the case of visual contents, Sentiment Analysis can be performed considering different level of visual detail. The most general approach performs Sentiment Analysis considering the whole image, this corresponds to apply a Visual Sentiment Analysis method on the \virgolette{GENERAL} aspect.
+The parts of an image can be defined by considering a set of sub-images. This set can be obtained by exploiting several Computer Vision techniques, such as background/foreground extraction, image segmentation, multi object recognition or dense captioning~\cite{Karpathy_2015_CVPR, karpathy2015deep}. The attributes of an image regards its aesthetic quality features, often obtained by extracting low-level features.
+\begin{figure}
+	\centering
+	%\includegraphics[width=1\linewidth]{strawberries.png}
+	\includegraphics[width=1\linewidth]{strawberries_2.png}
+	\caption{Example of the different scores that can be extracted from an image. The entity $e_i$ is the input image, the context (i.e., breakfast), the parts (i.e., objects in the scene) and the attributes (i.e., aesthetic features) represent the different aspects. Each aspect $a_{ij}$ is associated to a sentiment score $s_{ijkh}$. The sentiment scores can be expressed in terms of polarity (e.g., positive or negative) or bu considering different levels of strength (e.g., a score from 1 to 5).}
+	\label{figBreakfast}
+\end{figure}
+Exploiting this structured image hierarchy, a sentiment score can be achieved for each aspect. Finally, the scores are combined to obtain the sentiment classification (e.g., data can be used as input features of a regression model).
+As an example, the Figure~\ref{figBreakfast} shows an image related to a dish with pancakes and some fruit. The sentiment associated to this image could be inferred by considering the input from different perspectives. Considering the whole image (i.e., the GENERAL aspect), the inherent context expresses the concept of \virgolette{breakfast}, or \virgolette{food} in general. From this perspective one can consider the concept associated to the image context. For this purpose, several works about personal contexts~\cite{ORTIS2017207,furnari2018personal} and scene recognition can be exploited from the visual view, and the inferred concepts can be used to extract the associated sentiment. Moreover, sentiment scores can be further extracted from image parts and attributes, according to the model described above.
+
+Instead of representing the image parts as a set of sub-images, an alternative approach can rely on a textual description of the depicted scene. The description of a photo can be focused on a specific task of image understanding. By changing the task, we can obtain different descriptions of the same image from different points of view. Then, these complementary concepts can be combined to obtain the above described structure.
+Most of the existing works in sentiment analysis of social media exploit textual information manually associated to images by performing textual Sentiment Analysis.%either to define the ground truth~\cite{borth2013large} (i.e., by performing textual Sentiment Analysis on the text) or as an additional data modality~\cite{katsurai2016image,baecchi2016multimodal}. In the latter case, both the visual and the textual information are used as input to establish the sentiment polarity of a post.
+
+Although the text associated to social images is widely exploited in the state-of-the-art to improve the semantics inferred from images, it can be a very noisy source because it is provided by the users; the reliability of such input is often based on the capability and the intent of the users to provide textual data that are coherent with respect to the visual content of the image. There is no guarantee that the subjective text accompanying an image is useful.  %It is usually related to a specific purpose or intention of the user that published the picture on the platform. %Often, the subjective user description and tags are related to the semantic of the images or to the context of acquisition rather than sentiment.
+In addition, the tags associated to social images are often selected by users with the purpose to maximize the retrieval and/or the visibility of such images by the platform search engine. In Flickr, for instance, a good selection of tags helps to augment the number of views of an image, hence its popularity in the social platform.
+These information are hence not always useful for sentiment analysis.
+For a deeper analysis, a comprehensive treatise of image tag assignment is presented in~\cite{li2016socializing}.
+
+As discussed in~\cite{gong2014multi}, the semantic of an image can be expressed by means of an object category (i.e., a class). However the tags provided by users usually include several additional terms, related to the object class, coming from a larger vocabulary. As an alternative, the semantic could be expressed by using multiple keywords corresponding to scenes, object categories, or attributes.
+%As discussed in~\cite{gong2014multi}, the semantic of an image may be given by a single object category, while the user-provided tags may include a number of additional terms correlated with the object coming from a larger vocabulary. Alternatively, the semantic might be given by multiple keywords corresponding to objects, scene types, or attributes.
 \begin{figure*}
 	\centering
-	\includegraphics[width=1\linewidth]{interface01}
-	\caption{Example of exploration interface. It is composed by three main areas: the map area (upper-right) shows the positions where the images have been taken from. This give the positions of the users during the event and some hints about the most interesting parts of the site. The interaction with this map allows the users to know more details by selecting the images from their positions. The gallery (bottom) shows the collection's pictures organized by using t-SNE algorithm according to the selected filters and allows the users to explore the collection. The detail area (upper-left) shows the details of a picture selected from the gallery, and presents the available filters.
-		From this interface, the user can launch the t-SNE algorithm on a customized set of images, apply one or more filters, and know more about the different statistics and inferences performed by the system.}
-	\label{interface}
+	%	\includegraphics[width=1\linewidth]{images/pipeline_objective.pdf}
+	\includegraphics[width=1\linewidth]{images/pipeline_objective.png}
+	\caption{Given an image, the text describing the visual content can be extracted by exploiting four different deep learning architectures. The considered architectures are used to extract text related to objects, scene and image description. The figure shows also the text associated to the image by the user (i.e., title, description and tags) at top left. The subjective text presents very noisy words which are highlighted in red. The words that appears in both sources of text are highlighted in green.}
+	\label{figFeaturesExtraction}
 \end{figure*}
 
-%\subsubsection{Analysis engine}
-The several exploration tools are based on both visual and textual data. The system exploits information such as Exif data (camera model, geolocalization, acquisition details, JPEG compression, and others) when available, and a number of ad hoc extracted visual features.
+Figure~\ref{figFeaturesExtraction} shows an example image taken from Flickr. The textual information below the image is the text provided by the Flickr's user. Namely the photo title, the description and the tags are usually the text that can be exploited to make inferences on the image.
+This example shows how the text can be very noisy with respect to any task aimed to understand the sentiment that can be evoked by the picture. %Indeed the title is used to describe the tension between the depicted dogs, whereas the photo description is used to ask a question to the community. %Furthermore, most of the provided tags include misleading text such as geographical information (i.e., Washington State, Seattle), information related to the camera (i.e., Nikon, D200), objects that are not present in the picture (i.e., boy, red ball, stick) or personal considerations of the user (i.e., my new word view). Moreover, in the subjective text there are many redundant terms (e.g., dog).
+Another drawback of the text associated to social images is that two users can provide rather different information about the same picture, either in quality and in quantity. Finally, there is not guarantee that such text is present; this is an intrinsic limit of all Visual Sentiment Analysis approaches exploiting subjective text.
 
-The visual analysis module of the system feds all the images to two different CNNs \cite{krizhevsky2012imagenet, zhou2014learning}, in order to extract the classification labels and an image representation. To attach semantic labels to the visual content of the images, we used \textit{AlexNet} \cite{krizhevsky2012imagenet} and \textit{Places205-AlexNet} \cite{zhou2014learning}.
-The CNN used in \cite{krizhevsky2012imagenet} consist of seven internal layers with a final 1000-way softmax which produces a distribution over the 1000 predefined classes of the ImageNet dataset \cite{ILSVRC15}.We considered the feature activations induced at the last hidden layer, which consists of 4096 dimensional feature (fc-7 feature), as an image representation to be further used with t-SNE algorithm \cite{van2008visualizing} for visualization purposes. 
-We also fed the images to the \textit{Places205-AlexNet} CNN \cite{zhou2014learning}. This CNN has the same architecture of \textit{AlexNet} CNN, but it is trained on 205 scene categories related to places learned by using the database \textit{Places205-AlexNet} composed by 2.5 million images.
+Starting from the aforementioned observations about the user provided text associated to social images, one can exploit an objective aspect of the textual source that comes directly from the understanding of the visual content. This text can be achieved by employing a set of deep learning models trained to accomplish different visual inference tasks on the input image. At the top right part of Figure~\ref{figFeaturesExtraction} the text automatically extracted with different scene understanding methods is shown. In this case, the inferred text is very descriptive and each model provides distinctive information related to objects, scene, context, etc.
+The objective text extracted by the three different scene understanding methods has a pre-defined structure, therefore all the images have the same quantity of textual objective information. For each considered scene understanding method (i.e., GoogLeNet~\cite{googlenet}, DeepSentiBank~\cite{chen2014deepsentibank} and Places205~\cite{zhou2014learning}). 
+In Section~\ref{(secPolarity)} we present our work on Image Polarity Prediction exploiting Objective Text extracted directly from images, and experimentally compare such text with respect to the Subjective (i.e., user provided) text information usually used in previous works.
+%So far, the existing literature only focused on the analysis on one or a few of these sentiment aspects in an unstructured way.
+Such approach provides an alternative user-independent source of text which describes the semantic of images, useful to address the issues related to the inherent subjectivity of the text associated to images.
+Several papers faced the issues related to the subjective text associated to images, such as tag refinement and completion~\cite{li2016socializing,sang2012user,xu2009tag,wu2013tag}, which aims at alleviating the number of noisy tags and enhancing the number of informative tags by modelling the relationship between visual content and tags.
+%%The framework presented in~\cite{wang2015unsupervised} implements an unsupervised approach aimed to address the lack of proper annotations/labels in the majority of social media images. In~\cite{gong2014improving}, the authors tried to learn an efficient image-sentence embedding by combining a large amount of weakly annotated images (where the text is obtained by considering title, descriptions and tags) with a smaller amount of fully annotated ones.
+%%In~\cite{wang2009building} the authors exploit large noisily annotated image collections to improve image classification.
 
-%The results of the image evaluation by the above CNNs consist of the three classification predictions with the highest scores, given by each CNN, and the fc7 image representation.
-\subsection{User experience}
-An event manager (i.e., a user of \textit{The Social Picture} which starts a new collection) creates a new event by selecting among three possible type of event: public event (e.g., a concert), cultural heritage site (e.g., a museum) or private event (e.g., a wedding). The available event categorization can be extended to include other customized categories. We considered these three categories to better focus the aims of the specific analysis, and the inferred information that an organizator wants to extract.
-The data gathering from users can be performed within a specific time window. The manager is allowed to control the image acquisition by selecting fine-grained criteria such as filtering media by hashtag, associated text or geolocalization distance.
-After creating the event and its acquisition settings, the manager can select the statistics that the system have to compute by exploiting the collection of multimedia data gathered for that event.
+\subsection{Holder}
+Emotions are subjective, they are affected by several factors such as gender, individual background, age, environments, etc. However, emotions also have the property of stability~\cite{wang2008survey}. This means that the average emotion response of a statistically large set of observers is stable and reproducible. The stability of emotion response enables researchers to generalize their results, when obtained on large datasets.
 
-The pictures can be grouped by hierarchical categories depending on the combination of two or more of the extracted visual features, which allow us to create several taxonomies in the image collection (panoramic pictures versus close-ups, natural versus artificial, indoor or outdoor, the presence or absence of crowds, selfies versus not selfies, and others).
-Specific image categorizations help users to better handle huge amount of crowdsourced pictures, this kind of grouping can be exploited as a pre-processing before performing an image based visual search. Given a seed image, the system selects a set of similar pictures.
-The system provides different exploration tools. There is a tool for the exploration of outdoor collections such as cultural sites. % and whenever a large environment image can be considered as a reference for more detailed ones,
-One more tool can be exploited to better navigate any huge image collection. These exploration tools together with other advanced tools are described in the next subsections.
-A video of the demo is available at the following link:
-http://iplab.dmi.unict.it/TSP
+Almost all the works in Visual Sentiment Analysis ignore the sentiment holder, or implicitly consider only the sentiment of the image publisher. In this context at least two holders can be defined: the image owner and the image viewer. Considering the example of an advertising campaign, where the owner is the advertising company and the viewers are the potential customers, it's crucial the study and analysis the connection between the sentiment intended by the owner and the actual sentiment induced to the viewers. 
 
-\subsubsection{Heat map exploration}
-In a cultural heritage site, people usually take pictures from different points of view and considering different details of parts related to famous and appreciated attractions and artworks. The heat map exploration tool of \textit{The Social Picture} aims to infer the ``interest'' of people with respect to the different parts of a site. An example of heat map generated from data in \textit{The Social Picture} is shown in Figure \ref{heatmap}. Through this visualization tool, an organizer of a collection will be able to know which parts of the site captures people's interests.
-On the other hand, users can explore the collection related to a site in a very simple and intuitive way. So, to highlight the ``interest'' of people related to parts of a site, the proposed system creates an heat map by aligning images in \textit{The Social Picture} with respect to panoramic images of the site of interest~\cite{Mikulik2015}.
-
-The heat map is a visualization used to depict the intensity of images at spatial points. The heat map consists of a colored overlay applied to the original image. Areas of higher intensity will be colored red, and areas of lower intensity will appear blue. The intensity of the heat map is given by the number of collected pictures that contain that visual area.
-By clicking on a point of the heat map, the user can visualize the subject of images that contribuited to generate the map intensity at that point. This set of pictures can be further refined by selecting one of the images and asking the system to search similar pictures, or use the image subset as a starting point for furhter analysis. In other words, the heat map visualization gives the possibility to understand the behaviour of the people. Also it can be considered as a powerful and intuitive image retrieval tool for the collections related to cultural heritage sites.
-
-\begin{figure*}
-	\centering
-	%\epsfig{file=architecture.eps, width=2.72in}
-	\includegraphics[width=1\linewidth]{gridtsne}
-	\caption{t-SNE visualization, the images are forced to fit a grid layout. Images of an event are automatically organized by visual content. Images close in the 2D space of the visualization tool are also close in terms of visual content.}
-	\label{gridtsne}
-\end{figure*}
-
-\paragraph{3D Reconstruction}
-Starting from VSFM (Visual Structure From Motion)~\cite{wu2013towards}, we are able to compute a 3D sparse reconstruction of large photos collections. The models are augmented with colors for vertices, related to the frequency of been acquired in a photo, colors for cameras, related to the number of visual features acquired by each photo, and with a plane which show the spatial density of contributing users. We embedded in TSP the models through a 3D web viewer based on Threejs, allowing the users to browse the 3D sparse reconstructed models gaining a cue about what are the points of view and the subjects preferred by users when take photos. Moreover, the models in the 3D web viewer can also be browsed through Leap Motion system, an intuitive and fast interactive system.
-\vspace{-0.2cm}
-
-
-\subsubsection{t-SNE exploration}
-We exploit the fc7 feature extracted with the \textit{AlexNet} architecture \cite{krizhevsky2012imagenet} for each image and use the t-SNE embedding algorithm \cite{van2008visualizing} to compute a 2D embedding that respects the pairwise distances between visual features, forcing to fit a grid layout (Figure \ref{gridtsne}). The t-SNE (t-Distribuited Stochastic Neighbour Embedding) is a technique for feature space dimensionality reduction that is particularly well suited for the visualization of high dimensional image datasets.
-Note that images with the same subject are automatically arranged nearby (see Figure \ref{gridtsne}). Moreover, the system arranges very close those images which are not the same but have a similar visual content. It is also important to highlight that the employed CNN \cite{krizhevsky2012imagenet} has been trained using a different dataset concerning 1000 classes of objects, but the fc7 features resulted expressive and representative enough to be applied succesfully to a generic event collection.
-
-%Another exploration tool, allow users to see the result of t-SNE embedding without using the grid layout. If we display a set of images using their embedded locations computed by t-SNE, they may overlap one each other. Especially if there are many similar images. For this reason, this interface provides a set of tools to help the user's navigation.
-
-With this exploration tool, the user can apply a translation or a zooming to all the viewed images, just clicking and dragging the mouse along the desidered direction and by using the scroll wheel respectively. This helps the user to better explore the image distribution in a custom level of detail.
-%A number of tools enable users to fine-tune the spread of images along X and Y axis, and the zooming effect. These parameters can be used to transform the distribution of the embedded images, and adapt the effect of the mouse commands. For example, if the user fix an upper bound for the zoom effect, when this limit is reached the scrool wheel of the mouse has the effect of separating the images according to the amout of the rotation.
-Furthermore, the user can choose a subset of images and compute the t-SNE embedding of them directly on the browser (see Figure \ref{gridtsne}).% This tool has been developed by using the \textit{tsnejs} Javascript library by Andrej Karpathy.
-
-\paragraph{Hierarchical t-SNE}
-The first implementation of the t-SNE exploration tool in TSP was unable to scale with the number of the collections' images. The new tool presented in this demo implements an hierarchical version of the t-SNE embedding which allows to explore picture collections without limits on the amount of processed pictures. 
-This helps the user to better explore the image distribution in a custom level of detail. Furthermore, the user can choose a subset of images and compute the t-SNE embedding of them directly on the browser. % This tool has been developed by using the \textit{tsnejs} Javascript library by Andrej Karpathy.
-As the number of pictures of a collection is unpredictable, the computation of the t-SNE coordinates could be very expensive. Besides the t-SNE computation, which needs to be executed only one time per dataset, a huge number of pictures can affect the browser efficiency for the visualization of the 2D embedding. We organize the entire collection of pictures in a hierarchical structure. After the collection is analysed (i.e., the \textit{fc7} features have been computed for all the images) the system performs a hierarchical k-means clustering of the image features. The algorithm divides the dataset recursively into \textit{k} clusters, for each computation the \textit{k} centroids are used as elements of a \textit{k-tree} and removed from the set. %Each node has \textit{k} children nodes (even empty), each one containing the cluster elements associated to the corresponding centroid. Since each node cannot contain more then \textit{k} elements, when this number is higher than \textit{k} the clustering is repeated recursively. 
-When this new version of the t-SNE tool (hierarchical t-SNE) is executed, it shows to the user the t-SNE embedding computed only for the elements in the root of the \textit{k-tree} (i.e., the picture centroids of the first \textit{k-means} computation). When the user selects one of these pictures, the system computes the t-SNE of the pictures included in the child node corresponding to the selected picture element. This hierarchical exploration can be continued by selecting one of the shown pictures and computing the t-SNE embedding for its sub-elements in the hierarchy.
-
-
-
-\subsubsection{Other Advanced Tools}
-%\begin{itemize}
-%	\item Subsampling from set of images 
-%	\item Captioning-Image Description:
-%	with the aim to obtain better image descriptions, the system can generate a set of captions associated to each image. The dense captioning task generalizes object detection when the descriptions consist of a single word, and Image Captioning when one predicted region covers the full image \cite{Johnson2015densecap}. The result of dense captioning can be exploited to provide a description based image retrieval system, and an image description with an higher level of abstracton compared to the one given by an image classification approach.
-%	\item Questions and Answers for assistive:
-%	in the last few years, with the improvements in both natural language and image understanding, much effort has been spent by scientific community to develop algorithms for question answering on real-world images \cite{VQA}. These systems take and image and a natural language question about the image content, and provide a natural language answer. Such a system can be easily integrated in the \textit{The Social Picture} platform with the aim to improve its interfaces, allowing the visually impaired to know about the image collection's visual contents. The user is allowed to ask natural language questions about single images, the entire collections or an its subset.
-%\end{itemize}
+%\st{As a real example, in September 2016 the Italian Health Ministry launched an advertising campaign called Fertility Day%~\cite{fertilityDay}, aimed at persuading couples to have more children.
+%Critics denounced the pictures of the first campaign as sexist and the advert was withdrawn. Then, the Ministry put out another advert, but this was denounced as racist on social media. Also this advert has been withdrawn by the Ministry a few hours after it was sent out. and the advert was withdrawn. Then, the ministry put out another advert, but this was denounced as racist on social media. Also this advise has been withdrawn by the ministry a few hours after it was sent out.
+%This examples evidences two important aspects, the first is that users' engagement and reactions toward public contents are difficult to be predicted; secondly, }
+These days, the social media platforms provide a very powerful mean to retrieve real-time and large scale information of people reactions toward topics, events and advertising campaigns.  
+The work in~\cite{chen2014predicting} is the first that distinguishes publisher affect (i.e., intent) and viewer affect (i.e., reaction) related to the visual content. 
+This branch of research can be useful to understand the relation between the affect concepts of the image owner and the evoked viewer ones, allowing new user centric applications.
+%In December 2015, the american company Clarifai launched a new photo organization smartphone app called \virgolette{Forevery}. One of the aim of this app, beside the smart picture organization, is to make photo discovery personal. Indeed, this app applies Machine Learning to learn the people the user cares about, his pets, or objects of significance. This first version learns to recognize them starting by a few examples provided by the user. However, if such an application want to actually make a picture ranking according to the emotions evoked to the user, the underling ranking algorithm will take into account the user profiling.
+User profiling helps personalization, which is very important in the field of recommendation systems. The insights that could be obtained from such a research branch can be useful for several business fields, such as advertisement and User Interface design (UI). And the community of user interface designers started to take into account the emotional effect of the user interfaces toward users who are interacting with a website, product or brand. The work in~\cite{lockner2014emotion} discusses about methods to measure user’s emotion during an interface interaction experience, with the aim to assess the interface design emotional effect. 
+Progresses in this field promote the definition of new design approaches such as Emotional UI~\cite{emoji2015w}, aimed to exploit the emotions conveyed by visual contents. Indeed, emotions have been traditionally considered to be something that the design evoked, now they represent something that drives the design process. While so far, designers focused on \virgolette{user friendly} design (i.e., interfaces easy to use), now they need to focus on design that stimulates and connects the product with users deeply.
+%Recently, user interface (UI) designers have begun to employ sentiment related colors in the interfaces of applications and services. This approach for the design of user interfaces is known as Emotional or Emotive UI. 
+%Figure~\ref{figEmojiWheel} shows an emoji-based wheel of emotions based on the Plutchik's model, recently presented by Sherine Kazim, an expert of user interfaces and director of experience design for Huge Inc.~\footnote{http://www.hugeinc.com}. This model shows relationships between emotions and colors is represented through 24 corresponding emojis. This model can be exploited to explain how colors can be used in the design of user interfaces~\footnote{http://www.hugeinc.com/ideas/perspective/an-introduction-to-emotive-ui}.
+%She asserts that, as AI becomes more prevalent in our lives, designers will need to focus on the personality of the user and how it interacts with the AI systems. Products and platforms are changing, and the interfaces can no longer solely rely on just the visual representation of the UI. %The discipline that studies the set ofinterface design emotional effect. sensations, emotions and feelings of a user who is interacting with a website, product or brand is knonw as User eXperience Desing (UX Design, or UXD).
 %
-Among the tools included in \textit{The Social Picture} there is the one useful to generate automatic subsets of images from a specific photo collection. This tool allows the user to set the number of images to obtain as output for a collection in TSP, and automatically generates the subset of images taking into account visual features as well as EXIF information related to the images composing the photo collection (e.g., GPS location, TAGS, day, time, etc). In this way, the user can have some representative image prototypes related to the collection to be used for different purposes (e.g., printing the most significative pictures of paintings of a museum for a specific social group).
+%
+%\begin{figure}[t]
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{emojiwheel.png}
+%	\caption{Emoji based Wheel of Emotions.}
+%	\label{figEmojiWheel}
+%\end{figure}
+%
+\\
+\\
+Although the interesting cues discussed in this paragraph, currently the development of Visual Sentiment Analysis algorithms that concern the sentiment holder find difficulties due the lack of specific datasets. In this context, the huge data shared on the social media platforms can be exploited to better understand the relationships between the sentiment of the two main holders (i.e., owner/publisher and viewer/user) through their interactions.
 
-One more feature included in The Social Picture is the automatic image captioning as described in~\cite{johnson2015densecap}. With the aim to help the user to include a description to an uploaded image, \textit{The Social Picture} automatically generates and suggests a description to the user that can then refine it.  The descriptions of images can be used for text based query performed by the user.
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=1\linewidth]{falconeborsellino.jpg}
+%	\caption{The most famous pictures of G. Falcone and P. Borsellino, taken before they were murdered in 1992.}
+%	\label{figFalconeBorsellino}
+%\end{figure}
 
+\subsection{Time}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\linewidth]{twintowers.jpg}
+	\caption{Picture of the World Trade Center, taken in 1990.}
+	\label{figTwintowers}
+\end{figure}
+Although almost all the aforementioned works ignore this aspect, the emotion evoked by an image can change depending on the time. 
+This sentiment component can be ignored the most of times, but in specific cases is determinant. Moreover, is very difficult to collect a dataset related to the changes in the emotion evoked by images over time.
+For example, the sentiment evoked by an image depicting the World Trade Center (Figure~\ref{figTwintowers}) is presumably different if the image is shown before or after 9/11.
+%Figure~\ref{figFalconeBorsellino} shows two famous italian judges named Giovanni Falcone and Paolo Borsellino. The photo has been taken during a public event. Only after their murders this picture became the iconic image of the struggle against the Mafia. It is often reproduced on posters, articles and event commemorating the fight against the Mafia violence.
+
+Although there are not works on Visual Sentiment Analysis that analyse the changes of image sentiments over time, due to the specificity of the task and the lack of image datasets, there are several works that exploits the analysis of images over time focused on specific cognitive and psychology applications. 
+As an example, the work in~\cite{reece2016instagram} employed a statistical framework to detect depression by analysing the sequence of photos posted on Instagram. The findings of this paper suggest the idea that variations in individual psychology reflect in the use social media by the users, hence they can be computationally detected by the analysis of the user's posting history.
+
+In~\cite{khosla2012memorability} the authors studied which objects and regions of an image are positively or negatively correlated with memorability, allowing to create memorability maps for each image. This work provides a method to estimate the memorability of images from many different classes. To collect human memory scores, the adopted experimental procedure consists of showing several occurrences of the same images at variable time intervals. The employed image dataset has been created by sampling images from a number of existing dataset, including images evoking emotions~\cite{machajdik2010affective}.
+
+
+\section{Challenges}\label{challenges}
+So far we discussed on the current state of the art in Visual Sentient Analysis, describing the related issues, as well as the different employed approaches and features.
+This section aims to introduce some additional challenges and techniques that can be investigated.
+
+\subsection{Popularity}\label{csurPopularity}
+%% TODO: unificare con state-of-the-art in paper su Popularity (ex ACMMM 18)
+One of the most common application field of Visual Sentiment Analysis is related to social marketing campaigns. In the context of social media communication, several companies are interested to analyse the level of people engagement with respect to social posts related to their products. This can be measured as the number of post's views, likes, shares or by the analysis of the comments. These information can be further combined with web search engine and companies website visits statistics, to find correlations between social advertising campaigns and their aimed outcomes (e.g., brand reputation, website/store visits, product dissemination and sale, etc.).
+
+The popularity of an image is a difficult quantity to define, hence to measure or infer. 
+However human beings are able to predict what visual contents other people will like in specific contexts (e.g., marketing campaigns, professional photography). This suggest that there are some common appealing factors in images.
+So far, researches have been trying to gain insights into what features make an image popular.
+
+As mentioned in the previous sections, the quality of the text associated to images is often pre-processed in order to avoid noisy text. 
+On the other hand, the users who want increase the reach of their published contents are used to associate popular tags to their images, regardless their relevance with the image content. This is motivated by the fact that image associated tags are used by the image search engines in these platforms, so the use of popular tags highs the reach of the pictures.
+Therefore, in this context, the tags associated to images become a crucial factor to understand the popularity of images in social platforms.
+For instance, Yamasaki et al.~\cite{yamasaki2014social} proposed an algorithm to estimate the social popularity of images uploaded on Flickr by using only text tags.
+Other features should be also taken into account such as: number of user followers and groups, which represent the reach capability of the user. These factors make the task of popularity prediction very different from the task of sentiment polarity classification in the selection of features, methods and measures of evaluation.
+
+The work in~\cite{mcparlane2014nobody} considers the effect of 16 features in the prediction of the image popularity. Specifically, they considered image context (i.e., day, time, season and acquisition settings), image content (i.e., image content provided by detectors of scenes, faces and dominant colors), user context and text features (i.e., image tags).
+The authors cast the problem as a binary classification by splitting the dataset between images with high and low popularity measure.
+As popularity measures the authors considered the views and the comments counts. Their study highlights that comments are more predictable than views, hence comments are more correlated with the studied features. 
+%Indeed the the higher effort required for commenting a picture compared with respect to viewing the image makes the comments count a more reliable measure of image popularity. 
+The experimental results show that the accuracy values achieved only considering textual features (i.e., tags) outperform the performances of the classification based on other features and the combinations of them, for both comments and views counts classifications.
+
+
+In 2014 Khosla et al.~\cite{khosla2014makes} proposed a log-normalized popularity score that has been then commonly used in the community. Let $c_i$ be a measure of the engagement achieved by a social media item (e.g., number of likes, number of views, number of shares, etc.), also known as popularity measure. The popularity score of the $i^{th}$ item is defined as follows:
+
+\begin{equation}\label{eqPopScore}
+score_i = \log \left ( \frac{c_i}{T_i} + 1 \right )
+\end{equation}
+where $T_i$ is the number of days since the uploading of the image on the Social Platform. 
+Equation~\ref{eqPopScore} normalizes the number of interactions reached by an image by dividing the engagement measure by the time.
+However, the measures $c_i$ related to social posts are cumulative values as they continuously collect the interactions between users and the social posts during their time on-line. Therefore, this normalization will penalize social media contents published in the past with respect to more recent contents, especially when the difference between the dates of posting is high. Indeed, the most of the engagement obtained by a social media item is achieved in the first period, then the engagement measures become more stable. There are very few works which takes into account the evolution of the image popularity over time. For example, the study presented in~\cite{valafar2009beyond} shows that photos obtain most of their engagement within the first 7 days since the date of upload. However, this study is focused on Flickr, and each social platform has its own mechanisms to show contents to users.
+
+In~\cite{khosla2014makes} the authors analysed the importance of several image and social cues that lead to high or low values of popularity. In particular they considered the relevance of user context features (e.g., mean views, number of photos, number of contacts, number of groups, average groups' members, etc.), image context features (e.g., title length, description length, number of tags), as well as image features (e.g., GIST, LBP, BoW color patches, CNN activations features, etc.). Is interesting to notice that, differently than several works on sentiment polarity prediction in which the text concerning the images (i.e., title, description and tags included in the post) is semantically analysed in order to achieve sentiment related insights on the image content, in this work only the length of the text associated to the images is considered. 
+
+Cappallo et al.~\cite{cappallo2015latent} address the popularity prediction problem as a ranking task by exploiting a latent-SVM objective function defined such that the ranking of the popularity scores between pairs of images is maintained.
+They considered the number of views and comments for Flickr images and the number of re-tweets and favorites for Twitter.
+
+The problem of image popularity prediction is also addressed in~\cite{gelli2015image}, whose experiments suggest that some sentiment ANPs defined in VSO~\cite{borth2013large} have a correlation with popularity.
+
+In~\cite{almgren2016predicting} the authors considered the number of likes achieved within the first hour after the image posting (early popularity) to predict the popularity after a day, a week or a month. This study has been performed on Instagram images and the dataset is publicly available~\footnote{http://www1bpt.bridgeport.edu/$\sim$jelee/sna/pred.html.}. The images are categorized as popular or not popular considering a popularity threshold obtained with the Pareto principle (80~\% - 20~\%). Three features representing information that is retrieved within the first hour of image upload (i.e., early information) are evaluated: social context (based on the user's number of followers), image semantics (based on image caption and NLP), and early popularity in the first hour. The binary classification is performed by using a Gaussian Naive Bayes Model. The experimental results show that the early popularity feature significantly outperforms the other evaluated features. Furthermore, the authors compared the proposed semantic feature with the features proposed by~\cite{mcparlane2014nobody} for the task of popularity binary classification considering the MIR-1M Flickr dataset~\cite{huiskes2010new}, obtaining better accuracy rates.
+
+Most of the works addressing the problem of popularity prediction follow a very similar pipeline. First, a set of interesting features that have been demonstrating correlation with the images sentiment or popularity is selected. Then a model for each distinctive feature is trained to understand the predictive capability of each feature. In the above discussed works, the popularity prediction task is cast as a ranking or a regression problem. Therefore, the exploited algorithms are ranking SVM and latent SVM in the case of ranking, and SVR for regression.  Then, the features are combined with the aim to improve the performances of the method. The evaluation is usually quantified through the Spearman's correlation coefficient.
+\\
+\\
+% DATASET PER POPULARITY
+Although the task of image popularity prediction is rather new, there are interesting datasets available for the development of massive learning systems (i.e., deep neural networks).
+The Micro-Blog Images 1 Million (MBI-1M) dataset is a collection of 1M images from Twitter, along with accompanying tweets and metadata. 
+The dataset was introduced by the work in~\cite{cappallo2015latent}. A subset of the the Trec 2013 micro-blog track tweets collection~\cite{lin2013overview} has been selected.
+%The dataset was introduced by the work in~\cite{cappallo2015latent}, in which the authors selected a subset of the 240 million tweets collected for the Trec 2013 microblog track~\cite{lin2013overview}.
+
+% DATASET PER POPULARITY
+The MIR-1M dataset~\cite{huiskes2010new} is a collection of 1M photos from Flickr. These images have been selected considering the interestingness score used by Flickr to rank images.
+
+The Social Media Prediction~(SMP) dataset is a large-scale collection of social posts, recently collected for the ACM Multimedia 2017 SMP Challenge~\footnote{\small Challenge webpage: https://social-media-prediction.github.io/MM17PredictionChallenge}. This dataset consists of over 850K posts and 80K users, including photos from VSO~\cite{borth2013large} as well as photos collected from personal users' albums~\cite{Wu2016TimeMatters,Wu2017DTCN,Wu2016TemporalPrediction}. %The goal of the authors is to make the SMP dataset as varied and rich as possible. 
+In particular, the authors aimed to record the dynamic variance of social media data. Indeed, the social media posts in the dataset are obtained with temporal information (i.e., posts sequentiality) to preserve the continuity of post sequences.
+Two challenges have been proposed:
+\begin{itemize}
+	\item \textbf{Popularity Prediction:} the task is to predict a popularity measure defined for the specific social platform (e.g., number of photo's views on Flickr) of a given image posted by a specific user;
+	\item \textbf{Tomorrow's Top Prediction:} given a set of photos and the data related to the past photo sharing history, the task is to predict the top-n popular posts (i.e., ranking problem over a set of social posts) on the social media platform in the next day.
+	%, the goal is to automatically predict which will be the most popular photos in the next day.
+\end{itemize}
+The SMP dataset includes features such as unique picture id (pid) and associated user id (uid). From these information one can extract almost all the user and photo related data available in Flickr. Some metadata of the picture and user-centered information are also included in the dataset. Moreover, the popularity scores (as defined in Equation~\ref{eqPopScore}) are provided. 
+The SMP dataset furthered the development of time aware popularity prediction methods, which exploit time information to define new image representation spaces used to infer the image popularity score at a precise time or at pre-defined time scales. 
+Li et al.~\cite{li2017hybrid} extracted multiple time-scale features from a set of timestamps related to the photo post. As instance, the timestamp \virgolette{postdate} is used to define several features with different time scales: \virgolette{season of year}, \virgolette{month of year}, etc.
+The framework presented in~\cite{hidayati2017popularity} exploits an ensemble learning method to combine the outputs of an SVR and a CART (Classification And Regression Tree) models, previously trained to estimate the popularity score. The models have been trained by exploiting features extracted from user's information, image meta-data and visual aesthetic features extracted from the image. In particular, the authors take into account the post duration (i.e., the number of days the image was posted), the upload time, day and month.
+
+
+\subsection{Relative Attributes}
+As discussed in previous sections, several Visual Sentiment Analysis works aim to associate an image one sentiment label over a set of emotional categories or attributes. However, given a set of images that have been assigned to the same emotional category (e.g., joy), it would be interesting to determine their ranking with respect the specific attribute (see Figure~\ref{figJoyscale}). Such a technique could suggest, for example, if a given image \textit{A} conveys more \virgolette{joy} than another image \textit{B}. For this purpose, several works on relative attributes can be exploited~\cite{parikh2011relative, altwaijry2013relative, fan2013relative, yu2015just}.
+Furthermore, a ground truth dataset can be built by exploiting human annotators. Given a pair of images, the annotator is requested to indicate which image is closer to the attribute. In this way it's possible to obtain a proper ranking for each sentiment attribute.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{joyscale.png}
+	\caption{Example of images ranking based on the emotional category \virgolette{joy}.}
+	\label{figJoyscale}
+\end{figure}
+
+\subsection{Common Sense}
+With the aim to reduce the affective and cognitive gap between images and sentiments conveyed by them, we further need to encode the \virgolette{affective common-sense}. 
+An Halloween picture %\st{(such as a person with a knife stuck in his head)} 
+can be classified as a negative image by an automatic system which considers the image semantics, however the knowledge of the context (i.e., Halloween) should affect the semantic concepts conveyed by the picture, hence its interpretation. 
+This corresponds to the \virgolette{common-sense knowledge problem} in the field of knowledge representation, which is a sub-field of Artificial Intelligence.
+Clearly, besides inferential capabilities, such an intelligent program needs a representation of the knowledge. %to solve the problem it faces. 
+By observing that is very difficult to build a Sentiment Analysis system that may be used in any context with accurate classification prediction, Agrawal et al.~\cite{agarwal2015sentiment} considered contextual information to determine the sentiment of text. Indeed, in this paper is proposed a model based on common-sense knowledge extracted from ConceptNet~\cite{liu2004conceptnet} ontology and context information. Although this work addresses the problem of Sentiment Analysis applied on textual data, as discussed above, the knowledge of the context related to what an image is depicting should affect its interpretation. Moreover, such results on textual analysis can be transferred to the visual counterpart. Furthermore, emerging approaches based on the Attention mechanism could be exploited to add such a context. The Attention mechanism is a recent trend in Deep Learning, it can be viewed as a method for making the Artificial Neural Network work better by letting the network know where to look as it is performing its task. For example, in the task of image captioning, the attention mechanism tells the network roughly which pixels to pay attention to when generating the text~\cite{xu2015show,you2016image}.
+
+\subsection{Emoticon/Emoji}\label{secEmoji}
+
+In this section we discuss about the possibility to exploit text ideograms, such emoticons and emoji, in the task of Sentiment Analysis on both visual and textual contents.
+An emoticon is a textual shorthand that represents a facial expression. The emoticons have been introduced to allow the writer to express feelings and emotions with respect to a textual message. It helps to express the correct intent of a text sentence, improving the understanding of the message.
+The emoticons are used to emulate visual cues in textual communications with the aim to express or explicitly clarify the writer's sentiment.
+Indeed, in real conversations the sentiment can be inferred from visual cues such as facial expressions, pose and gestures. However, in textual based conversations, the visual cues are not present. 
+%In real communication, sentiment can often be inferred from visual cues such as facial expressions, pose and gestures. However, in textual based communication, such visual cues are lost. Over the years, the emoticons have been used as visual cues in texts to replace normal visual cues to express or disambiguate one's sentiment.
+
+%Textual Sentiment Analysis methods involve the analysis of a text for the detection of cues signaling its polarity, typically by the detection of sentiment words.
+The authors of~\cite{hogenboom2013exploiting} tried to understand if emoticons could be useful as well on the textual Sentiment Analysis task.
+In particular, they investigated the role that emoticons play in conveying sentiment and how they can be exploited in the field of Sentiment Analysis. The authors manually labelled 574 emoticons as positive or negative, and combined this emoticon-lexicon with the text based Sentiment Analysis to perform document polarity classification considering both sentence and paragraph levels.
+%In~\cite{amalanathan2015social} the set of emoticons have been mapped in nine emotional categories. Then the authors performed sentiment classification of tweets using both emoticons and bag-of-words based features.
+
+A step further the emoticon, is represented by the emoji. An emoji is an ideogram representing concepts such as weather, celebration, food, animals, emotions, feelings, and activities, besides a large set of facial expressions.
+They have been developed with the aim to allow more expressive messages. 
+%They have been developed with the aim to facilitate more expressive messages. 
+%An emoji is a graphic symbol, that represents not only facial expressions, but also concepts and ideas, such as celebration, weather, food, animals, emotions, feelings, and activities.
+Emojis have become extremely popular in social media platforms and instant messaging systems. For example, in March 2015, Instagram  reported that almost half of the texts on its platform contain emojis~\cite{instagram2015}.
+
+In~\cite{cappallo2015image2emoji}, the authors exploited the expressiveness carried by emoji, to develop a system able to generate an image content description in terms of a set of emoji. The focus of this system is to use emoji as a means for image retrieval and exploration. Indeed, it allows to perform an image search by means of a emoji-based query.
+This approach exploits the expressiveness conveyed by emoji, by leaning on the textual description of these ideograms (see the eleventh column in Figure~\ref{figEmojiranking}). 
+The work in~\cite{CappalloTEMP18} studied the ways in which emoji can be related to other common modalities such as text and images, in the context of multimedia research. This work also presents a new dataset that contains examples of both text-emoji and image-emoji relationships.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1\linewidth]{emojiranking.png}
+	\caption{Some examples of the \textit{Emoji Sentiment Ranking} scores and statistics obtained by the study conducted in~\cite{novak2015sentiment}. The sentiment bar (10th column) shows the proportion of negativity, neutrality and positivity of the associated emoji.}
+	\label{figEmojiranking}
+\end{figure}
+
+
+Most of them contains also strong sentiment properties.
+In~\cite{novak2015sentiment} the authors presented a sentiment emoji lexicon named Emoji Sentiment
+Ranking. In this paper, the sentiment properties of the emojis have been deeply analyzed, and some interesting conclusions have been highlighted.
+For each emoji, the \textit{Emoji Sentiment Ranking} provides its associated positive, negative and neutral scores. These scores are represented by decimal values between -1 and +1. The authors also proposed a visual tool, named sentiment bar, to better visualize the sentiment properties associated to each emoji (see Figure~\ref{figEmojiranking}).
+The data considered in this analysis consists of 1.6 million labelled tweets.
+This collection includes text written in 13 different languages. 
+%The data considered in this analysis consists of 1.6 million annotated tweets in 13 different languages. 
+The authors found that the sentiment scores and ranking associated to emojis remain stable among different languages. This property is very useful to overcome the difficulties addressed in multilingual contexts.
+This lexicon represents a precious resource for many useful applications~\footnote{The Emoji Sentiment Ranking scores computed by~\cite{novak2015sentiment} can be visualized at the following URL: http://kt.ijs.si/data/Emoji\_sentiment\_ranking/.}.
+
+The results and the insights obtained in~\cite{cappallo2015image2emoji,CappalloTEMP18} and~\cite{novak2015sentiment} could be combined to exploit the sentiment conveyed by emoji on the task of Visual Sentiment Analysis. Indeed, as the most common systems lean on the text associated to images to obtain the corresponding sentiments, it worth to investigate if the sentiment conveyed by emoji can improve the performances of such systems. 
+To this aim, an image dataset with emoji annotation can be defined, by asking people to select a set of meaningful emojis to express the sentiment evoked by a given image. This dataset, combined with the sentiment insights obtained in~\cite{novak2015sentiment}, can be exploited to build systems able to better predict the sentiment evoked by images. For instance, an image could be represented by considering the distribution of the associate emojis as a sentiment feature, taking a cue from the approach presented in~\cite{peng2015mixed}.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{reactions.png}
+	\caption{Facebook emoji reactions: Like, Love, Haha, Wow, Sad, and Angry.}
+	\label{figReactions}
+\end{figure}
+
+By a few years, Facebook has released a new \virgolette{reactions} feature, which allows users to interact with a Facebook post by using one of six emotional reactions (Like, Love, Haha, Wow, Sad, and Angry) , instead of just having the option of \virgolette{liking} a post. These reactions corresponds to a meaningful subset of emoji (see Figure~\ref{figReactions}).
+
+
+
+
+%%%%%%%%
 
 \section{Image Polarity Prediction}\label{(secPolarity)}
 
 \section{Image Popularity Prediction}\label{secPopularity}
+In Section~\ref{csurPopularity} we introduced the task of Image Popularity Prediction.
 
-\section{Conclusions}
+\section{Conclusions}\label{sentiConclusions}
+%CSUR Conclusions
+In this Chapter we have summarized the main issues and techniques related to Visual Sentiment Analysis. The current state of the art has been analysed in detail, highlighting pros and cons of each approach and dataset. Although this task has been studied for years, the field is still in its infancy. Visual Sentiment Analysis is a challenging task due to a number of factors that have been discussed in this paper.
+
+%\item multimodality is mandatory... [ vedi http://vireo.cs.cityu.edu.hk/papers/deep\_multimodal\_emotion\_pl.pdf] 
+The results discussed in this study, such as~\cite{machajdik2010affective}, agree that the semantic content has a great impact on the emotional influence of a picture. Images having similar color histograms and textures could have completely different emotional impacts.
+% (see Figure~\ref{figContent}).
+%For instance, the two images shown in Figure~\ref{figContent} have similar color histograms and textures, however the emotional impact is very different. 
+As result, a representation of images which express both the appearance of the whole image and the intrinsic semantic of the viewed scene is needed.
+Early methods in the literature about Visual Sentiment Analysis tried to fill the so called \textit{affective gap} by designing visual representations. Some approaches build systems trained with human labelled datasets and try to predict the polarity of the images.
+Other approaches compute the polarity of the text associated to the images (e.g., post message, tags and comments) by exploiting common Sentiment Analysis systems that works on textual contents~\cite{esuli2006sentiwordnet, wilson2005recognizing}, and try to learn Machine Learning systems able to infer that polarity from the associated visual content.
+These techniques have achieved interesting improvements in the tasks of image content recognition, automatic annotation and image retrieval~\cite{fu2014transductive, gong2014multi, gong2014improving,  guillaumin2010multimodal,   katsurai2014cross, li2015robust, rasiwasia2010new}.
+However, is not possible to know if such user provided text is related to the image content or to the sentiment it conveys. Moreover, the text associated to images is often noisy. Therefore, the exploitation of such text for the definition of either polarity ground truth or as an input source for a sentiment classifier have to address with not reliable text sources.
+
+Furthermore, some approaches exploit a combination of feature modalities (often called views) to build feature space embeddings in which the correlation of the multi-modal features associated to the images that have the same polarity is maximized~\cite{katsurai2016image}.
+%Since the emotion can be viewed as an expression of multimodal experience, Pang et al.~\cite{pang2015deep} exploited a Deep Bolzmann Machine (DBM) to develop a joint density model over multimodal inputs, including visual, auditory and textual modalities for automatic video retrieval.
+The results achieved by several discussed works suggest that exploiting multiple modalities is mandatory, since the sentiment evoked by a picture is affected by a combination of factors, beside the visual information.
+Studies in psychology and art theory suggested some visual features associated to emotions evoked by images. However, the most promising choice is given by representations automatically learned through neural networks, autoencoder and feature embedding methods. These approaches are able to find new feature spaces which capture contributes from the different input factor which the sentiment is affected by. The recent results in representation learning confirm this statement.
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{content.png}
+%	\caption{Example of two images with similar colors and textures but different emotional impact. Image borrowed from~\cite{machajdik2010affective}.}
+%	\label{figContent}
+%\end{figure}
+
+To this end, one important contribution is given by the availability of large and robust datasets. Indeed, in this study, we highlighted some issues related to the existing datasets.
+Modern social media platforms allows the collection of huge amount of pictures with several correlated information. These can be exploited to define either input features and \virgolette{ground truth}. However, as highlighted before, these textual information need to be properly filtered and processed, in order to avoid the association of noisy information to the images.
+
+Systems with broader ambitions could be developed to address the new challenges (e.g., relative attributes, popularity prediction, common-sense, etc.) or to focus on new emerging tasks (e.g., image popularity prediction, sentiment over time, sentiment by exploiting ideograms, etc.).
+For instance, ideograms helps people to reduce the gap between real and virtual communications. Thanks to the diffusion of social media platforms, the use of emojis has been growing for years, and they are now integrated to the way people communicate in the digital world. They are commonly used to express user reactions with respect to messages, pictures, or news. Thus, the analysis of such new communication media could help to improve the current state of the art performances.  
+%As we discussed in Section, the field of user interfaces design (UI) can benefit from such studies, and
+%Since design strategies may affect positively the user, and influence a better attractiveness of the interface, the experts in UI and UX (User eXprience Design) begun to take into account methods and studies about Sentiment Analysis on visual contents in user interfaces. This is also motivated by the increasing presence of AI services and the need of interactions between users and AI systems.
+
+This Chapter aimed to give a complete overview of the Visual Sentiment Analysis problem, the relative issues, and the algorithms proposed in the state of the art. %as well as 
+Relevant points with practical applications in business fields which would benefit from studies in Sentiment Analysis on visual contents have been also discussed.
+%It also aims to clear the way for new solutions, by suggesting new and interesting techniques and sources of information that can be explored to tackle the problem.
+
+%POLARITY Conclusions
+%POPULARITY Conclusions
