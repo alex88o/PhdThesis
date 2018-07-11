@@ -3,11 +3,10 @@ With the rapid growth in communication technology, both companies and research i
 Crowdsourcing provides the opportunity for input from a number of sources, with different degrees of granularity, and allows to find new ways to reach audiences on a broader scale. %Moreover, the growing industry of online communication through smartphones provides a way for people of all backgrounds to give input on a project or research.
 %Sometimes the possibility to participate on a project, or just express their opinions encourages people to partecipate to crowdsourcing campains.
 %Often times, the trigger to attract a huge amount of contributors is the so called ``gamification''.
-Social media, blogs, forums, comment sections in online websites allow the opportunity for people to give suggestions or concerns.
-
+Social media, blogs, forums, and comment sections in online websites allow the opportunity for people to give suggestions or concerns.
 There are three main assets that supported the rise of the ``crowdsourcing era'':
 \begin{itemize}
-	\item \textbf{Social Platforms}: the diffusion of social networks plays a crucial role in collecting information about people opinion, trends and behaviour. There are general social networks like Facebook where people chat, read news, and share their experiences. Furthermore, there are also very specific social platforms aimed to bring together people with common interests. There are platforms by which computer engineers share code and advices, or professional photographers can share their photos, etc. What happens now is that people love sharing their information, tell friends what they are doing and how they feel. And what is very important for the scientific community is that most of these information are public and immediately available.
+	\item \textbf{Social Platforms}: the diffusion of social networks plays a crucial role in collecting information about people opinion, trends and behaviour. There are general social networks in which people chat, read news, and share their experiences (e.g., Facebook). Furthermore, there are also very specific social platforms aimed to bring together people with common interests. There are platforms by which computer engineers share code and advices, or professional photographers can share their photos, etc. What happens now is that people love sharing their information, tell friends what they are doing and how they feel. And what is very important for the scientific community is that most of these information are public and immediately available.
 	\item \textbf{High Bandwidth Connection}: the number of people with an Internet connection is increasing, as well as the bandwidth and the available connection speed. With the 5G connection, it's possible to download an high quality two hour long movie in less than 4 seconds. 
 	The connectivity improvements allowed the development of new services based on the transmission of huge amount of data, and real-time services. This allowed, for instance, web-based services like Netflix and the IP television, with the possibility to watch movies or live events with very high quality and low latency, or to perform a video of the event the user is attending, allowing him to share the live streaming through a social network.
 	\item \textbf{Personal Devices}: the diffusion of personal devices like smartphones allows people to be connected in every second of their lives, wherever they are in that moment. This allows the users to access on-line services in any moment of their daytime. Moreover, the amount of personal data that can be acquired by personal devices allow these services to be more pervasive and user centric.% Moreover, with the huge amount of available personal data, the provided services became more pervasive and user specific (i.e., more persuasive, and attractive). 
@@ -31,7 +30,7 @@ Besides new emerging companies, also the main IT companies have sought out innov
 In 2008, Facebook has exploited crowdsourcing to create different language versions of its website~\cite{dolmaya2011ethics}. %The company claimed this method offers the advantage of providing site versions that are more compatible with local cultures.
 
 The amount of public available and large-scale information supports the study and development of systems able to translate crowdsourced data into clear actionable insights.
-In the following, real use-case services based on the exploitation of user gathered visual contents are presented. From a set of crowdsourced videos or images, the presented systems are able to infer information about the sentiment (i.e., polarity) and the popularity (i.e., \virgolette{visual consensus}) of the users viewing or recording the depicted scenes.
+In the following, real use-case services based on the exploitation of user gathered visual contents are presented. From a set of crowdsourced videos or images, the presented systems are able to infer information about the sentiment polarity (i.e., positive/negative evoked emotion) and the popularity (i.e., \virgolette{visual consensus} among large groups of users) of the users viewing or recording the depicted scenes.
 In Section~\ref{TSP}, we present \textit{The Social Picture}~\cite{battiato2016social}, a framework to collect and explore huge amount of crowdsourced social images about public events, cultural heritage sites and other customized private events, with the aim to extract insights about the behaviour of people attending the same event or visiting the same place. 
 Through \textit{The Social Picture} users contributes to the creation of image collections about common interests. %Users can add an image to a collection by using either a mobile application and a website interface. Furthermore, an event collection can be populated by selecting images from the most common social networks for images (e.g., Flickr, Panoramio, Instagram).
 The collections can be explored through a number of advanced Computer Vision and Machine Learning algorithms, able to capture the visual content of images in order to organize them in a semantic way. The interfaces of \textit{The Social Picture} allow the users to create customized collections by exploiting semantic filters based on visual features, social network tags, geolocation, and other information related to the images.
@@ -52,12 +51,6 @@ These information can be inferred by analysing the multimedia audience activity 
 On the other hand, from the user point of view, the collection of an event can be exploited trough a set of visualization tools which exploits Computer Vision algorithms to organize images by visual content. In this way, the ``social picture'' of the event can be captured and shared among users.
 
 %In Figure~\ref{heatmap}, an example of visual output produced by the proposed framework. It is computed by considering images automatically gathered from social media and related to the cultural heritage site of Teatro Massimo, in Catania. As detailed in the following sections, the interaction with the heatmap allows the users to explore all the images contributing in each part of the analyzed cultural heritage site.
-
-\subsection{Architecture}
-The architecture of the developed framework is shown in Figure \ref{architecture}.
-Users can add an image to an event's collection by using a mobile application which gives access to \textit{The Social Picture} repository (TSP). The new images can be uploaded in TSP by using the mobile camera or by selecting images from the most common social networks for images (e.g., Flickr, Panoramio).
-Once an image is uploaded, it is analysed by a set of Computer Vision algorithms, and then stored in the database together with the extracted features and the inferred high level attributes (e.g., type of scene recognized by the algorithm). These information are exploited in TSP to create smart interfaces for the users, which can be used during the exploration of the images related to an event's collection.
-The framework collects all the data uploaded by the users of an event, and exploits this crowdsourced multimedia flow of pictures to infer social behavioural information about the event considering the popularity of the uploaded scenes \cite{Ortis2015n525}.
 \begin{figure}[t]
 	%	\vspace{-0.3in}
 	\centering
@@ -66,7 +59,19 @@ The framework collects all the data uploaded by the users of an event, and explo
 	\caption{The Social Picture's architecture.}
 	\label{architecture}
 \end{figure}
-The collections can be explored from smartphones, tablet or desktop computers via a web application, which exhibits a range of filtering tools to better explore the huge amount of data (see Figure \ref{interface}).
+\subsection{Architecture}
+The architecture of the developed framework is shown in Figure \ref{architecture}.
+Users can add an image to an event's collection by using a mobile application which gives access to \textit{The Social Picture} repository (TSP). The new images can be uploaded in TSP by using the mobile camera or by selecting images from the most common social networks for images (e.g., Flickr, Panoramio).
+Once an image is uploaded, it is analysed by a set of Computer Vision algorithms, and then stored in the database together with the extracted features and the inferred high level attributes (e.g., type of scene recognized by the algorithm). These information are exploited in TSP to create smart interfaces for the users, which can be used during the exploration of the images related to an event's collection.
+The framework collects all the data uploaded by the users of an event, and exploits this crowdsourced multimedia flow of pictures to infer social behavioural information about the event considering the popularity of the uploaded scenes \cite{Ortis2015n525}.
+
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=1\linewidth]{gallery.png}
+	\caption{Example of exploration interface. It is composed by three main areas: the gallery (right part) shows the collection's pictures according to the selected filters (middle) which allows the users to explore the collection. By selecting an image the system shows all the extracted information and the computed inferences (i.e., objects, places, similar images, if there is food, etc.). The filters allow to customize the set of images shown in the gallery. The menu (left) allows to select the visualization tool of the framework.}
+	\label{interface}
+\end{figure*}
+The collections can be explored with smartphones, tablet or desktop computers via a web application, which exhibits a range of filtering tools to better explore the huge amount of data (see Figure \ref{interface}).
 %\subsubsection{Database}
 %When a new image is added to the system, it is analysed by a set of algorithms with the aim to extract pre-defined features (both visual and textual), as well as semantic information. The image is collected, entered, processed and all the analysis results are stored in the Database. 
 %\subsubsection{Mobile App}
@@ -75,16 +80,20 @@ The collections can be explored from smartphones, tablet or desktop computers vi
 The web application shows different interfaces depending of the specific user and the event in which he has joined after an invitation from the event manager (the person who created the event). To join an event's collection, the user must upload at least one picture related to that event. Collections can be explored by several data visualization enviroments, which are selected by the event manager. Anyone registered to \textit{The Social Picture} can become event manager and start a social collection: this follows the ``prosumer'' paradigm, where the users are both producers and consumers of the service.
 The developed framework is characterized by a modular architecture: new visualization interfaces, as well as new semantic filters can be independently created and futher added to the system. 
 Thus, when an event manager creates a new collection, he is allowed to specify several options to customize the image gathering, the social analysis to be performed and the visualization tools for the users of that collection.
-The event manager is also allowed to set a range of statistics, which will be available after the analysis of the collected images. These statistics helps organizators to extract useful social information from the crowdsourced pictures \cite{Milotta2016n544}. For example, what is the most popular artwork of a museum? What is the least considered? From which perspective these pictures were taken?
+The event manager is also allowed to set a range of statistics, which will be available after the analysis of the collected images (see some examples in Figure~\ref{figStatistics}). 
+\begin{figure}[t]
+	%	\vspace{-0.3in}
+	\centering
+	%\epsfig{file=architecture.eps, width=2.72in}
+	\includegraphics[width=1\linewidth]{statistics}
+	\caption{Some statistics computed by the framework. The left plot shows the amount of pictures monthly uploaded for a set of selected years. The right plot shows the distribution of the devices used to take the pictures included in the connection.}
+	\label{figStatistics}
+\end{figure}
+Statistics helps organisers to extract useful social information from the crowdsourced pictures.% \cite{Milotta2016n544}. 
+For example, what is the most popular artwork of a museum? What is the least considered? From which perspective these pictures were taken?
 These information could be exploited, for example, to perform aimed investments. The system can suggest what is the better subject to use for the advertising campaign of the event, or which of the attractions it worth to mainly reproduce in the souvenir shop products, to support merchandising strategies. Feedback about what is the most interesting part (i.e., the most captured photo) of a landmark building can help on taking decisions about renovating some parts of the building rather than other as first investment, where the connotation of importance is achieved by the crowd who generated ``the social picture'' for that building by uploading related images.
 
 
-\begin{figure*}[t]
-	\centering
-	\includegraphics[width=1\linewidth]{gallery.png}
-	\caption{Example of exploration interface. It is composed by three main areas: the gallery (right part) shows the collection's pictures according to the selected filters (middle) which allows the users to explore the collection. By selecting an image the system shows all the extracted information and the computed inferences (i.e., objects, places, similar images, if there is food, etc.). The filters allow to customize the set of images shown in the gallery. The menu (left) allows to select the visualization tool of the framework.}
-	\label{interface}
-\end{figure*}
 
 %\begin{figure*}
 %	\centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.23)  10 JUL 2018 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.23)  10 JUL 2018 13:14
 entering extended mode
 **./PhDThesis.tex
 (PhDThesis.tex
@@ -2643,18 +2643,18 @@ File: images/schema.pdf Graphic file (type pdf)
 <use images/schema.pdf>
 Package pdftex.def Info: images/schema.pdf  used on input line 47.
 (pdftex.def)             Requested size: 341.43437pt x 182.92728pt.
-Package cleveref Info: loaded `english' language definitions on input line 60.
+Package cleveref Info: loaded `english' language definitions on input line 64.
 [4]
-Package cleveref Info: loaded `english' language definitions on input line 60.
+Package cleveref Info: loaded `english' language definitions on input line 64.
  [5 <./images/schema.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
-Package cleveref Info: loaded `english' language definitions on input line 87.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
+Package cleveref Info: loaded `english' language definitions on input line 73.
  [6])
 Package cleveref Info: loaded `english' language definitions on input line 305.
 
@@ -2670,84 +2670,89 @@ Chapter 2.
 
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 32.
+Package cleveref Info: loaded `english' language definitions on input line 31.
  [9]
-Package cleveref Info: loaded `english' language definitions on input line 46.
+Package cleveref Info: loaded `english' language definitions on input line 45.
  [10]
-Package cleveref Info: loaded `english' language definitions on input line 53.
+Package cleveref Info: loaded `english' language definitions on input line 52.
  [11]
-<images/architecture.png, id=331, 643.40375pt x 422.57875pt>
+<images/architecture.png, id=334, 643.40375pt x 422.57875pt>
 File: images/architecture.png Graphic file (type png)
 <use images/architecture.png>
-Package pdftex.def Info: images/architecture.png  used on input line 65.
+Package pdftex.def Info: images/architecture.png  used on input line 58.
 (pdftex.def)             Requested size: 298.75264pt x 196.21982pt.
-Package cleveref Info: loaded `english' language definitions on input line 80.
- [12]
-<images/gallery.png, id=341, 1135.8435pt x 531.1845pt>
+Package cleveref Info: loaded `english' language definitions on input line 67.
+ [12 <./images/architecture.png>]
+<images/gallery.png, id=344, 1135.8435pt x 531.1845pt>
 File: images/gallery.png Graphic file (type png)
 <use images/gallery.png>
-Package pdftex.def Info: images/gallery.png  used on input line 84.
+Package pdftex.def Info: images/gallery.png  used on input line 70.
 (pdftex.def)             Requested size: 426.79135pt x 199.59084pt.
-Package cleveref Info: loaded `english' language definitions on input line 103.
+<images/statistics.png, id=347, 993.7125pt x 324.61275pt>
+File: images/statistics.png Graphic file (type png)
+<use images/statistics.png>
+Package pdftex.def Info: images/statistics.png  used on input line 88.
+(pdftex.def)             Requested size: 426.79135pt x 139.4173pt.
+Package cleveref Info: loaded `english' language definitions on input line 95.
+ [13 <./images/gallery.png>]
+Package cleveref Info: loaded `english' language definitions on input line 112.
 
- [13 <./images/architecture.png>]
-Package cleveref Info: loaded `english' language definitions on input line 109.
 
- [14 <./images/gallery.png>]
-<images/heatGUI.png, id=365, 1141.26375pt x 545.03625pt>
+[14 <./images/statistics.png>]
+<images/heatGUI.png, id=370, 1141.26375pt x 545.03625pt>
 File: images/heatGUI.png Graphic file (type png)
 <use images/heatGUI.png>
-Package pdftex.def Info: images/heatGUI.png  used on input line 130.
+Package pdftex.def Info: images/heatGUI.png  used on input line 139.
 (pdftex.def)             Requested size: 426.79135pt x 203.82256pt.
-Package cleveref Info: loaded `english' language definitions on input line 138.
+Package cleveref Info: loaded `english' language definitions on input line 147.
 
- [15 <./images/heatGUI.png>]
-<images/3Dmap.png, id=373, 1141.866pt x 496.85625pt>
+ [15]
+<images/3Dmap.png, id=379, 1141.866pt x 496.85625pt>
 File: images/3Dmap.png Graphic file (type png)
 <use images/3Dmap.png>
-Package pdftex.def Info: images/3Dmap.png  used on input line 145.
+Package pdftex.def Info: images/3Dmap.png  used on input line 154.
 (pdftex.def)             Requested size: 426.79135pt x 185.70653pt.
-Package cleveref Info: loaded `english' language definitions on input line 153.
+Package cleveref Info: loaded `english' language definitions on input line 158.
 
- [16]
-<images/tsneFixed.png, id=387, 1090.67474pt x 182.48175pt>
+ [16 <./images/heatGUI.png>]
+<images/tsneFixed.png, id=392, 1090.67474pt x 182.48175pt>
 File: images/tsneFixed.png Graphic file (type png)
 <use images/tsneFixed.png>
-Package pdftex.def Info: images/tsneFixed.png  used on input line 164.
+Package pdftex.def Info: images/tsneFixed.png  used on input line 173.
 (pdftex.def)             Requested size: 426.79135pt x 71.40704pt.
-<images/tsne.png, id=388, 606.01407pt x 378.66469pt>
+<images/tsne.png, id=393, 606.01407pt x 378.66469pt>
 File: images/tsne.png Graphic file (type png)
 <use images/tsne.png>
-Package pdftex.def Info: images/tsne.png  used on input line 172.
+Package pdftex.def Info: images/tsne.png  used on input line 181.
 (pdftex.def)             Requested size: 426.79135pt x 266.68129pt.
-Package cleveref Info: loaded `english' language definitions on input line 183.
+Package cleveref Info: loaded `english' language definitions on input line 185.
 
  [17 <./images/3Dmap.png>]
-Package cleveref Info: loaded `english' language definitions on input line 183.
+Package cleveref Info: loaded `english' language definitions on input line 192.
 
- [18 <./images/tsneFixed.png> <./images/tsne.png>]
-<images/archs.png, id=402, 1081.641pt x 510.708pt>
+ [18 <./images/tsneFixed.png>]
+<images/archs.png, id=408, 1081.641pt x 510.708pt>
 File: images/archs.png Graphic file (type png)
 <use images/archs.png>
-Package pdftex.def Info: images/archs.png  used on input line 193.
+Package pdftex.def Info: images/archs.png  used on input line 202.
 (pdftex.def)             Requested size: 426.79135pt x 201.51314pt.
-Package cleveref Info: loaded `english' language definitions on input line 200.
+Package cleveref Info: loaded `english' language definitions on input line 209.
 
- [19]
-Package cleveref Info: loaded `english' language definitions on input line 212.
+ [19 <./images/tsne.png>]
+Package cleveref Info: loaded `english' language definitions on input line 209.
 
  [20 <./images/archs.png>]
-<images/map.png, id=416, 1156.32pt x 527.571pt>
+<images/map.png, id=423, 1156.32pt x 527.571pt>
 File: images/map.png Graphic file (type png)
 <use images/map.png>
-Package pdftex.def Info: images/map.png  used on input line 219.
+Package pdftex.def Info: images/map.png  used on input line 228.
 (pdftex.def)             Requested size: 426.79135pt x 194.72325pt.
-Package cleveref Info: loaded `english' language definitions on input line 229.
+Package cleveref Info: loaded `english' language definitions on input line 238.
 
- [21 <./images/map.png>])
+ [21])
 Package cleveref Info: loaded `english' language definitions on input line 306.
 
- [22]
+ [22 <./images/map.png>]
 \openout2 = `./TeX_files/chap3.aux'.
 
  (TeX_files/chap3.tex
@@ -2768,7 +2773,7 @@ Package cleveref Info: loaded `english' language definitions on input line 84.
  [27]
 Package cleveref Info: loaded `english' language definitions on input line 99.
  [28]
-<images/distribution_public.png, id=550, 1192.455pt x 741.972pt>
+<images/distribution_public.png, id=557, 1192.455pt x 741.972pt>
 File: images/distribution_public.png Graphic file (type png)
 <use images/distribution_public.png>
 Package pdftex.def Info: images/distribution_public.png  used on input line 104
@@ -2794,7 +2799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--173
 Package cleveref Info: loaded `english' language definitions on input line 190.
 
 [33]
-<images/Plutchik-wheel.png, id=640, 2007.5pt x 2035.605pt>
+<images/Plutchik-wheel.png, id=647, 2007.5pt x 2035.605pt>
 File: images/Plutchik-wheel.png Graphic file (type png)
 <use images/Plutchik-wheel.png>
 Package pdftex.def Info: images/Plutchik-wheel.png  used on input line 225.
@@ -2860,12 +2865,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 460--462
 
  []
 
-<images/sentiDefinition.png, id=778, 787.14075pt x 603.4545pt>
+<images/sentiDefinition.png, id=785, 787.14075pt x 603.4545pt>
 File: images/sentiDefinition.png Graphic file (type png)
 <use images/sentiDefinition.png>
 Package pdftex.def Info: images/sentiDefinition.png  used on input line 467.
 (pdftex.def)             Requested size: 277.41176pt x 212.6763pt.
-<images/strawberries_2.png, id=782, 756.426pt x 360.1455pt>
+<images/strawberries_2.png, id=789, 756.426pt x 360.1455pt>
 File: images/strawberries_2.png Graphic file (type png)
 <use images/strawberries_2.png>
 Package pdftex.def Info: images/strawberries_2.png  used on input line 481.
@@ -2876,7 +2881,7 @@ Package cleveref Info: loaded `english' language definitions on input line 487.
 Package cleveref Info: loaded `english' language definitions on input line 487.
 
  [44 <./images/strawberries_2.png>]
-<images/pipeline_objective.png, id=803, 853.68938pt x 199.49532pt>
+<images/pipeline_objective.png, id=810, 853.68938pt x 199.49532pt>
 File: images/pipeline_objective.png Graphic file (type png)
 <use images/pipeline_objective.png>
 Package pdftex.def Info: images/pipeline_objective.png  used on input line 501.
@@ -2896,7 +2901,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--548
 Package cleveref Info: loaded `english' language definitions on input line 548.
 
 [47]
-<images/twintowers.jpg, id=840, 803.0pt x 514.92375pt>
+<images/twintowers.jpg, id=847, 803.0pt x 514.92375pt>
 File: images/twintowers.jpg Graphic file (type jpg)
 <use images/twintowers.jpg>
 Package pdftex.def Info: images/twintowers.jpg  used on input line 559.
@@ -2929,7 +2934,7 @@ thub.io/MM17PredictionChallenge|
 Package cleveref Info: loaded `english' language definitions on input line 636.
 
 [53]
-<images/joyscale.png, id=918, 678.73575pt x 165.61874pt>
+<images/joyscale.png, id=925, 678.73575pt x 165.61874pt>
 File: images/joyscale.png Graphic file (type png)
 <use images/joyscale.png>
 Package pdftex.def Info: images/joyscale.png  used on input line 648.
@@ -2943,12 +2948,12 @@ Package cleveref Info: loaded `english' language definitions on input line 668.
 Package cleveref Info: loaded `english' language definitions on input line 683.
 
  [56]
-<images/emojiranking.png, id=957, 863.02425pt x 457.10776pt>
+<images/emojiranking.png, id=964, 863.02425pt x 457.10776pt>
 File: images/emojiranking.png Graphic file (type png)
 <use images/emojiranking.png>
 Package pdftex.def Info: images/emojiranking.png  used on input line 686.
 (pdftex.def)             Requested size: 426.79135pt x 226.05629pt.
-<images/reactions.png, id=969, 389.20406pt x 98.61844pt>
+<images/reactions.png, id=976, 389.20406pt x 98.61844pt>
 File: images/reactions.png Graphic file (type png)
 <use images/reactions.png>
 Package pdftex.def Info: images/reactions.png  used on input line 706.
@@ -3076,7 +3081,7 @@ Package cleveref Info: loaded `english' language definitions on input line 27.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
 Package rerunfilecheck Info: File `PhDThesis.out' has not changed.
-(rerunfilecheck)             Checksum: BC3997D9A5240095BC30D0445A136263;5718.
+(rerunfilecheck)             Checksum: 52ABB2BD497C8FE3A10C84055B22E94B;5718.
 
 
 LaTeX Warning: There were undefined references.
@@ -3086,10 +3091,10 @@ Package logreq Info: Writing requests to 'PhDThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40064 strings out of 493301
- 797596 string characters out of 3138743
- 1087095 words of memory out of 3000000
- 42870 multiletter control sequences out of 15000+200000
+ 40072 strings out of 493301
+ 797765 string characters out of 3138743
+ 1087346 words of memory out of 3000000
+ 42876 multiletter control sequences out of 15000+200000
  553472 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,21n,83p,10401b,4294s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3113,9 +3118,9 @@ nts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on PhDThesis.pdf (82 pages, 12409085 bytes).
+Output written on PhDThesis.pdf (82 pages, 12601570 bytes).
 PDF statistics:
- 1264 PDF objects out of 1440 (max. 8388607)
- 278 named destinations out of 1000 (max. 500000)
- 423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1272 PDF objects out of 1440 (max. 8388607)
+ 279 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
